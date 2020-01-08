@@ -16,13 +16,17 @@ class Person { // 개인이 회원가입 했을 때 개인에게 생성(배정)�
     
 }
 
-class Dorm { // 기숙사 생성.
-    enum DormInformation { // 기숙사를 구분하는 정보. 다음 4기준이 모두 충족되어야 서로 매칭될 수 있다.
-        case school
-        case dormitory
-        case roomtype
-        case gender
+class Dorm { // 기숙사 생성. 기숙사를 구분하는 정보. 다음 4기준이 모두 충족되어야 서로 매칭될 수 있다.
+    enum roomtype{
+        case two, four, six
     }
+    enum gender{
+        case man, woman
+    }
+    enum dormitory{
+        
+    }
+    
 }
 
 class Room {   // 서로 매칭되었을 때 생기는 방
