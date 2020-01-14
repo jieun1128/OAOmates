@@ -378,7 +378,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuV-FK-XUQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+
             <point key="canvasLocation" x="2306" y="-1144"/>
+
         </scene>
         <!--View Controller-->
         <scene sceneID="xPy-FU-icw">
@@ -394,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nqb-q6-Eh1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3083" y="-1144"/>
+            <point key="canvasLocation" x="2942" y="-867"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fHU-Gz-kip">
@@ -411,7 +413,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oOs-EM-4FQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1551" y="-1144"/>
+            <point key="canvasLocation" x="1559" y="-866"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qvX-6v-3q9">
@@ -514,7 +516,10 @@
         <image name="message" catalog="system" width="64" height="56"/>
         <image name="person" catalog="system" width="64" height="58"/>
         <image name="person.circle" catalog="system" width="64" height="60"/>
+
         <image name="person.crop.circle" catalog="system" width="64" height="60"/>
+
+
         <image name="남자말풍선" width="306" height="170"/>
     </resources>
 </document>
