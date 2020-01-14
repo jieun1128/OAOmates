@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="-117" y="1789"/>
         </scene>
-        <!--View Controller-->
+        <!--Person View Controller-->
         <scene sceneID="yAR-KE-Cmo">
             <objects>
-                <viewController id="BPg-sG-t8y" sceneMemberID="viewController">
+                <viewController id="BPg-sG-t8y" customClass="PersonViewController" customModule="OAOmate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NBq-h2-4NR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,6 +104,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tSZ-c8-LLc" kind="show" id="YP0-u0-PP7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -116,7 +119,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="xQE-fp-Tgv"/>
                     <connections>
-                        <segue destination="ldG-Cp-7u6" kind="show" id="Kgr-sQ-SwU"/>
+                        <outlet property="personTableView" destination="H6a-DL-G5f" id="bxw-Hj-HPG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YcX-wI-Ivi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -131,8 +134,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ya-F1-df1">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ya-F1-df1">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="wdJ-4i-iVz"/>
                                 </items>
@@ -320,34 +324,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="RaH-ZM-JbC">
-                                <rect key="frame" x="8" y="119" width="398" height="150"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qpR-vj-R8u">
-                                        <rect key="frame" x="0.0" y="0.5" width="129.5" height="149"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balloon" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="haY-SN-QaK">
-                                        <rect key="frame" x="129.5" y="0.0" width="268.5" height="150"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="6Oc-kP-bwv"/>
-                                </constraints>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="RjL-zG-Rwj" firstAttribute="leading" secondItem="tD7-Op-kaC" secondAttribute="leading" constant="8" id="083-Kv-9dQ"/>
-                            <constraint firstAttribute="trailing" secondItem="RaH-ZM-JbC" secondAttribute="trailing" constant="8" id="Bnc-qR-3cM"/>
                             <constraint firstItem="tD7-Op-kaC" firstAttribute="trailing" secondItem="gPl-SP-Sqi" secondAttribute="trailing" constant="8" id="DuC-T9-nPq"/>
                             <constraint firstItem="vRY-fU-bfj" firstAttribute="leading" secondItem="tD7-Op-kaC" secondAttribute="leading" constant="20" id="HXH-Vw-ai0"/>
                             <constraint firstItem="tD7-Op-kaC" firstAttribute="trailing" secondItem="RjL-zG-Rwj" secondAttribute="trailing" constant="8" id="Kxo-pJ-N5x"/>
                             <constraint firstItem="gPl-SP-Sqi" firstAttribute="leading" secondItem="tD7-Op-kaC" secondAttribute="leading" constant="8" id="Ogq-zV-Nj1"/>
                             <constraint firstItem="LmU-He-j32" firstAttribute="leading" secondItem="tD7-Op-kaC" secondAttribute="leading" constant="20" id="UyX-VG-mWe"/>
                             <constraint firstItem="tD7-Op-kaC" firstAttribute="trailing" secondItem="LmU-He-j32" secondAttribute="trailing" constant="297" id="atx-JP-3ik"/>
-                            <constraint firstItem="haY-SN-QaK" firstAttribute="width" secondItem="cuu-f3-N7N" secondAttribute="width" multiplier="1.7" id="bd9-e7-Hhj"/>
-                            <constraint firstItem="RaH-ZM-JbC" firstAttribute="top" secondItem="5Ya-F1-df1" secondAttribute="bottom" constant="20" id="rdT-fi-jyr"/>
-                            <constraint firstItem="RaH-ZM-JbC" firstAttribute="leading" secondItem="tD7-Op-kaC" secondAttribute="leading" constant="8" id="tlK-3O-aVz"/>
                             <constraint firstItem="tD7-Op-kaC" firstAttribute="trailing" secondItem="vRY-fU-bfj" secondAttribute="trailing" constant="297" id="wLk-I1-Ebh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tD7-Op-kaC"/>
@@ -360,7 +346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuV-FK-XUQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2306" y="-1144"/>
+            <point key="canvasLocation" x="1425" y="-204"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xPy-FU-icw">
@@ -377,52 +363,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nqb-q6-Eh1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3083" y="-1144"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="fHU-Gz-kip">
-            <objects>
-                <navigationController id="4aY-hE-Zue" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="D3m-BK-F6X"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bg3-4N-mK4">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="tSZ-c8-LLc" kind="relationship" relationship="rootViewController" id="xAm-N7-qhc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oOs-EM-4FQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1551" y="-1144"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="qvX-6v-3q9">
-            <objects>
-                <viewController id="ldG-Cp-7u6" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="O5t-MM-pbd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이거슨 글 화면이여" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cH3-dO-UVf">
-                                <rect key="frame" x="94" y="333" width="127" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="남자말풍선" translatesAutoresizingMaskIntoConstraints="NO" id="qds-HL-PdM">
-                                <rect key="frame" x="20" y="111" width="374" height="164"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="AMd-b9-CF5"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="EtB-A1-d7q"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MAV-ZD-vd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1424.6376811594205" y="-204.24107142857142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="E3z-FI-IAm">
@@ -465,13 +405,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="balloon" width="484" height="310"/>
         <image name="delete.left" catalog="system" width="64" height="52"/>
         <image name="heart" catalog="system" width="64" height="54"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="message" catalog="system" width="64" height="56"/>
         <image name="person" catalog="system" width="64" height="58"/>
-        <image name="person.circle" catalog="system" width="64" height="60"/>
-        <image name="남자말풍선" width="306" height="170"/>
     </resources>
 </document>
