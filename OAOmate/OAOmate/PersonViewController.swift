@@ -14,7 +14,9 @@ struct Room {
     var nation: String
 }
 
+
 class PersonViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.person.count
