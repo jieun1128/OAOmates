@@ -14,9 +14,11 @@ struct Room {
     var nation: String
 }
 
-class TableViewCell {/Users/linc/Downloads
 
-    func tableView(_ tableView: UITableView, numberOfRowInSection section: Int) -> Int {
+class PersonViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.person.count
     }
     
@@ -39,17 +41,18 @@ class TableViewCell {/Users/linc/Downloads
         Room(age: 23, gender: "남", nation: "Korea")
     ]
 
-    @IBOutlet weak var Person: UITableView!
+    @IBOutlet weak var personTableView: UITableView!
     // Configure the view for the selected state
     
      override func viewDidLoad() {
          super.viewDidLoad()
-         self.tableView.dataSource = self
-         self.tableView.delegate = self
+         self.personTableView.dataSource = self
+         self.personTableView.delegate = self
 //          Do any additional setup after loading the view.
      }
      
-     
+    @IBOutlet weak var ageCell: UILabel!
+    @IBOutlet weak var genderCell: UILabel!
+    @IBOutlet weak var nationCell: UILabel! //tableView의 Label들 각각 연결했는데 이게 맞게 한건지는 모르겠다..ㅜㅜ
     
-
 }
