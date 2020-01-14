@@ -46,7 +46,7 @@ class TableViewCell {
          super.viewDidLoad()
          self.tableView.dataSource = self
          self.tableView.delegate = self
-         // Do any additional setup after loading the view.
+//          Do any additional setup after loading the view.
      }
      
      
