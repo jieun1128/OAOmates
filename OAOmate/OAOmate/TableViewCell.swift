@@ -14,7 +14,7 @@ struct Room {
     var nation: String
 }
 
-class TableViewCell {
+class TableViewCell {/Users/linc/Downloads
 
     func tableView(_ tableView: UITableView, numberOfRowInSection section: Int) -> Int {
         return self.person.count
