@@ -49,7 +49,8 @@ class PersonViewController: UIViewController, UITableViewDataSource, UITableView
 //          Do any additional setup after loading the view.
      }
      
-     
+    @IBOutlet weak var ageCell: UILabel!
+    @IBOutlet weak var genderCell: UILabel!
+    @IBOutlet weak var nationCell: UILabel! //tableView의 Label들 각각 연결했는데 이게 맞게 한건지는 모르겠다..ㅜㅜ
     
-
 }
