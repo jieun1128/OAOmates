@@ -361,7 +361,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuV-FK-XUQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2306" y="-1144"/>
-
         </scene>
         <!--View Controller-->
         <scene sceneID="xPy-FU-icw">
@@ -472,8 +471,7 @@
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="message" catalog="system" width="64" height="56"/>
         <image name="person" catalog="system" width="64" height="58"/>
-
+        <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="남자말풍선" width="306" height="170"/>
-
     </resources>
 </document>
