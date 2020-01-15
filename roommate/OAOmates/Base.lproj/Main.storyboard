@@ -158,9 +158,8 @@
                                     <segue destination="T4k-M9-FnL" kind="show" id="ZUb-UA-4Or"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7ef-Db-eTl">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7ef-Db-eTl">
                                 <rect key="frame" x="40" y="62" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.71638772585290811" green="0.50709821909469399" blue="0.95037109374999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uql-2l-1f6">
@@ -202,8 +201,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="2Da-QT-yd4">
-                                <rect key="frame" x="64" y="183" width="185" height="20.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="2Da-QT-yd4">
+                                <rect key="frame" x="114.5" y="215.5" width="185" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학교" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyl-b4-UD4">
                                         <rect key="frame" x="0.0" y="0.0" width="29.5" height="20.5"/>
@@ -219,8 +218,8 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mF0-zR-Ofd">
-                                <rect key="frame" x="64" y="232" width="189" height="121.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mF0-zR-Ofd">
+                                <rect key="frame" x="112.5" y="256" width="189" height="121.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="6GZ-nE-fJA">
                                         <rect key="frame" x="0.0" y="0.0" width="189" height="20.5"/>
@@ -275,22 +274,30 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="___________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj4-DE-s9d">
-                                <rect key="frame" x="52" y="364" width="311" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="___________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj4-DE-s9d">
+                                <rect key="frame" x="52" y="407.5" width="311" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="나의 생활 패턴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fat-zy-inO">
-                                <rect key="frame" x="64" y="408" width="98" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 생활 패턴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fat-zy-inO">
+                                <rect key="frame" x="158.5" y="438" width="97.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mF0-zR-Ofd" firstAttribute="top" secondItem="2Da-QT-yd4" secondAttribute="bottom" constant="20" id="56U-0s-zxD"/>
+                            <constraint firstItem="Fat-zy-inO" firstAttribute="top" secondItem="jj4-DE-s9d" secondAttribute="bottom" constant="10" id="5pe-pI-qCz"/>
+                            <constraint firstItem="2Da-QT-yd4" firstAttribute="centerX" secondItem="tSv-8S-fFW" secondAttribute="centerX" id="6au-lu-5Ln"/>
+                            <constraint firstItem="7ef-Db-eTl" firstAttribute="top" secondItem="8bw-zn-gKD" secondAttribute="top" constant="20" id="CiP-WN-ENn"/>
+                            <constraint firstItem="Fat-zy-inO" firstAttribute="centerY" secondItem="tSv-8S-fFW" secondAttribute="centerY" id="I2K-th-9HL"/>
+                            <constraint firstItem="Fat-zy-inO" firstAttribute="centerX" secondItem="tSv-8S-fFW" secondAttribute="centerX" id="Njj-sp-W9Z"/>
+                            <constraint firstItem="jj4-DE-s9d" firstAttribute="top" secondItem="mF0-zR-Ofd" secondAttribute="bottom" constant="30" id="hUb-Jw-3zb"/>
+                            <constraint firstItem="mF0-zR-Ofd" firstAttribute="centerX" secondItem="tSv-8S-fFW" secondAttribute="centerX" id="vhy-9t-JwO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8bw-zn-gKD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="MY" selectedImage="person" catalog="system" id="LKM-rH-vTb"/>
