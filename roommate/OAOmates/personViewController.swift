@@ -45,10 +45,11 @@ class personViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
         self.personTableView.dataSource = self
         self.personTableView.delegate = self
-
         // Do any additional setup after loading the view.
+        
+        
     }
-
+    
     /*
     // MARK: - Navigation
 
