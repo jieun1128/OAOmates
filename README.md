@@ -1,2 +1,4 @@
 # OAOmates
-룸메이트를 찾고 싶은 사람을 위한 기숙사 룸메이트 배정해주는 앱
+Application where you can find your best dormitory roommate
+
+only in Dongguk University
