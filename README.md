@@ -1,4 +1,4 @@
 # OAOmates
-Application where you can find your best roommate
+Application where you can find your best dormitory roommate
 
-Dongguk University Namsan Dormitory only
+only in Dongguk University
