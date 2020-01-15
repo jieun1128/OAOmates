@@ -170,6 +170,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KxD-lR-odE">
                                 <rect key="frame" x="-2" y="0.0" width="417" height="896"/>
                                 <subviews>
@@ -401,8 +402,19 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="3Qs-KA-28E"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="3je-9a-Ebp"/>
                             </scrollView>
+
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mF0-zR-Ofd" firstAttribute="top" secondItem="2Da-QT-yd4" secondAttribute="bottom" constant="20" id="56U-0s-zxD"/>
+                            <constraint firstItem="Fat-zy-inO" firstAttribute="top" secondItem="jj4-DE-s9d" secondAttribute="bottom" constant="10" id="5pe-pI-qCz"/>
+                            <constraint firstItem="2Da-QT-yd4" firstAttribute="centerX" secondItem="tSv-8S-fFW" secondAttribute="centerX" id="6au-lu-5Ln"/>
+                            <constraint firstItem="7ef-Db-eTl" firstAttribute="top" secondItem="8bw-zn-gKD" secondAttribute="top" constant="20" id="CiP-WN-ENn"/>
+                            <constraint firstItem="Fat-zy-inO" firstAttribute="centerY" secondItem="tSv-8S-fFW" secondAttribute="centerY" id="I2K-th-9HL"/>
+                            <constraint firstItem="Fat-zy-inO" firstAttribute="centerX" secondItem="tSv-8S-fFW" secondAttribute="centerX" id="Njj-sp-W9Z"/>
+                            <constraint firstItem="jj4-DE-s9d" firstAttribute="top" secondItem="mF0-zR-Ofd" secondAttribute="bottom" constant="30" id="hUb-Jw-3zb"/>
+                            <constraint firstItem="mF0-zR-Ofd" firstAttribute="centerX" secondItem="tSv-8S-fFW" secondAttribute="centerX" id="vhy-9t-JwO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8bw-zn-gKD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="MY" selectedImage="person" catalog="system" id="LKM-rH-vTb">
