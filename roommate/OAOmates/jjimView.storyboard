@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xsW-0C-eMF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--JJIM-->
+        <scene sceneID="t6y-BR-Uc0">
+            <objects>
+                <viewController id="xsW-0C-eMF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6f2-4g-Bwe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPo-wz-kVH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7U6-Sz-Od1">
+                                        <rect key="frame" x="0.0" y="0.0" width="424" height="357"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="1gI-H1-Plo"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="0Zv-cs-m7O"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KPo-wz-kVH" firstAttribute="top" secondItem="m8d-cr-xqJ" secondAttribute="top" constant="217" id="BHQ-dl-hGa"/>
+                            <constraint firstItem="m8d-cr-xqJ" firstAttribute="trailing" secondItem="KPo-wz-kVH" secondAttribute="trailing" constant="87" id="O2I-ei-ZOR"/>
+                            <constraint firstItem="KPo-wz-kVH" firstAttribute="height" secondItem="6f2-4g-Bwe" secondAttribute="height" multiplier="0.142857" id="QVf-9E-JrS"/>
+                            <constraint firstItem="KPo-wz-kVH" firstAttribute="width" secondItem="6f2-4g-Bwe" secondAttribute="width" multiplier="0.57971" id="WIz-Ko-BKB"/>
+                            <constraint firstItem="m8d-cr-xqJ" firstAttribute="bottom" secondItem="KPo-wz-kVH" secondAttribute="bottom" constant="424" id="fa5-To-Cue"/>
+                            <constraint firstItem="KPo-wz-kVH" firstAttribute="top" secondItem="m8d-cr-xqJ" secondAttribute="top" constant="217" id="jRN-Ui-cXq"/>
+                            <constraint firstItem="KPo-wz-kVH" firstAttribute="leading" secondItem="m8d-cr-xqJ" secondAttribute="leading" constant="87" id="p4O-Xa-PKP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m8d-cr-xqJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="JJIM" image="heart.circle.fill" catalog="system" id="xOi-UX-o1O"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cn4-cD-RFj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97.101449275362327" y="1177.2321428571429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
