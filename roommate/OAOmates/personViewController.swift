@@ -21,11 +21,11 @@ class personViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "personTableViewCell",  for: indexPath) as! personTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath)        //personCell 이름 맞추세욧!!!!!!!!!!
         let rowData = self.person[indexPath.row]
-        cell.ageLabel?.text = "\(rowData.age)살"
-        cell.genderLabel?.text = "성별: \(rowData.gender)"
-        cell.nationLabel?.text = rowData.nation
+        cell.detailTextLabel?.text = "\(rowData.age)살"
+        cell.textLabel?.text = "성별: \(rowData.gender)"
+        cell.textLabel?.text = rowData.nation
         return cell
         
     }
