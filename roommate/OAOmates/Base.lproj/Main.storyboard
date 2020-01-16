@@ -21,7 +21,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfn-B3-NK9">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="남자말풍선" translatesAutoresizingMaskIntoConstraints="NO" id="3g5-NM-fkp">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="남자말풍선" translatesAutoresizingMaskIntoConstraints="NO" id="3g5-NM-fkp">
                                                 <rect key="frame" x="20" y="17" width="374" height="174"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -167,6 +167,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xms-Qb-2e0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2255" y="-119"/>
+        </scene>
+        <!--jjim-->
+        <scene sceneID="AE7-o2-cwB">
+            <objects>
+                <viewController id="Twd-ef-dNq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JUb-Zi-3Jx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FzE-7r-J6M">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="7tH-Yu-5Jd"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ixc-rd-nP0"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FzE-7r-J6M" firstAttribute="top" secondItem="4Bz-hw-U6d" secondAttribute="top" id="3FH-jz-rpe"/>
+                            <constraint firstItem="FzE-7r-J6M" firstAttribute="top" secondItem="4Bz-hw-U6d" secondAttribute="top" id="4AX-aE-02U"/>
+                            <constraint firstItem="FzE-7r-J6M" firstAttribute="leading" secondItem="4Bz-hw-U6d" secondAttribute="leading" id="GDa-6G-3ve"/>
+                            <constraint firstItem="FzE-7r-J6M" firstAttribute="top" secondItem="4Bz-hw-U6d" secondAttribute="top" id="Igd-J8-geM"/>
+                            <constraint firstItem="4Bz-hw-U6d" firstAttribute="bottom" secondItem="FzE-7r-J6M" secondAttribute="bottom" id="Qtb-dB-GB0"/>
+                            <constraint firstItem="4Bz-hw-U6d" firstAttribute="trailing" secondItem="FzE-7r-J6M" secondAttribute="trailing" id="RZ4-Zc-vUb"/>
+                            <constraint firstItem="FzE-7r-J6M" firstAttribute="leading" secondItem="4Bz-hw-U6d" secondAttribute="leading" id="UMG-HZ-1Fu"/>
+                            <constraint firstItem="FzE-7r-J6M" firstAttribute="top" secondItem="4Bz-hw-U6d" secondAttribute="top" id="W0Z-Zo-ePZ"/>
+                            <constraint firstItem="4Bz-hw-U6d" firstAttribute="trailing" secondItem="FzE-7r-J6M" secondAttribute="trailing" id="kD4-QF-Jm4"/>
+                            <constraint firstItem="4Bz-hw-U6d" firstAttribute="bottom" secondItem="FzE-7r-J6M" secondAttribute="bottom" id="zWi-vz-6q5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Bz-hw-U6d"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="jjim" image="heart.circle.fill" catalog="system" id="PEb-Ub-Uxl">
+                        <color key="badgeColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8SY-rm-sVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="891.96428571428567"/>
         </scene>
         <!--MY-->
         <scene sceneID="lMQ-et-KCo">
@@ -419,7 +456,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8bw-zn-gKD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="MY" selectedImage="person" catalog="system" id="LKM-rH-vTb">
+                    <tabBarItem key="tabBarItem" title="MY" image="person" catalog="system" selectedImage="person" id="LKM-rH-vTb">
                         <color key="badgeColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                 </viewController>
@@ -712,6 +749,7 @@
                     <connections>
                         <segue destination="vzq-u3-5wC" kind="relationship" relationship="viewControllers" id="79P-tP-6Eg"/>
                         <segue destination="ZPQ-xH-g8U" kind="relationship" relationship="viewControllers" id="zYM-tp-Cji"/>
+                        <segue destination="Twd-ef-dNq" kind="relationship" relationship="viewControllers" id="zf0-HX-Aue"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37o-Hl-o4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -722,7 +760,7 @@
         <scene sceneID="RB6-Rk-VNd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vzq-u3-5wC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="HOME" selectedImage="house" catalog="system" id="ulX-qw-VtJ">
+                    <tabBarItem key="tabBarItem" title="HOME" image="house" catalog="system" selectedImage="house" id="ulX-qw-VtJ">
                         <color key="badgeColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -742,8 +780,9 @@
     </scenes>
     <resources>
         <image name="KakaoTalk_Image_2020-01-15-20-42-43" width="282.5" height="365.5"/>
+        <image name="heart.circle.fill" catalog="system" width="64" height="60"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="person" catalog="system" width="64" height="58"/>
-        <image name="남자말풍선" width="306" height="170"/>
+        <image name="남자말풍선" width="306" height="170"/>
     </resources>
 </document>
