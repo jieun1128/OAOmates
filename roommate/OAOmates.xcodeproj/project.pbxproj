@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
 		3F46D7DD23D067C90020F986 /* homeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F46D7DC23D067C90020F986 /* homeView.storyboard */; };
+
+		3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F181CDC23D05E360026ADED /* personTableViewCell.swift */; };
+
 		3F96F1D023CDCDFA00456F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96F1CF23CDCDFA00456F64 /* AppDelegate.swift */; };
 		3F96F1D223CDCDFA00456F64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96F1D123CDCDFA00456F64 /* SceneDelegate.swift */; };
 		3F96F1D423CDCDFA00456F64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96F1D323CDCDFA00456F64 /* ViewController.swift */; };
@@ -20,7 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+
 		3F46D7DC23D067C90020F986 /* homeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = homeView.storyboard; sourceTree = "<group>"; };
+
+		3F181CDC23D05E360026ADED /* personTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personTableViewCell.swift; sourceTree = "<group>"; };
+
 		3F96F1CC23CDCDFA00456F64 /* OAOmates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OAOmates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F96F1CF23CDCDFA00456F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F96F1D123CDCDFA00456F64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,9 +80,13 @@
 				3F96F1DA23CDCDFA00456F64 /* LaunchScreen.storyboard */,
 				3F96F1DD23CDCDFA00456F64 /* Info.plist */,
 				3F96F1E323CDD10A00456F64 /* personViewController.swift */,
+
 				3F46D7DC23D067C90020F986 /* homeView.storyboard */,
 				3FCA42AA23D066760050793A /* myView.storyboard */,
 				3FCA42A823D0603B0050793A /* jjimView.storyboard */,
+
+				3F181CDC23D05E360026ADED /* personTableViewCell.swift */,
+
 			);
 			path = OAOmates;
 			sourceTree = "<group>";
@@ -156,6 +168,7 @@
 				3F96F1D423CDCDFA00456F64 /* ViewController.swift in Sources */,
 				3F96F1D023CDCDFA00456F64 /* AppDelegate.swift in Sources */,
 				3F96F1D223CDCDFA00456F64 /* SceneDelegate.swift in Sources */,
+				3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */,
 				3F96F1E423CDD10A00456F64 /* personViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
