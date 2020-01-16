@@ -647,7 +647,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="personCell" rowHeight="79" id="WvO-TF-zQ2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="personCell" rowHeight="79" id="WvO-TF-zQ2" customClass="personTableViewCell" customModule="OAOmates" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WvO-TF-zQ2" id="o6X-Yt-8ZG">
@@ -682,7 +682,10 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="q9W-mg-JMM" kind="show" id="ZE7-ZL-zlG"/>
+                                            <outlet property="ageLabel" destination="ERP-Id-fxF" id="n9x-lw-ZCo"/>
+                                            <outlet property="genderLabel" destination="3DL-im-0Yf" id="sXo-Jo-lMD"/>
+                                            <outlet property="nationLabel" destination="Swd-TY-Mk5" id="A2s-La-SKP"/>
+                                            <segue destination="q9W-mg-JMM" kind="show" id="vGS-53-AmI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
