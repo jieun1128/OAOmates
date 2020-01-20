@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NEN-UB-2ow">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gdP-rK-JlY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4t-Fr-FBE">
-                                <rect key="frame" x="-2" y="0.0" width="417" height="1500"/>
+                                <rect key="frame" x="-2" y="38" width="417" height="1330"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Bg-iA-43r">
-                                        <rect key="frame" x="0.0" y="83" width="417" height="1500"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Bg-iA-43r">
+                                        <rect key="frame" x="0.0" y="0.0" width="417" height="1330"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2md-r8-3fE">
                                                 <rect key="frame" x="154" y="122" width="45" height="21"/>
@@ -120,7 +120,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="추천 서비스를 위해 설문조사를 등록해보세요! 잘 맞는 방친구를 찾을 수 있을 거에요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVB-1y-KMi">
-                                                <rect key="frame" x="59" y="845" width="284" height="76"/>
+                                                <rect key="frame" x="40" y="838" width="284" height="76"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -142,12 +142,6 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="예) 저는 조용하고 소리에 예민해요. 마음이 잘 통하는 룸메를 찾고 있어요." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o30-Ah-PHP">
                                                 <rect key="frame" x="53" y="651" width="296" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="예) 저는 아침에 늦게 일어나고 밤에 늦게 자는 올빼미형 인간이랍니다. 비슷한 생활패턴을 가지거나 신경 안 쓸 수 있는 룸메였으면 좋겠어요^^" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V5J-24-056">
-                                                <rect key="frame" x="28" y="796" width="296" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -200,18 +194,6 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-Ni-lBD">
-                                                <rect key="frame" x="117" y="918" width="104" height="35"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <state key="normal" title="설문조사 시작">
-                                                    <color key="titleColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <color key="titleShadowColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="pOP-2v-Kuc" kind="show" id="zSI-Xp-GlO"/>
-                                                </connections>
-                                            </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KakaoTalk_Image_2020-01-15-20-42-43" translatesAutoresizingMaskIntoConstraints="NO" id="IvT-xC-3lk">
                                                 <rect key="frame" x="60" y="68" width="75" height="83"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -272,16 +254,34 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6D-Jd-kLa">
-                                                <rect key="frame" x="0.0" y="1284" width="417" height="216"/>
-                                            </pickerView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Va5-9W-5Wa">
+                                                <rect key="frame" x="339" y="24" width="52" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="수정하기"/>
+                                                <connections>
+                                                    <segue destination="v42-qj-T7b" kind="show" id="GRb-Sd-sgP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-Ni-lBD">
+                                                <rect key="frame" x="135" y="904" width="104" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <state key="normal" title="설문조사 시작">
+                                                    <color key="titleColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleShadowColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="pOP-2v-Kuc" kind="show" id="zSI-Xp-GlO"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="예) 저는 아침에 늦게 일어나고 밤에 늦게 자는 올빼미형 인간이랍니다. 비슷한 생활패턴을 가지거나 신경 안 쓸 수 있는 룸메였으면 좋겠어요^^" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V5J-24-056">
+                                                <rect key="frame" x="32" y="778" width="296" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="d6D-Jd-kLa" secondAttribute="bottom" id="Bon-Be-pky"/>
-                                            <constraint firstItem="d6D-Jd-kLa" firstAttribute="leading" secondItem="1Bg-iA-43r" secondAttribute="leading" id="Lt1-w4-S02"/>
-                                            <constraint firstAttribute="trailing" secondItem="d6D-Jd-kLa" secondAttribute="trailing" id="dJ3-8h-98K"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -289,6 +289,7 @@
                                     <constraint firstAttribute="bottom" secondItem="1Bg-iA-43r" secondAttribute="bottom" id="AeS-KF-6bR"/>
                                     <constraint firstAttribute="trailing" secondItem="1Bg-iA-43r" secondAttribute="trailing" id="NZV-pN-iks"/>
                                     <constraint firstItem="1Bg-iA-43r" firstAttribute="height" secondItem="Q4t-Fr-FBE" secondAttribute="height" id="PoX-GL-bnE"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Bg-iA-43r" secondAttribute="bottom" id="cYs-7m-l9d"/>
                                     <constraint firstItem="1Bg-iA-43r" firstAttribute="width" secondItem="Q4t-Fr-FBE" secondAttribute="width" id="gkP-jf-2Xb"/>
                                     <constraint firstItem="1Bg-iA-43r" firstAttribute="leading" secondItem="Q4t-Fr-FBE" secondAttribute="leading" id="kqz-Sv-2PO"/>
                                     <constraint firstAttribute="width" constant="417" id="tP6-7M-XKs"/>
@@ -297,26 +298,66 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="xRc-cZ-5Lp" firstAttribute="top" secondItem="Q4t-Fr-FBE" secondAttribute="top" constant="44" id="HzW-b1-7Lh"/>
+                            <constraint firstItem="xRc-cZ-5Lp" firstAttribute="top" secondItem="Q4t-Fr-FBE" secondAttribute="top" constant="50" id="HzW-b1-7Lh"/>
                             <constraint firstAttribute="centerX" secondItem="jq0-y6-sAt" secondAttribute="centerX" id="Kba-pO-heM"/>
-                            <constraint firstItem="Q4t-Fr-FBE" firstAttribute="bottom" secondItem="xRc-cZ-5Lp" secondAttribute="bottom" constant="83" id="NNb-Mz-ahS"/>
+                            <constraint firstItem="Q4t-Fr-FBE" firstAttribute="bottom" secondItem="xRc-cZ-5Lp" secondAttribute="bottom" id="NNb-Mz-ahS"/>
                             <constraint firstItem="xRc-cZ-5Lp" firstAttribute="leading" secondItem="Q4t-Fr-FBE" secondAttribute="leading" constant="2" id="RiU-W4-eIC"/>
                             <constraint firstAttribute="centerX" secondItem="jq0-y6-sAt" secondAttribute="centerX" id="XPF-4p-Veg"/>
                             <constraint firstItem="Q4t-Fr-FBE" firstAttribute="trailing" secondItem="xRc-cZ-5Lp" secondAttribute="trailing" constant="1" id="wat-tN-t6l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xRc-cZ-5Lp"/>
-                        <connections>
-                            <outlet property="mypicker" destination="d6D-Jd-kLa" id="JWp-bU-ynG"/>
-                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="MY" image="person" catalog="system" id="0VI-Li-mgT"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="7pp-by-Fi2"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="414" height="1500"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfI-aF-Iqy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="798.55072463768124" y="527.67857142857144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9qo-7u-aoH">
+            <objects>
+                <viewController id="v42-qj-T7b" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kmL-a0-68m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="49x-0T-wRq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1280"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Im2-SY-lCy">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1280"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sbf-GQ-lFl" firstAttribute="bottom" secondItem="Im2-SY-lCy" secondAttribute="bottom" id="7Od-uT-AE1"/>
+                                    <constraint firstItem="sbf-GQ-lFl" firstAttribute="trailing" secondItem="Im2-SY-lCy" secondAttribute="trailing" id="JNu-ct-ED3"/>
+                                    <constraint firstItem="Im2-SY-lCy" firstAttribute="leading" secondItem="sbf-GQ-lFl" secondAttribute="leading" id="gTJ-xC-9M5"/>
+                                    <constraint firstItem="Im2-SY-lCy" firstAttribute="top" secondItem="sbf-GQ-lFl" secondAttribute="top" id="u6u-aY-LoW"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="JkH-UD-08q"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="sbf-GQ-lFl"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="49x-0T-wRq" firstAttribute="top" secondItem="1Sb-by-Vp7" secondAttribute="top" id="NRx-Iq-3GE"/>
+                            <constraint firstItem="49x-0T-wRq" firstAttribute="leading" secondItem="1Sb-by-Vp7" secondAttribute="leading" id="hry-Ke-EBH"/>
+                            <constraint firstItem="1Sb-by-Vp7" firstAttribute="bottom" secondItem="49x-0T-wRq" secondAttribute="bottom" id="ila-TR-AyW"/>
+                            <constraint firstItem="1Sb-by-Vp7" firstAttribute="trailing" secondItem="49x-0T-wRq" secondAttribute="trailing" id="vb1-YK-F1T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Sb-by-Vp7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="02Y-kw-0bS"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSb-5a-H5F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710.144927536232" y="-52.232142857142854"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BMa-HQ-wTD">
@@ -327,7 +368,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tar-VO-Rh0">
-                                <rect key="frame" x="0.0" y="44" width="414" height="1456"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="1412"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wtk-aC-JRA">
                                         <rect key="frame" x="0.0" y="8" width="414" height="1456"/>
@@ -523,7 +564,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5y-3Q-zdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1516" y="730"/>
+            <point key="canvasLocation" x="1713" y="1023"/>
+        </scene>
+        <!--MY-->
+        <scene sceneID="Swg-yc-Vq5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZu-7V-wtt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="gdP-rK-JlY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="MY" image="person" catalog="system" id="NC6-la-3iw"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EzN-zV-5V3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NEN-UB-2ow" kind="relationship" relationship="rootViewController" id="khj-YK-VXO"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="38" y="516"/>
         </scene>
     </scenes>
     <resources>

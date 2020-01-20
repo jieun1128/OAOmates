@@ -6,13 +6,13 @@
 //  Copyright © 2020 linc. All rights reserved.
 //
 
-//struct Room {
-//    var dormitory: String
-//    var number: Int
-//    var age: Int
-//    var gender: String
-//    var nation: String
-//}
+struct Room {
+    var dormitory: String
+    var number: Int
+    var age: Int
+    var gender: String
+    var nation: String
+}
 
 
 import UIKit
