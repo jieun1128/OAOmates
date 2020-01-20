@@ -5,11 +5,7 @@
 //  Created by linc on 2020/01/14.
 //  Copyright © 2020 linc. All rights reserved.
 //
-struct Room {
-    var age: Int
-    var gender: String
-    var nation: String
-}
+
 
 import UIKit
 
