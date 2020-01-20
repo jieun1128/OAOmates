@@ -18,7 +18,7 @@
 		3F96F1E423CDD10A00456F64 /* personViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96F1E323CDD10A00456F64 /* personViewController.swift */; };
 		3FCA42A923D0603B0050793A /* jjimView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA42A823D0603B0050793A /* jjimView.storyboard */; };
 		3FCA42AB23D066760050793A /* myView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA42AA23D066760050793A /* myView.storyboard */; };
-		3FF5694D23D57EC800B506D2 /* JjimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5694C23D57EC800B506D2 /* JjimViewController.swift */; };
+		3FF5694F23D5809C00B506D2 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5694E23D5809C00B506D2 /* MyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		3F96F1E323CDD10A00456F64 /* personViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personViewController.swift; sourceTree = "<group>"; };
 		3FCA42A823D0603B0050793A /* jjimView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = jjimView.storyboard; sourceTree = "<group>"; };
 		3FCA42AA23D066760050793A /* myView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = myView.storyboard; sourceTree = "<group>"; };
-		3FF5694C23D57EC800B506D2 /* JjimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JjimViewController.swift; sourceTree = "<group>"; };
+		3FF5694E23D5809C00B506D2 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 				3F96F1E323CDD10A00456F64 /* personViewController.swift */,
 				3F46D7DC23D067C90020F986 /* homeView.storyboard */,
 				3FCA42AA23D066760050793A /* myView.storyboard */,
-				3FF5694C23D57EC800B506D2 /* JjimViewController.swift */,
+				3FF5694E23D5809C00B506D2 /* MyViewController.swift */,
 				3FCA42A823D0603B0050793A /* jjimView.storyboard */,
 				3F181CDC23D05E360026ADED /* personTableViewCell.swift */,
 			);
@@ -163,7 +163,7 @@
 				3F96F1D023CDCDFA00456F64 /* AppDelegate.swift in Sources */,
 				3F96F1D223CDCDFA00456F64 /* SceneDelegate.swift in Sources */,
 				3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */,
-				3FF5694D23D57EC800B506D2 /* JjimViewController.swift in Sources */,
+				3FF5694F23D5809C00B506D2 /* MyViewController.swift in Sources */,
 				3F96F1E423CDD10A00456F64 /* personViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
