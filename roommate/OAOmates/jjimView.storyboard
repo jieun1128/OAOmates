@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xsW-0C-eMF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kXM-Nc-tMG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -8,45 +8,46 @@
     </dependencies>
     <scenes>
         <!--JJIM-->
-        <scene sceneID="t6y-BR-Uc0">
+        <scene sceneID="OPD-iv-fEk">
             <objects>
-                <viewController id="xsW-0C-eMF" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="on8-DI-IYW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <viewController id="kXM-Nc-tMG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bUS-st-ub3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zOX-nd-jRd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
-                                <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rz6-Sz-m0E">
-                                        <rect key="frame" x="67" y="209" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    </tableView>
-                                </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="r9G-od-pmu"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="bIA-e4-6VL"/>
-                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dqd-Ly-HI5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="9tQ-DF-gFT">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9tQ-DF-gFT" id="B4L-Xr-7rn" customClass="jjimTableViewCell" customModule="OAOmates" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="zOX-nd-jRd" firstAttribute="leading" secondItem="Cl5-FT-33x" secondAttribute="leading" id="BXW-oT-L8u"/>
-                            <constraint firstItem="zOX-nd-jRd" firstAttribute="top" secondItem="Cl5-FT-33x" secondAttribute="top" id="g0v-f5-9oV"/>
-                            <constraint firstItem="Cl5-FT-33x" firstAttribute="bottom" secondItem="zOX-nd-jRd" secondAttribute="bottom" id="q8I-iv-HG1"/>
-                            <constraint firstItem="Cl5-FT-33x" firstAttribute="trailing" secondItem="zOX-nd-jRd" secondAttribute="trailing" id="vkq-8e-a3z"/>
+                            <constraint firstItem="Dqd-Ly-HI5" firstAttribute="leading" secondItem="Edf-cx-G8g" secondAttribute="leading" id="DxE-1y-PCx"/>
+                            <constraint firstItem="Dqd-Ly-HI5" firstAttribute="trailing" secondItem="Edf-cx-G8g" secondAttribute="trailing" id="I40-GI-09R"/>
+                            <constraint firstItem="Edf-cx-G8g" firstAttribute="bottom" secondItem="Dqd-Ly-HI5" secondAttribute="bottom" id="LdX-NC-FTL"/>
+                            <constraint firstItem="Dqd-Ly-HI5" firstAttribute="top" secondItem="Edf-cx-G8g" secondAttribute="top" id="Vhd-YK-khh"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Cl5-FT-33x"/>
+                        <viewLayoutGuide key="safeArea" id="Edf-cx-G8g"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="JJIM" image="heart.circle.fill" catalog="system" id="xOi-UX-o1O"/>
+                    <tabBarItem key="tabBarItem" title="JJIM" image="heart.circle" catalog="system" id="TWc-8O-lF9"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="414" height="1000"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cn4-cD-RFj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7O-qI-NoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-97.101449275362327" y="1177.2321428571429"/>
+            <point key="canvasLocation" x="-200.00000000000003" y="1177.2321428571429"/>
         </scene>
     </scenes>
     <resources>
-        <image name="heart.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="heart.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>

@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="NEN-UB-2ow" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jq0-y6-sAt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4t-Fr-FBE">
-                                <rect key="frame" x="-2" y="38" width="417" height="1330"/>
+                                <rect key="frame" x="-2" y="38" width="417" height="1230"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Bg-iA-43r">
-                                        <rect key="frame" x="0.0" y="0.0" width="417" height="1330"/>
+                                        <rect key="frame" x="0.0" y="20" width="417" height="1230"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2md-r8-3fE">
                                                 <rect key="frame" x="154" y="122" width="45" height="21"/>
@@ -289,7 +289,9 @@
                                     <constraint firstAttribute="bottom" secondItem="1Bg-iA-43r" secondAttribute="bottom" id="AeS-KF-6bR"/>
                                     <constraint firstAttribute="trailing" secondItem="1Bg-iA-43r" secondAttribute="trailing" id="NZV-pN-iks"/>
                                     <constraint firstItem="1Bg-iA-43r" firstAttribute="height" secondItem="Q4t-Fr-FBE" secondAttribute="height" id="PoX-GL-bnE"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Bg-iA-43r" secondAttribute="bottom" id="Ypv-O7-TPu"/>
                                     <constraint firstAttribute="bottom" secondItem="1Bg-iA-43r" secondAttribute="bottom" id="cYs-7m-l9d"/>
+                                    <constraint firstItem="1Bg-iA-43r" firstAttribute="top" secondItem="Q4t-Fr-FBE" secondAttribute="top" constant="20" symbolic="YES" id="eF9-3B-Sva"/>
                                     <constraint firstItem="1Bg-iA-43r" firstAttribute="width" secondItem="Q4t-Fr-FBE" secondAttribute="width" id="gkP-jf-2Xb"/>
                                     <constraint firstItem="1Bg-iA-43r" firstAttribute="leading" secondItem="Q4t-Fr-FBE" secondAttribute="leading" id="kqz-Sv-2PO"/>
                                     <constraint firstAttribute="width" constant="417" id="tP6-7M-XKs"/>
@@ -298,12 +300,19 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Q4t-Fr-FBE" secondAttribute="trailing" constant="20" symbolic="YES" id="1xH-Q8-PyD"/>
                             <constraint firstItem="xRc-cZ-5Lp" firstAttribute="top" secondItem="Q4t-Fr-FBE" secondAttribute="top" constant="50" id="HzW-b1-7Lh"/>
                             <constraint firstAttribute="centerX" secondItem="jq0-y6-sAt" secondAttribute="centerX" id="Kba-pO-heM"/>
                             <constraint firstItem="Q4t-Fr-FBE" firstAttribute="bottom" secondItem="xRc-cZ-5Lp" secondAttribute="bottom" id="NNb-Mz-ahS"/>
                             <constraint firstItem="xRc-cZ-5Lp" firstAttribute="leading" secondItem="Q4t-Fr-FBE" secondAttribute="leading" constant="2" id="RiU-W4-eIC"/>
                             <constraint firstAttribute="centerX" secondItem="jq0-y6-sAt" secondAttribute="centerX" id="XPF-4p-Veg"/>
+                            <constraint firstItem="Q4t-Fr-FBE" firstAttribute="top" secondItem="jq0-y6-sAt" secondAttribute="top" constant="20" symbolic="YES" id="fKY-d2-TqC"/>
+                            <constraint firstItem="Q4t-Fr-FBE" firstAttribute="leading" secondItem="jq0-y6-sAt" secondAttribute="leading" constant="20" symbolic="YES" id="gqQ-aD-7Ka"/>
+                            <constraint firstAttribute="trailing" secondItem="Q4t-Fr-FBE" secondAttribute="trailing" constant="20" symbolic="YES" id="nyi-oX-VH2"/>
+                            <constraint firstAttribute="bottom" secondItem="Q4t-Fr-FBE" secondAttribute="bottom" id="qdu-bV-cPs"/>
+                            <constraint firstItem="Q4t-Fr-FBE" firstAttribute="top" secondItem="jq0-y6-sAt" secondAttribute="top" constant="20" symbolic="YES" id="sIQ-HI-L9B"/>
                             <constraint firstItem="Q4t-Fr-FBE" firstAttribute="trailing" secondItem="xRc-cZ-5Lp" secondAttribute="trailing" constant="1" id="wat-tN-t6l"/>
+                            <constraint firstItem="Q4t-Fr-FBE" firstAttribute="leading" secondItem="jq0-y6-sAt" secondAttribute="leading" constant="20" symbolic="YES" id="zXL-Xy-Q1b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xRc-cZ-5Lp"/>
                     </view>
@@ -311,7 +320,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="7pp-by-Fi2"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="414" height="1500"/>
+                    <size key="freeformSize" width="414" height="1400"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfI-aF-Iqy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -569,7 +578,6 @@
         <!--MY-->
         <scene sceneID="Swg-yc-Vq5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cZu-7V-wtt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="gdP-rK-JlY" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="MY" image="person" catalog="system" id="NC6-la-3iw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -581,6 +589,7 @@
                         <segue destination="NEN-UB-2ow" kind="relationship" relationship="rootViewController" id="khj-YK-VXO"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZu-7V-wtt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="38" y="516"/>
         </scene>
