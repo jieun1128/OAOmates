@@ -11,7 +11,11 @@ import UIKit
 class personTableViewCell: UITableViewCell {
 
    
-    @IBOutlet weak var ageLabel: UILabel!    //다시연결하세여
+    @IBOutlet weak var dormitoryLabel: UILabel!
+    
+    @IBOutlet weak var numberLabel: UILabel!
+    
+    @IBOutlet weak var ageLabel: UILabel!    
     
     @IBOutlet weak var genderLabel: UILabel!
     
