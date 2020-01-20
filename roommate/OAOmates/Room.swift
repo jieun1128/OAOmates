@@ -9,6 +9,8 @@
 import Foundation
 
 struct Room {
+    var dormitory: String
+    var number: Int
     var age: Int
     var gender: String
     var nation: String
