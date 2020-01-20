@@ -51,19 +51,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-
-		3F88AF3023D5806800A377EC /* homeViewFolder */ = {
-			isa = PBXGroup;
-			children = (
-				3F46D7DC23D067C90020F986 /* homeView.storyboard */,
-				3F88AF3123D580AC00A377EC /* Room.swift */,
-				3F96F1E323CDD10A00456F64 /* personViewController.swift */,
-				3F181CDC23D05E360026ADED /* personTableViewCell.swift */,
-			);
-			path = homeViewFolder;
-			sourceTree = "<group>";
-		};
-
 		3F96F1C323CDCDFA00456F64 = {
 			isa = PBXGroup;
 			children = (
