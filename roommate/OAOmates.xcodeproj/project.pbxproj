@@ -18,6 +18,7 @@
 		3F96F1E423CDD10A00456F64 /* personViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96F1E323CDD10A00456F64 /* personViewController.swift */; };
 		3FCA42A923D0603B0050793A /* jjimView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA42A823D0603B0050793A /* jjimView.storyboard */; };
 		3FCA42AB23D066760050793A /* myView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA42AA23D066760050793A /* myView.storyboard */; };
+		3FE664F623D58EEC0009FC64 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE664F523D58EEC0009FC64 /* Room.swift */; };
 		3FF5694F23D5809C00B506D2 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5694E23D5809C00B506D2 /* MyViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		3F96F1E323CDD10A00456F64 /* personViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personViewController.swift; sourceTree = "<group>"; };
 		3FCA42A823D0603B0050793A /* jjimView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = jjimView.storyboard; sourceTree = "<group>"; };
 		3FCA42AA23D066760050793A /* myView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = myView.storyboard; sourceTree = "<group>"; };
+		3FE664F523D58EEC0009FC64 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		3FF5694E23D5809C00B506D2 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 		3F96F1CE23CDCDFA00456F64 /* OAOmates */ = {
 			isa = PBXGroup;
 			children = (
+				3FE664F423D58EBD0009FC64 /* HomeView */,
 				3F96F1CF23CDCDFA00456F64 /* AppDelegate.swift */,
 				3F96F1D123CDCDFA00456F64 /* SceneDelegate.swift */,
 				3F96F1D323CDCDFA00456F64 /* ViewController.swift */,
@@ -75,14 +78,22 @@
 				3F96F1D823CDCDFA00456F64 /* Assets.xcassets */,
 				3F96F1DA23CDCDFA00456F64 /* LaunchScreen.storyboard */,
 				3F96F1DD23CDCDFA00456F64 /* Info.plist */,
-				3F96F1E323CDD10A00456F64 /* personViewController.swift */,
-				3F46D7DC23D067C90020F986 /* homeView.storyboard */,
 				3FCA42AA23D066760050793A /* myView.storyboard */,
 				3FF5694E23D5809C00B506D2 /* MyViewController.swift */,
 				3FCA42A823D0603B0050793A /* jjimView.storyboard */,
-				3F181CDC23D05E360026ADED /* personTableViewCell.swift */,
 			);
 			path = OAOmates;
+			sourceTree = "<group>";
+		};
+		3FE664F423D58EBD0009FC64 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				3F181CDC23D05E360026ADED /* personTableViewCell.swift */,
+				3F96F1E323CDD10A00456F64 /* personViewController.swift */,
+				3F46D7DC23D067C90020F986 /* homeView.storyboard */,
+				3FE664F523D58EEC0009FC64 /* Room.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 			files = (
 				3F96F1D423CDCDFA00456F64 /* ViewController.swift in Sources */,
 				3F96F1D023CDCDFA00456F64 /* AppDelegate.swift in Sources */,
+				3FE664F623D58EEC0009FC64 /* Room.swift in Sources */,
 				3F96F1D223CDCDFA00456F64 /* SceneDelegate.swift in Sources */,
 				3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */,
 				3FF5694F23D5809C00B506D2 /* MyViewController.swift in Sources */,
