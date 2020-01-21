@@ -10,32 +10,25 @@ import UIKit
 
 class MoreInfoViewController: UIViewController {
 
-//    @IBOutlet weak var collegeLabel: UILabel!
-//    @IBOutlet weak var majorLabel: UILabel!
+    @IBOutlet weak var collegeLabel: UILabel!
+    @IBOutlet weak var majorLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var nationLabel: UILabel!
-//    @IBOutlet weak var gradeLabel: UILabel!
+    @IBOutlet weak var gradeLabel: UILabel!
     @IBOutlet weak var dormitoryLabel: UILabel!
-//    @IBOutlet weak var sleepTimeLabel: UILabel!
-//    @IBOutlet weak var letterLabel: UITextView!
-//    @IBOutlet weak var introductionLabel: UILabel!
-//    @IBOutlet weak var openChatLabel: UITextField!
-//    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var sleepTimeLabel: UILabel!
+    @IBOutlet weak var letterLabel: UITextView!
+    @IBOutlet weak var introductionLabel: UILabel!
+    @IBOutlet weak var openChatLabel: UITextField!
+    @IBOutlet weak var timeLabel: UILabel!
     
-    var age : String = ""
-    var nation : String = ""
-    var dormitory : String = ""
-    var gender : String = ""
-    
+    var personDetail : Room? = nil
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        genderLabel.text = gender
-        ageLabel.text = age
-        dormitoryLabel.text = dormitory
-        nationLabel.text = nation
+
         // Do any additional setup after loading the view.
     }
     
