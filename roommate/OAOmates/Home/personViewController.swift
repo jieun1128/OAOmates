@@ -6,31 +6,17 @@
 //  Copyright © 2020 linc. All rights reserved.
 //
 
-struct Room {
-    var dormitory: String
-    var number: Int
-    var age: Int
-    var gender: String
-    var nation: String
-}
+
 
 
 import UIKit
 
 
 class personViewController: UIViewController,  UITableViewDelegate {
+    let data = DataLoader().userData
 
     @IBOutlet weak var personTableView: UITableView!
     
-    let person:[Room] = [
-        Room(dormitory: "남산학사", number: 2, age: 20, gender: "여", nation: "Korea"),
-        Room(dormitory: "남산학사", number: 2, age: 20, gender: "남", nation: "Korea"),
-        Room(dormitory: "충무학사", number: 4, age: 21, gender: "여", nation: "China"),
-        Room(dormitory: "남산학사", number: 2, age: 22, gender: "남", nation: "India"),
-        Room(dormitory: "충무학사", number: 4, age: 22, gender: "여", nation: "Korea"),
-        Room(dormitory: "남산학사", number: 2, age: 23, gender: "남", nation: "Korea")
-    ]
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.personTableView.dataSource = self
@@ -41,17 +27,16 @@ class personViewController: UIViewController,  UITableViewDelegate {
 
 extension personViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.person.count
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personTableViewCell", for: indexPath) as! personTableViewCell
-        let rowData = self.person[indexPath.row]
-        cell.dormitoryLabel.text = rowData.dormitory
-        cell.numberLabel.text = "\(rowData.number)인실"
-        cell.ageLabel.text = "\(rowData.age)살"
-        cell.genderLabel.text = "성별: \(rowData.gender)"
-        cell.nationLabel.text = rowData.nation
+        cell.dormitoryLabel.text = data[indexPath.row].dormitory
+        cell.numberLabel.text = "\(data[indexPath.row].number)인실"
+        cell.ageLabel.text = "\(data[indexPath.row].age)살"
+        cell.genderLabel.text = "성별: \(data[indexPath.row].gender)"
+        cell.nationLabel.text = data[indexPath.row].nation
         return cell
         
     }

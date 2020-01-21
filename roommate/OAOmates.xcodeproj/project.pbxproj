@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F181CDC23D05E360026ADED /* personTableViewCell.swift */; };
 		3F46D7DD23D067C90020F986 /* homeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F46D7DC23D067C90020F986 /* homeView.storyboard */; };
+		3F74FAD323D6BAC1009028B1 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74FAD223D6BAC1009028B1 /* Room.swift */; };
+		3F74FAD523D6BAFE009028B1 /* personalData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F74FAD423D6BAFE009028B1 /* personalData.json */; };
+		3F74FAD723D6BBA5009028B1 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74FAD623D6BBA5009028B1 /* DataLoader.swift */; };
 		3F96F1D023CDCDFA00456F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96F1CF23CDCDFA00456F64 /* AppDelegate.swift */; };
 		3F96F1D223CDCDFA00456F64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96F1D123CDCDFA00456F64 /* SceneDelegate.swift */; };
 		3F96F1D423CDCDFA00456F64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96F1D323CDCDFA00456F64 /* ViewController.swift */; };
@@ -24,6 +27,9 @@
 /* Begin PBXFileReference section */
 		3F181CDC23D05E360026ADED /* personTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personTableViewCell.swift; sourceTree = "<group>"; };
 		3F46D7DC23D067C90020F986 /* homeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = homeView.storyboard; sourceTree = "<group>"; };
+		3F74FAD223D6BAC1009028B1 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		3F74FAD423D6BAFE009028B1 /* personalData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = personalData.json; sourceTree = "<group>"; };
+		3F74FAD623D6BBA5009028B1 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		3F96F1CC23CDCDFA00456F64 /* OAOmates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OAOmates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F96F1CF23CDCDFA00456F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F96F1D123CDCDFA00456F64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,9 @@
 		3F74FACF23D6BA4A009028B1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3F74FAD223D6BAC1009028B1 /* Room.swift */,
+				3F74FAD423D6BAFE009028B1 /* personalData.json */,
+				3F74FAD623D6BBA5009028B1 /* DataLoader.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -177,6 +186,7 @@
 			files = (
 				3F96F1DC23CDCDFA00456F64 /* LaunchScreen.storyboard in Resources */,
 				3FCA42AB23D066760050793A /* myView.storyboard in Resources */,
+				3F74FAD523D6BAFE009028B1 /* personalData.json in Resources */,
 				3F96F1D923CDCDFA00456F64 /* Assets.xcassets in Resources */,
 				3F96F1D723CDCDFA00456F64 /* Main.storyboard in Resources */,
 				3F46D7DD23D067C90020F986 /* homeView.storyboard in Resources */,
@@ -193,7 +203,9 @@
 			files = (
 				3F96F1D423CDCDFA00456F64 /* ViewController.swift in Sources */,
 				3F96F1D023CDCDFA00456F64 /* AppDelegate.swift in Sources */,
+				3F74FAD323D6BAC1009028B1 /* Room.swift in Sources */,
 				3F98B1F223D5A84700C733C3 /* jjimTableViewCell.swift in Sources */,
+				3F74FAD723D6BBA5009028B1 /* DataLoader.swift in Sources */,
 				3F96F1D223CDCDFA00456F64 /* SceneDelegate.swift in Sources */,
 				3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */,
 				3F96F1E423CDD10A00456F64 /* personViewController.swift in Sources */,
