@@ -37,25 +37,39 @@ extension personViewController: UITableViewDataSource{
         cell.ageLabel.text = "\(data[indexPath.row].age)살"
         cell.genderLabel.text = "성별: \(data[indexPath.row].gender)"
         cell.nationLabel.text = data[indexPath.row].nation
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "MoreInfo"{
+                let detailController = segue.destination as? MoreInfoViewController
+                detailController?.age = "\(data[indexPath.row].age)"
+                detailController?.gender = "\(data[indexPath.row].gender)"
+                detailController?.nation = "\(data[indexPath.row].nation)"
+                detailController?.dormitory = "동국대학교 \(data[indexPath.row].dormitory) \(data[indexPath.row].number)인실"
+            }
+        }
         return cell
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            performSegue(withIdentifier: "MoreInfo", sender: data[indexPath.row])
+         
+//        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            if segue.identifier == "MoreInfo"{
+//                let detailController = segue.destination as? MoreInfoViewController
+//                detailController?.ageLabel.text = "\(data[indexPath.row].age)"
+//                detailController?.genderLabel.text = "\(data[indexPath.row].gender)"
+//                detailController?.nationLabel.text = "\(data[indexPath.row].nation)"
+//                detailController?.dormitoryLabel.text = "동국대학교 \(data[indexPath.row].dormitory) \(data[indexPath.row].number)인실"
+//            }
+//        }
        }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "MoreInfo"{
-            let detailController = segue.destination as? MoreInfoViewController
-//            let list = sender as? Room
-//            if list != nil{
-//                let detailController = segue.destination as? MoreInfoViewController
-//                if detailController != nil{
-//                    detailController!.personDetail = list
-//                }
-//            }
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "MoreInfo"{
+//            let detailController = segue.destination as? MoreInfoViewController
+//            detailController?.ageLabel.text = data
+//
+//        }
+//    }
 }
 
     /*
