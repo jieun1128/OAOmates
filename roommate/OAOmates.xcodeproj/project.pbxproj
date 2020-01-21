@@ -49,6 +49,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F74FACE23D6B9CD009028B1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3F96F1E323CDD10A00456F64 /* personViewController.swift */,
+				3F181CDC23D05E360026ADED /* personTableViewCell.swift */,
+				3F46D7DC23D067C90020F986 /* homeView.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3F74FACF23D6BA4A009028B1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3F74FAD023D6BA52009028B1 /* jjimView */ = {
+			isa = PBXGroup;
+			children = (
+				3F98B1F123D5A84700C733C3 /* jjimTableViewCell.swift */,
+				3FCA42A823D0603B0050793A /* jjimView.storyboard */,
+			);
+			path = jjimView;
+			sourceTree = "<group>";
+		};
+		3F74FAD123D6BA66009028B1 /* MyView */ = {
+			isa = PBXGroup;
+			children = (
+				3FCA42AA23D066760050793A /* myView.storyboard */,
+			);
+			path = MyView;
+			sourceTree = "<group>";
+		};
 		3F96F1C323CDCDFA00456F64 = {
 			isa = PBXGroup;
 			children = (
@@ -68,19 +102,17 @@
 		3F96F1CE23CDCDFA00456F64 /* OAOmates */ = {
 			isa = PBXGroup;
 			children = (
-				3F96F1CF23CDCDFA00456F64 /* AppDelegate.swift */,
+				3F74FAD123D6BA66009028B1 /* MyView */,
+				3F74FAD023D6BA52009028B1 /* jjimView */,
+				3F74FACF23D6BA4A009028B1 /* Data */,
+				3F74FACE23D6B9CD009028B1 /* Home */,
 				3F96F1D123CDCDFA00456F64 /* SceneDelegate.swift */,
 				3F96F1D323CDCDFA00456F64 /* ViewController.swift */,
+				3F96F1CF23CDCDFA00456F64 /* AppDelegate.swift */,
 				3F96F1D523CDCDFA00456F64 /* Main.storyboard */,
 				3F96F1D823CDCDFA00456F64 /* Assets.xcassets */,
 				3F96F1DA23CDCDFA00456F64 /* LaunchScreen.storyboard */,
 				3F96F1DD23CDCDFA00456F64 /* Info.plist */,
-				3F96F1E323CDD10A00456F64 /* personViewController.swift */,
-				3F46D7DC23D067C90020F986 /* homeView.storyboard */,
-				3FCA42AA23D066760050793A /* myView.storyboard */,
-				3FCA42A823D0603B0050793A /* jjimView.storyboard */,
-				3F181CDC23D05E360026ADED /* personTableViewCell.swift */,
-				3F98B1F123D5A84700C733C3 /* jjimTableViewCell.swift */,
 			);
 			path = OAOmates;
 			sourceTree = "<group>";
