@@ -484,8 +484,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="profileYear:" destination="Zzn-cX-zqO" eventType="editingDidEnd" id="LhD-k2-YOo"/>
-                                                        <outlet property="delegate" destination="koC-xl-qig" id="sWB-w9-46h"/>
+                                                        <outlet property="delegate" destination="koC-xl-qig" id="EUI-Pl-g5d"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -755,7 +754,6 @@
                     <navigationItem key="navigationItem" id="ugk-LW-RBH"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3TT-eM-Fkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Zzn-cX-zqO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1769.5652173913045" y="-152.00892857142856"/>
         </scene>
