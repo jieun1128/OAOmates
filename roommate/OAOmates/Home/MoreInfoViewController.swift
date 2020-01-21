@@ -22,16 +22,16 @@ class MoreInfoViewController: UIViewController {
     @IBOutlet weak var introductionLabel: UILabel!
     @IBOutlet weak var openChatLabel: UITextField!
     @IBOutlet weak var timeLabel: UILabel!
-    
+
     var personDetail : Room? = nil
-    
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
 //        genderLabel?.text = data[IndexPath.row].gender
     }
