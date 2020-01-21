@@ -199,8 +199,18 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Va5-9W-5Wa">
+
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="충무학사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39K-Fe-frZ">
+                                                <rect key="frame" x="147" y="384" width="59" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Va5-9W-5Wa">
                                                 <rect key="frame" x="331" y="25" width="52" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+
                                                 <state key="normal" title="수정하기"/>
                                                 <connections>
                                                     <segue destination="koC-xl-qig" kind="show" id="Wzg-vv-4AK"/>
@@ -485,7 +495,7 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
                                                         <action selector="profileYear:" destination="Zzn-cX-zqO" eventType="editingDidEnd" id="LhD-k2-YOo"/>
-                                                        <outlet property="delegate" destination="koC-xl-qig" id="sWB-w9-46h"/>
+                                                        <outlet property="delegate" destination="koC-xl-qig" id="D4c-IS-2u4"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -511,7 +521,8 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <outlet property="delegate" destination="koC-xl-qig" id="30B-rc-ve9"/>
+                                                        <action selector="profileAge:" destination="Zzn-cX-zqO" eventType="editingDidEnd" id="iWB-Gt-n2Q"/>
+                                                        <outlet property="delegate" destination="koC-xl-qig" id="iNW-T0-AAN"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -537,6 +548,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
+                                                        <action selector="profileGender:" destination="Zzn-cX-zqO" eventType="editingDidEnd" id="FA8-MJ-EEg"/>
                                                         <outlet property="delegate" destination="koC-xl-qig" id="2C3-BQ-MpF"/>
                                                     </connections>
                                                 </textField>
@@ -563,7 +575,8 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <outlet property="delegate" destination="koC-xl-qig" id="78O-aW-IKv"/>
+                                                        <action selector="profileNation:" destination="Zzn-cX-zqO" eventType="editingDidEnd" id="qfp-cK-uXx"/>
+                                                        <outlet property="delegate" destination="koC-xl-qig" id="7Wn-hP-1GU"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>

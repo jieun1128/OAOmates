@@ -214,6 +214,9 @@
                         <viewLayoutGuide key="safeArea" id="WGt-La-laT"/>
                     </view>
                     <navigationItem key="navigationItem" id="fwL-hJ-9Te"/>
+
+                    <size key="freeformSize" width="414" height="950"/>
+
                     <size key="freeformSize" width="414" height="900"/>
                     <connections>
                         <outlet property="ageLabel" destination="mFs-ap-Rxf" id="mTc-L4-sgT"/>
@@ -229,6 +232,7 @@
                         <outlet property="sleepTimeLabel" destination="dK5-qw-GaR" id="IB0-gy-Pej"/>
                         <outlet property="timeLabel" destination="WAc-FD-v4j" id="J6v-1H-Zia"/>
                     </connections>
+
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HpT-O9-wSE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
