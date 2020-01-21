@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--More Info View Controller-->
         <scene sceneID="gbZ-IO-TV3">
             <objects>
-                <viewController id="dcM-nT-bBs" sceneMemberID="viewController">
+                <viewController id="dcM-nT-bBs" customClass="MoreInfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jj0-27-98D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,6 +170,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="fwL-hJ-9Te"/>
                     <size key="freeformSize" width="414" height="950"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="mFs-ap-Rxf" id="mTc-L4-sgT"/>
+                        <outlet property="collegeLabel" destination="kke-mD-CdA" id="155-5b-DQv"/>
+                        <outlet property="dormitoryLabel" destination="wBJ-U2-B9D" id="Fuc-fA-vW1"/>
+                        <outlet property="genderLabel" destination="jnB-lN-3jj" id="DWt-IZ-1xb"/>
+                        <outlet property="gradeLabel" destination="PaH-i3-48A" id="UAf-Pe-PdW"/>
+                        <outlet property="introductionLabel" destination="jkn-qW-yUl" id="4Nk-iI-S1c"/>
+                        <outlet property="letterLabel" destination="2b0-wm-FzZ" id="9Mt-KC-OrT"/>
+                        <outlet property="majorLabel" destination="xsg-mv-IEx" id="ohe-82-QKa"/>
+                        <outlet property="nationLabel" destination="e1g-Su-YdT" id="kHO-BH-bBq"/>
+                        <outlet property="openChatLabel" destination="r1V-iY-zr8" id="lEd-31-9bO"/>
+                        <outlet property="sleepTimeLabel" destination="dK5-qw-GaR" id="IB0-gy-Pej"/>
+                        <outlet property="timeLabel" destination="WAc-FD-v4j" id="J6v-1H-Zia"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HpT-O9-wSE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -267,7 +281,7 @@
                                             <outlet property="nationLabel" destination="mHa-cZ-w5G" id="uKq-Ym-eCe"/>
                                             <outlet property="numberLabel" destination="Mfx-AW-InQ" id="M2b-Rs-Kt2"/>
                                             <outlet property="progressView" destination="byW-Eb-QYI" id="nxu-EV-Ter"/>
-                                            <segue destination="dcM-nT-bBs" kind="show" id="4oy-Y8-i23"/>
+                                            <segue destination="dcM-nT-bBs" kind="show" identifier="MoreInfo" id="4oy-Y8-i23"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
