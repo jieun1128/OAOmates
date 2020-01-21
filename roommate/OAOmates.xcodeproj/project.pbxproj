@@ -23,6 +23,7 @@
 		3F98B1F223D5A84700C733C3 /* jjimTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F98B1F123D5A84700C733C3 /* jjimTableViewCell.swift */; };
 		3FCA42A923D0603B0050793A /* jjimView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA42A823D0603B0050793A /* jjimView.storyboard */; };
 		3FCA42AB23D066760050793A /* myView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA42AA23D066760050793A /* myView.storyboard */; };
+		3FDFBBDF23D6D64300296588 /* MyPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDFBBDE23D6D64300296588 /* MyPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		3F98B1F123D5A84700C733C3 /* jjimTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jjimTableViewCell.swift; sourceTree = "<group>"; };
 		3FCA42A823D0603B0050793A /* jjimView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = jjimView.storyboard; sourceTree = "<group>"; };
 		3FCA42AA23D066760050793A /* myView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = myView.storyboard; sourceTree = "<group>"; };
+		3FDFBBDE23D6D64300296588 /* MyPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				3FCA42AA23D066760050793A /* myView.storyboard */,
+				3FDFBBDE23D6D64300296588 /* MyPickerViewController.swift */,
 			);
 			path = MyView;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				3F96F1D223CDCDFA00456F64 /* SceneDelegate.swift in Sources */,
 				3F74FADD23D6CADE009028B1 /* MoreInfoViewController.swift in Sources */,
 				3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */,
+				3FDFBBDF23D6D64300296588 /* MyPickerViewController.swift in Sources */,
 				3F96F1E423CDD10A00456F64 /* personViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
