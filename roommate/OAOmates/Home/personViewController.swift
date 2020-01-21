@@ -12,7 +12,7 @@
 import UIKit
 
 
-class personViewController: UIViewController,  UITableViewDelegate {
+class personViewController: UIViewController, UITableViewDelegate{
     let data = DataLoader().userData
 
     @IBOutlet weak var personTableView: UITableView!
@@ -40,7 +40,24 @@ extension personViewController: UITableViewDataSource{
         return cell
         
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           performSegue(withIdentifier: "MoreInfo", sender: data[indexPath.row])
+       }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MoreInfo"{
+            let detailController = segue.destination as? MoreInfoViewController
+//            let list = sender as? Room
+//            if list != nil{
+//                let detailController = segue.destination as? MoreInfoViewController
+//                if detailController != nil{
+//                    detailController!.personDetail = list
+//                }
+//            }
+        }
+    }
 }
+
     /*
     // MARK: - Navigation
 
