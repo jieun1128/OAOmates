@@ -17,8 +17,7 @@ class MyPickerViewController:UIViewController, UITextFieldDelegate{
     var Age = [19, 20, 21, 22, 23, 24, 25 ,26, 27, 28, 29, 30]
     var Gender = ["남", "여", "x"]
     var Nation = ["Korea", "China", "Japan", "India"]
-    @IBAction func profileYear(_ sender: Any) {
-    }
+   
     
     // 개인정보
 
