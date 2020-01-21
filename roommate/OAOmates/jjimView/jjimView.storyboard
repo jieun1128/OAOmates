@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kXM-Nc-tMG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--JJIM-->
+        <scene sceneID="OPD-iv-fEk">
+            <objects>
+                <viewController id="kXM-Nc-tMG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bUS-st-ub3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dqd-Ly-HI5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="9tQ-DF-gFT">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9tQ-DF-gFT" id="B4L-Xr-7rn" customClass="jjimTableViewCell" customModule="OAOmates" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Dqd-Ly-HI5" firstAttribute="leading" secondItem="Edf-cx-G8g" secondAttribute="leading" id="DxE-1y-PCx"/>
+                            <constraint firstItem="Dqd-Ly-HI5" firstAttribute="trailing" secondItem="Edf-cx-G8g" secondAttribute="trailing" id="I40-GI-09R"/>
+                            <constraint firstItem="Edf-cx-G8g" firstAttribute="bottom" secondItem="Dqd-Ly-HI5" secondAttribute="bottom" id="LdX-NC-FTL"/>
+                            <constraint firstItem="Dqd-Ly-HI5" firstAttribute="top" secondItem="Edf-cx-G8g" secondAttribute="top" id="Vhd-YK-khh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Edf-cx-G8g"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="JJIM" image="heart.circle" catalog="system" id="TWc-8O-lF9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7O-qI-NoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-200.00000000000003" y="1177.2321428571429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
