@@ -14,4 +14,6 @@ struct Room : Codable{
     var age: Int
     var gender: String
     var nation: String
+    
+  
 }

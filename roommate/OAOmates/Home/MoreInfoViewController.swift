@@ -28,10 +28,10 @@ class MoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        ageLabel.text = "\(String(describing: detail?.age))"
-        genderLabel.text = "\(String(describing: detail?.gender))"
-        dormitoryLabel.text = "동국대학교 \(String(describing: detail?.dormitory))학사 \(String(describing: detail?.number))인실"
-        nationLabel.text = "\(String(describing: detail?.nation))"
+        ageLabel.text = "\(detail!.age)"
+        genderLabel.text = "\(detail!.gender)"
+        dormitoryLabel.text = "동국대학교 \( detail!.dormitory) \( detail!.number)인실"
+        nationLabel.text = "\( detail!.nation)"
         
         // Do any additional setup after loading the view.
     }
