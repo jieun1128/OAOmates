@@ -23,12 +23,16 @@ class MoreInfoViewController: UIViewController {
     @IBOutlet weak var openChatLabel: UITextField!
     @IBOutlet weak var timeLabel: UILabel!
 
-    var personDetail : Room? = nil
+    var detail : Room?
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ageLabel.text = "\(String(describing: detail?.age))"
+        genderLabel.text = "\(String(describing: detail?.gender))"
+        dormitoryLabel.text = "동국대학교 \(String(describing: detail?.dormitory))학사 \(String(describing: detail?.number))인실"
+        nationLabel.text = "\(String(describing: detail?.nation))"
+        
         // Do any additional setup after loading the view.
     }
 

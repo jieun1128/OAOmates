@@ -46,6 +46,8 @@ extension personViewController: UITableViewDataSource{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MoreInfo"{
+            let detailVC = segue.destination as? MoreInfoViewController
+            detailVC?.detail = data[(personTableView.indexPathForSelectedRow?.row)!]
             
         }
     }
