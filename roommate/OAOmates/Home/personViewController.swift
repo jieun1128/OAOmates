@@ -46,14 +46,7 @@ extension personViewController: UITableViewDataSource{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MoreInfo"{
-            let detailController = segue.destination as? MoreInfoViewController
-//            let list = sender as? Room
-//            if list != nil{
-//                let detailController = segue.destination as? MoreInfoViewController
-//                if detailController != nil{
-//                    detailController!.personDetail = list
-//                }
-//            }
+            
         }
     }
 }
