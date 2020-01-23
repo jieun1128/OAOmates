@@ -33,6 +33,8 @@ class MoreInfoViewController: UIViewController {
         dormitoryLabel.text = "동국대학교 \( detail!.dormitory) \( detail!.number)인실"
         nationLabel.text = "\( detail!.nation)"
         
+//        college.text = //으으으
+        
         // Do any additional setup after loading the view.
     }
 

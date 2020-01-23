@@ -15,5 +15,13 @@ struct Room : Codable{
     var gender: String
     var nation: String
     
+//    var major: String
+//    var grade: Int
+//    var college: String
+//    var sleepTime: String
+//    var letter: String
+//    var introduction: String
+//    var openChat: String
+//    var time: String.  //으으으으으
   
 }
