@@ -8,6 +8,7 @@ target 'OAOmates' do
 pod 'Firebase/Firestore'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'SwiftDictionaryCoding'
   # Pods for OAOmates
 
 end

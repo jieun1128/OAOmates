@@ -277,11 +277,13 @@ PODS:
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
   - PromisesObjC (1.2.8)
+  - SwiftDictionaryCoding (1.0.0)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
+  - SwiftDictionaryCoding
 
 SPEC REPOS:
   trunk:
@@ -307,6 +309,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - SwiftDictionaryCoding
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
@@ -331,7 +334,8 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  SwiftDictionaryCoding: b66a21363a7bbda35dec0c5d61ab3e10b75dc11b
 
-PODFILE CHECKSUM: a0a4cfa5b8fae455cbd8ba5ac2d8df8c3bcda209
+PODFILE CHECKSUM: 50d6a902390df39ed78e3e3068164cdea978885e
 
 COCOAPODS: 1.8.4
