@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F181CDC23D05E360026ADED /* personTableViewCell.swift */; };
 		3F46D7DD23D067C90020F986 /* homeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F46D7DC23D067C90020F986 /* homeView.storyboard */; };
 		3F4D9F7223D8500A0015132A /* JjimTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D9F7123D8500A0015132A /* JjimTableViewController.swift */; };
+		3F5B8F4F23DEBDEA00E64578 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F5B8F4E23DEBDEA00E64578 /* GoogleService-Info.plist */; };
 		3F74FAD323D6BAC1009028B1 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74FAD223D6BAC1009028B1 /* Room.swift */; };
 		3F74FAD523D6BAFE009028B1 /* personalData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F74FAD423D6BAFE009028B1 /* personalData.json */; };
 		3F74FAD723D6BBA5009028B1 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74FAD623D6BBA5009028B1 /* DataLoader.swift */; };
@@ -32,6 +33,7 @@
 		3F181CDC23D05E360026ADED /* personTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personTableViewCell.swift; sourceTree = "<group>"; };
 		3F46D7DC23D067C90020F986 /* homeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = homeView.storyboard; sourceTree = "<group>"; };
 		3F4D9F7123D8500A0015132A /* JjimTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JjimTableViewController.swift; sourceTree = "<group>"; };
+		3F5B8F4E23DEBDEA00E64578 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F74FAD223D6BAC1009028B1 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		3F74FAD423D6BAFE009028B1 /* personalData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = personalData.json; sourceTree = "<group>"; };
 		3F74FAD623D6BBA5009028B1 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
@@ -70,7 +72,6 @@
 				DD42642F600667230A8EABDC /* Pods-OAOmates.debug.xcconfig */,
 				2984AFD5B83035190D53346D /* Pods-OAOmates.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,6 +146,7 @@
 				3F96F1D823CDCDFA00456F64 /* Assets.xcassets */,
 				3F96F1DA23CDCDFA00456F64 /* LaunchScreen.storyboard */,
 				3F96F1DD23CDCDFA00456F64 /* Info.plist */,
+				3F5B8F4E23DEBDEA00E64578 /* GoogleService-Info.plist */,
 			);
 			path = OAOmates;
 			sourceTree = "<group>";
@@ -218,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F96F1DC23CDCDFA00456F64 /* LaunchScreen.storyboard in Resources */,
+				3F5B8F4F23DEBDEA00E64578 /* GoogleService-Info.plist in Resources */,
 				3FCA42AB23D066760050793A /* myView.storyboard in Resources */,
 				3F74FAD523D6BAFE009028B1 /* personalData.json in Resources */,
 				3F96F1D923CDCDFA00456F64 /* Assets.xcassets in Resources */,
