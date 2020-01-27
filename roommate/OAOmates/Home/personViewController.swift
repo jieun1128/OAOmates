@@ -13,9 +13,14 @@ import UIKit
 
 
 class personViewController: UIViewController, UITableViewDelegate{
-    let data = DataLoader().userData
+//    let data = DataLoader().userData
 
     @IBOutlet weak var personTableView: UITableView!
+    fileprivate var  users:[Room] = [] {
+        didSet {
+            self.personTableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,31 +28,37 @@ class personViewController: UIViewController, UITableViewDelegate{
         self.personTableView.delegate = self
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        API.shared.allUsers{(users) in
+            self.users = users
+    }
+    }
 }
 
 extension personViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return self.users.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personTableViewCell", for: indexPath) as! personTableViewCell
-        cell.dormitoryLabel.text = data[indexPath.row].dormitory
-        cell.numberLabel.text = "\(data[indexPath.row].number)인실"
-        cell.ageLabel.text = "\(data[indexPath.row].age)살"
-        cell.genderLabel.text = "성별: \(data[indexPath.row].gender)"
-        cell.nationLabel.text = data[indexPath.row].nation
+        cell.dormitoryLabel.text = users[indexPath.row].dormitory
+        cell.numberLabel.text = "\(users[indexPath.row].number)인실"
+        cell.ageLabel.text = "\(users[indexPath.row].age)살"
+        cell.genderLabel.text = "성별: \(users[indexPath.row].gender)"
+        cell.nationLabel.text = users[indexPath.row].nation
         return cell
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           performSegue(withIdentifier: "MoreInfo", sender: data[indexPath.row])
+           performSegue(withIdentifier: "MoreInfo", sender: users[indexPath.row])
        }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MoreInfo"{
             let detailVC = segue.destination as? MoreInfoViewController
-            detailVC?.detail = data[(personTableView.indexPathForSelectedRow?.row)!]
+            detailVC?.detail = users[(personTableView.indexPathForSelectedRow?.row)!]
             
         }
     }
