@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import moltin
 
 class MoreInfoViewController: UIViewController {
 
@@ -24,6 +25,14 @@ class MoreInfoViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
 
     var detail : Room?
+    
+    //???/
+    var detailItem: AnyObject? {
+        didSet {
+            //Update the view
+            self.viewDidLoad()
+        }
+    }
 
 
     override func viewDidLoad() {
@@ -44,7 +53,6 @@ class MoreInfoViewController: UIViewController {
 //        genderLabel?.text = data[IndexPath.row].gender
     }
     
-
     /*
     // MARK: - Navigation
 
