@@ -260,6 +260,18 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="S9P-6S-GUY"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="R8w-Tc-0GW"/>
                             </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAb-EC-fpY">
+                                <rect key="frame" x="0.0" y="873" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7j0-Mt-vXU"/>
+                                    <barButtonItem title="Item" image="heart" catalog="system" id="smv-SD-Skw"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YK0-Q2-8bU"/>
+                                    <barButtonItem title="매칭요청" id="aSh-cY-U89"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1kP-Ac-Zxu"/>
+                                </items>
+                                <color key="tintColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -434,6 +446,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="heart" catalog="system" width="64" height="54"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="남자말풍선" width="306" height="170"/>
     </resources>
