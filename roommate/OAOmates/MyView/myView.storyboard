@@ -10,7 +10,7 @@
         <!--MY-->
         <scene sceneID="f1i-Nj-6Q0">
             <objects>
-                <viewController id="NEN-UB-2ow" sceneMemberID="viewController">
+                <viewController id="NEN-UB-2ow" customClass="MyViewController" customModule="OAOmates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jq0-y6-sAt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1146"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -395,15 +395,27 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="R85-P0-vJY" id="Upw-LV-fYt"/>
+                        <outlet property="departmentLabel" destination="YyH-4Y-GoD" id="KSL-PD-cOR"/>
+                        <outlet property="dormitoryLabel" destination="39K-Fe-frZ" id="5oC-I7-qv3"/>
+                        <outlet property="genderLabel" destination="yum-09-PDy" id="xxv-be-KWD"/>
+                        <outlet property="gradeLabel" destination="qlv-Sg-O3m" id="4lz-Mv-2xn"/>
+                        <outlet property="majorLabel" destination="CVf-0S-Z1G" id="bwq-Pe-vdl"/>
+                        <outlet property="nameLabel" destination="31t-fx-iN4" id="6bb-xm-HM7"/>
+                        <outlet property="nationLabel" destination="4lC-BI-bxC" id="YIx-xU-1ze"/>
+                        <outlet property="nickNameLabel" destination="cdU-2D-Nhu" id="sMg-ve-Oew"/>
+                        <outlet property="numberLabel" destination="Hih-BR-rGR" id="Bg2-yw-c33"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfI-aF-Iqy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="895.6521739130435" y="515.625"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Personal Info Table View Controller-->
         <scene sceneID="cMM-b0-do6">
             <objects>
-                <tableViewController id="koC-xl-qig" sceneMemberID="viewController">
+                <tableViewController id="koC-xl-qig" customClass="PersonalInfoTableViewController" customModule="OAOmates" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VA9-lw-ft6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -783,7 +795,26 @@
                             </tableViewSection>
                         </sections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem systemItem="save" id="mBk-9y-Ix9">
+                            <connections>
+                                <action selector="SaveUser:" destination="koC-xl-qig" id="CD3-nJ-bPl"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="ugk-LW-RBH"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="GradeText" destination="ZXm-Wk-mMc" id="lkw-4M-G7Q"/>
+                        <outlet property="MajorText" destination="P77-YW-Uoc" id="1d8-k4-t7r"/>
+                        <outlet property="NameText" destination="Jt1-PB-nfE" id="hCE-Nl-pD0"/>
+                        <outlet property="NickNameText" destination="pLx-KM-S1Y" id="MnZ-ts-QGX"/>
+                        <outlet property="ageTExt" destination="c2U-dI-xnJ" id="MGp-7s-wJZ"/>
+                        <outlet property="genderText" destination="oZE-eW-e2W" id="oaG-yb-027"/>
+                        <outlet property="introductionText" destination="Cn9-Ta-mIK" id="U7G-7N-H9Z"/>
+                        <outlet property="letterText" destination="zXQ-qe-eiQ" id="d1f-7f-b47"/>
+                        <outlet property="nationText" destination="WUJ-zp-IbH" id="gtT-2f-hYf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3TT-eM-Fkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
