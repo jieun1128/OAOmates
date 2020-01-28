@@ -177,6 +177,18 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5W-uT-NnZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                <items>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="W85-N5-gXK"/>
+                                                    <barButtonItem title="Item" image="heart" catalog="system" id="HGz-bd-t2o"/>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="f9x-oh-YOb"/>
+                                                    <barButtonItem title="매칭요청" id="gNO-vc-6US"/>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PDv-Rn-JCN"/>
+                                                </items>
+                                                <color key="tintColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </toolbar>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -266,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HpT-O9-wSE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2046" y="223"/>
+            <point key="canvasLocation" x="2044.9275362318842" y="222.99107142857142"/>
         </scene>
         <!--Person View Controller-->
         <scene sceneID="2yU-Fy-djY">
@@ -365,7 +377,7 @@
                                             <outlet property="nationLabel" destination="mHa-cZ-w5G" id="uKq-Ym-eCe"/>
                                             <outlet property="numberLabel" destination="Mfx-AW-InQ" id="M2b-Rs-Kt2"/>
                                             <outlet property="progressView" destination="byW-Eb-QYI" id="nxu-EV-Ter"/>
-                                            <segue destination="dcM-nT-bBs" kind="show" identifier="MoreInfo" id="4oy-Y8-i23"/>
+                                            <segue destination="dcM-nT-bBs" kind="show" id="4d4-Lo-sHn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -411,6 +423,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="heart" catalog="system" width="64" height="54"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="남자말풍선" width="306" height="170"/>
     </resources>
