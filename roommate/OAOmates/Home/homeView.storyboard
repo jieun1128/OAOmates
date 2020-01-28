@@ -12,7 +12,7 @@
             <objects>
                 <viewController title="MoreInfoViewController" id="dcM-nT-bBs" customClass="MoreInfoViewController" customModule="OAOmates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jj0-27-98D">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dY5-NW-CF7">
@@ -231,26 +231,6 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="____________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyr-a7-1Jf">
-                                                <rect key="frame" x="48.5" y="639" width="317.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFb-Jl-9WO">
-                                                <rect key="frame" x="0.0" y="744" width="414" height="44"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                <items>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ic7-lH-ZcT"/>
-                                                    <barButtonItem image="heart" catalog="system" id="OFi-nG-JNf"/>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hPT-SL-4OF"/>
-                                                    <barButtonItem title="매칭버튼" id="M7Z-H9-QgS"/>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0Zz-nV-voz"/>
-                                                </items>
-                                                <color key="tintColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </toolbar>
-
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -291,7 +271,7 @@
                         <viewLayoutGuide key="safeArea" id="WGt-La-laT"/>
                     </view>
                     <navigationItem key="navigationItem" id="fwL-hJ-9Te"/>
-                    <size key="freeformSize" width="414" height="960"/>
+                    <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="ageLabel" destination="mFs-ap-Rxf" id="mTc-L4-sgT"/>
                         <outlet property="collegeLabel" destination="kke-mD-CdA" id="155-5b-DQv"/>
@@ -408,7 +388,7 @@
                                             <outlet property="nationLabel" destination="mHa-cZ-w5G" id="uKq-Ym-eCe"/>
                                             <outlet property="numberLabel" destination="Mfx-AW-InQ" id="M2b-Rs-Kt2"/>
                                             <outlet property="progressView" destination="byW-Eb-QYI" id="nxu-EV-Ter"/>
-                                            <segue destination="dcM-nT-bBs" kind="show" identifier="MoreInfo" id="4d4-Lo-sHn"/>
+                                            <segue destination="dcM-nT-bBs" kind="show" identifier="MoreInfo" id="4oy-Y8-i23"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -454,7 +434,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="heart" catalog="system" width="64" height="54"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="남자말풍선" width="306" height="170"/>
     </resources>
