@@ -19,7 +19,7 @@ class PersonalInfoTableViewController: UITableViewController {
     @IBOutlet weak var introductionText: UITextField!
     @IBOutlet weak var letterText: UITextField!
     @IBAction func SaveUser(_ sender: Any) {
-        API.shared.addUser(user: Room(dormitory: "", number: "", age: ageTExt.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "",major : MajorText.text ?? "", grade : ""), completion: { self.navigationController?.popViewController(animated: true)})
+        API.shared.addUser(user: Room(dormitory: "", number: "", age: ageTExt.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "",major : MajorText.text ?? "", grade : "",college : "", sleepTime : "", riseTime : "", letter : "", introduction : "", openChat : ""), completion: { self.navigationController?.popViewController(animated: true)})
 //
     }
     override func viewDidLoad() {
