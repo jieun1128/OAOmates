@@ -29,6 +29,9 @@
 		3F98B1F223D5A84700C733C3 /* jjimTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F98B1F123D5A84700C733C3 /* jjimTableViewCell.swift */; };
 		3FCA42A923D0603B0050793A /* jjimView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA42A823D0603B0050793A /* jjimView.storyboard */; };
 		3FCA42AB23D066760050793A /* myView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA42AA23D066760050793A /* myView.storyboard */; };
+		3FED6C2E23DFF6130026924F /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED6C2D23DFF6130026924F /* MyViewController.swift */; };
+		3FED6C3023DFF63C0026924F /* PersonalInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED6C2F23DFF63C0026924F /* PersonalInfoTableViewController.swift */; };
+		3FED6C3223DFF6580026924F /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED6C3123DFF6580026924F /* SurveyViewController.swift */; };
 		FC79F853A6CEAC0D926488A3 /* Pods_OAOmates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE74BBBE895D0BC09A2C9B1 /* Pods_OAOmates.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,9 @@
 		3F98B1F123D5A84700C733C3 /* jjimTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jjimTableViewCell.swift; sourceTree = "<group>"; };
 		3FCA42A823D0603B0050793A /* jjimView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = jjimView.storyboard; sourceTree = "<group>"; };
 		3FCA42AA23D066760050793A /* myView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = myView.storyboard; sourceTree = "<group>"; };
+		3FED6C2D23DFF6130026924F /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		3FED6C2F23DFF63C0026924F /* PersonalInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoTableViewController.swift; sourceTree = "<group>"; };
+		3FED6C3123DFF6580026924F /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		BCE74BBBE895D0BC09A2C9B1 /* Pods_OAOmates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAOmates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD42642F600667230A8EABDC /* Pods-OAOmates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAOmates.debug.xcconfig"; path = "Target Support Files/Pods-OAOmates/Pods-OAOmates.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				3FCA42AA23D066760050793A /* myView.storyboard */,
+				3FED6C2D23DFF6130026924F /* MyViewController.swift */,
+				3FED6C2F23DFF63C0026924F /* PersonalInfoTableViewController.swift */,
+				3FED6C3123DFF6580026924F /* SurveyViewController.swift */,
 			);
 			path = MyView;
 			sourceTree = "<group>";
@@ -322,12 +331,15 @@
 				3F74FAD323D6BAC1009028B1 /* Room.swift in Sources */,
 				3F5B8F9623DED9E800E64578 /* API-Firebase.swift in Sources */,
 				3F98B1F223D5A84700C733C3 /* jjimTableViewCell.swift in Sources */,
+				3FED6C3223DFF6580026924F /* SurveyViewController.swift in Sources */,
+				3FED6C3023DFF63C0026924F /* PersonalInfoTableViewController.swift in Sources */,
 				3F74FAD723D6BBA5009028B1 /* DataLoader.swift in Sources */,
 				3F96F1D223CDCDFA00456F64 /* SceneDelegate.swift in Sources */,
 				3F5B8F9423DED9DA00E64578 /* API.swift in Sources */,
 				3F74FADD23D6CADE009028B1 /* MoreInfoViewController.swift in Sources */,
 				3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */,
 				3F96F1E423CDD10A00456F64 /* personViewController.swift in Sources */,
+				3FED6C2E23DFF6130026924F /* MyViewController.swift in Sources */,
 				3F5B8F8F23DED99A00E64578 /* Encodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
