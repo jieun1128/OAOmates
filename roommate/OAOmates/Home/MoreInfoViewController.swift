@@ -43,7 +43,12 @@ class MoreInfoViewController: UIViewController {
         nationLabel.text = "\( detail!.nation)"
         gradeLabel.text = "\(detail!.grade)"
         majorLabel.text = "\(detail!.major)"
-        
+        introductionLabel.text = "\(detail!.introduction)"
+        letterLabel.text = "\(detail!.letter)"
+        openChatLabel.text = "\(detail!.openChat)"
+        collegeLabel.text = "\(detail!.college)"
+        sleepTimeLabel.text = "P.M. \(detail!.sleepTime) ~ A.M. \(detail!.riseTime)"
+//        P.M. 00:00 ~ A.M. 00:00
 //        college.text = //으으으
         
         // Do any additional setup after loading the view.

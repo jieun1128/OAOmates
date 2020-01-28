@@ -295,7 +295,7 @@
                         <outlet property="majorLabel" destination="xsg-mv-IEx" id="ohe-82-QKa"/>
                         <outlet property="nationLabel" destination="e1g-Su-YdT" id="kHO-BH-bBq"/>
                         <outlet property="openChatLabel" destination="r1V-iY-zr8" id="lEd-31-9bO"/>
-                        <outlet property="sleepTimeLabel" destination="dK5-qw-GaR" id="IB0-gy-Pej"/>
+                        <outlet property="sleepTimeLabel" destination="Xut-RF-gKj" id="EmT-lP-hCC"/>
                         <outlet property="timeLabel" destination="WAc-FD-v4j" id="J6v-1H-Zia"/>
                     </connections>
                 </viewController>
