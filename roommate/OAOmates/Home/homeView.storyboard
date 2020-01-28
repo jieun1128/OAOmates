@@ -12,7 +12,7 @@
             <objects>
                 <viewController title="MoreInfoViewController" id="dcM-nT-bBs" customClass="MoreInfoViewController" customModule="OAOmates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jj0-27-98D">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dY5-NW-CF7">
@@ -177,15 +177,15 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5W-uT-NnZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFb-Jl-9WO">
+                                                <rect key="frame" x="0.0" y="744" width="414" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                 <items>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="W85-N5-gXK"/>
-                                                    <barButtonItem title="Item" image="heart" catalog="system" id="HGz-bd-t2o"/>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="f9x-oh-YOb"/>
-                                                    <barButtonItem title="매칭요청" id="gNO-vc-6US"/>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PDv-Rn-JCN"/>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ic7-lH-ZcT"/>
+                                                    <barButtonItem image="heart" catalog="system" id="OFi-nG-JNf"/>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hPT-SL-4OF"/>
+                                                    <barButtonItem title="매칭버튼" id="M7Z-H9-QgS"/>
+                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0Zz-nV-voz"/>
                                                 </items>
                                                 <color key="tintColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </toolbar>
@@ -257,7 +257,7 @@
                         <viewLayoutGuide key="safeArea" id="WGt-La-laT"/>
                     </view>
                     <navigationItem key="navigationItem" id="fwL-hJ-9Te"/>
-                    <size key="freeformSize" width="414" height="1000"/>
+                    <size key="freeformSize" width="414" height="960"/>
                     <connections>
                         <outlet property="ageLabel" destination="mFs-ap-Rxf" id="mTc-L4-sgT"/>
                         <outlet property="collegeLabel" destination="kke-mD-CdA" id="155-5b-DQv"/>
@@ -374,7 +374,7 @@
                                             <outlet property="nationLabel" destination="mHa-cZ-w5G" id="uKq-Ym-eCe"/>
                                             <outlet property="numberLabel" destination="Mfx-AW-InQ" id="M2b-Rs-Kt2"/>
                                             <outlet property="progressView" destination="byW-Eb-QYI" id="nxu-EV-Ter"/>
-                                            <segue destination="dcM-nT-bBs" kind="show" id="4d4-Lo-sHn"/>
+                                            <segue destination="dcM-nT-bBs" kind="show" identifier="MoreInfo" id="4d4-Lo-sHn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
