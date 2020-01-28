@@ -9,15 +9,23 @@
 import UIKit
 
 class JjimTableViewController: UITableViewController {
-    let data = DataLoader().userData
-
-           
+//    let data = DataLoader().userData
+    fileprivate var  data:[Room] = [] {
+        didSet{
+            reloadInputViews()
+        }
+    }
            
        override func viewDidLoad() {
                super.viewDidLoad()
               
                // Do any additional setup after loading the view.
            }
+    override func viewWillAppear(_ animated: Bool) {
+        API.shared.allUsers{(users) in
+            self.data = users
+    }
+    }
        
 
       
