@@ -9,15 +9,23 @@
 import UIKit
 
 class JjimTableViewController: UITableViewController {
-    let data = DataLoader().userData
-
-           
+//    let data = DataLoader().userData
+    fileprivate var  data:[Room] = [] {
+        didSet{
+            reloadInputViews()
+        }
+    }
            
        override func viewDidLoad() {
                super.viewDidLoad()
               
                // Do any additional setup after loading the view.
            }
+    override func viewWillAppear(_ animated: Bool) {
+        API.shared.allUsers{(users) in
+            self.data = users
+    }
+    }
        
 
       
@@ -31,7 +39,7 @@ class JjimTableViewController: UITableViewController {
                cell.numberLabel.text = "\(data[indexPath.row].number)인실"
                cell.ageLabel.text = "\(data[indexPath.row].age)살"
                cell.genderLabel.text = "성별: \(data[indexPath.row].gender)"
-//               cell.nationLabel.text = data[indexPath.row].nation
+               cell.nationLabel.text = "\(data[indexPath.row].nation)"
                return cell
                
            }

@@ -9,6 +9,7 @@ pod 'Firebase/Firestore'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'SwiftDictionaryCoding'
+pod 'Moltin'
   # Pods for OAOmates
 
 end

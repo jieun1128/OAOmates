@@ -32,6 +32,8 @@ class MoreInfoViewController: UIViewController {
         genderLabel.text = "\(detail!.gender)"
         dormitoryLabel.text = "동국대학교 \( detail!.dormitory) \( detail!.number)인실"
         nationLabel.text = "\( detail!.nation)"
+        gradeLabel.text = "\(detail!.grade)"
+        majorLabel.text = "\(detail!.major)"
         
 //        college.text = //으으으
         
