@@ -10,8 +10,8 @@ import Foundation
 
 struct Room : Codable{
     var dormitory: String
-    var number: Int
-    var age: Int
+    var number: String
+    var age: String
     var gender: String
     var nation: String
     
