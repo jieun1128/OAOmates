@@ -46,15 +46,27 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlO-4e-aKN">
+                                            <rect key="frame" x="333" y="48" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QOd-WS-WE8">
+                                            <rect key="frame" x="292" y="20" width="102" height="2"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </progressView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="TPC-cY-JaX" firstAttribute="centerX" secondItem="S3E-Ja-ujX" secondAttribute="centerX" constant="37" id="A1v-jL-bcB"/>
+                                        <constraint firstItem="TlO-4e-aKN" firstAttribute="centerX" secondItem="S3E-Ja-ujX" secondAttribute="centerX" constant="147" id="JZe-V5-Rgw"/>
                                         <constraint firstItem="N1l-Zk-Yge" firstAttribute="top" secondItem="TPC-cY-JaX" secondAttribute="bottom" constant="16" id="Uwf-0D-5Ws"/>
                                         <constraint firstItem="che-Fk-dQ7" firstAttribute="centerX" secondItem="S3E-Ja-ujX" secondAttribute="centerX" constant="-79" id="Wm5-g0-7sF"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="N1l-Zk-Yge" secondAttribute="bottom" id="lyP-jd-JZa"/>
                                         <constraint firstItem="che-Fk-dQ7" firstAttribute="top" secondItem="S3E-Ja-ujX" secondAttribute="topMargin" id="nKz-s1-Dhq"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="QaH-aB-fc7" secondAttribute="bottom" id="ob8-Sv-Vl1"/>
                                         <constraint firstItem="QaH-aB-fc7" firstAttribute="top" secondItem="che-Fk-dQ7" secondAttribute="bottom" constant="16" id="pmU-Qa-WRe"/>
+                                        <constraint firstItem="TlO-4e-aKN" firstAttribute="bottom" secondItem="S3E-Ja-ujX" secondAttribute="bottomMargin" id="qbW-Rj-aOL"/>
                                         <constraint firstItem="QaH-aB-fc7" firstAttribute="centerX" secondItem="S3E-Ja-ujX" secondAttribute="centerX" constant="-79" id="taW-OR-Dhk"/>
                                         <constraint firstItem="N1l-Zk-Yge" firstAttribute="centerX" secondItem="S3E-Ja-ujX" secondAttribute="centerX" constant="37" id="ubA-ON-7mV"/>
                                         <constraint firstItem="TPC-cY-JaX" firstAttribute="top" secondItem="S3E-Ja-ujX" secondAttribute="topMargin" id="wNB-np-ACX"/>
@@ -64,6 +76,7 @@
                                     <outlet property="ageLabel" destination="QaH-aB-fc7" id="8ik-wj-Zxc"/>
                                     <outlet property="dormitoryLabel" destination="che-Fk-dQ7" id="X5n-bc-5ZL"/>
                                     <outlet property="genderLabel" destination="N1l-Zk-Yge" id="ePB-TN-pr4"/>
+                                    <outlet property="nationLabel" destination="TlO-4e-aKN" id="VzU-Ef-P1Q"/>
                                     <outlet property="numberLabel" destination="TPC-cY-JaX" id="cgE-BU-EJ6"/>
                                 </connections>
                             </tableViewCell>
