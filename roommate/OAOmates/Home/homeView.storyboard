@@ -261,9 +261,8 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="S9P-6S-GUY"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="R8w-Tc-0GW"/>
                             </scrollView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAb-EC-fpY">
-                                <rect key="frame" x="0.0" y="873" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAb-EC-fpY">
+                                <rect key="frame" x="0.0" y="868" width="414" height="49"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="7j0-Mt-vXU"/>
                                     <barButtonItem title="Item" image="heart" catalog="system" id="smv-SD-Skw"/>
@@ -277,7 +276,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="WGt-La-laT" firstAttribute="bottom" secondItem="dY5-NW-CF7" secondAttribute="bottom" constant="21" id="1c7-na-0lx"/>
+                            <constraint firstItem="CAb-EC-fpY" firstAttribute="trailing" secondItem="dY5-NW-CF7" secondAttribute="trailing" id="9B0-Gv-QdZ"/>
                             <constraint firstAttribute="trailing" secondItem="dY5-NW-CF7" secondAttribute="trailing" id="NFs-1G-cWv"/>
+                            <constraint firstItem="CAb-EC-fpY" firstAttribute="leading" secondItem="dY5-NW-CF7" secondAttribute="leading" id="YCq-uL-rOd"/>
+                            <constraint firstItem="CAb-EC-fpY" firstAttribute="bottom" secondItem="WGt-La-laT" secondAttribute="bottom" id="gh8-or-IqB"/>
                             <constraint firstItem="dY5-NW-CF7" firstAttribute="top" secondItem="Jj0-27-98D" secondAttribute="top" id="oje-DT-uSG"/>
                             <constraint firstItem="dY5-NW-CF7" firstAttribute="leading" secondItem="Jj0-27-98D" secondAttribute="leading" id="wSL-Tn-hSp"/>
                         </constraints>
