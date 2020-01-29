@@ -22,6 +22,18 @@ struct Room : Codable{
     var letter: String
     var introduction: String
     var openChat: String
+    
+//    enum survey : String{
+//        case sleepingHabit
+//        case smoking
+//        case drinking
+//        case sleepout
+//        case closeness
+//        case washing
+//        case religion
+//
+//        case
+//    }
 //    var time: String.  //으으으으으
   
 }

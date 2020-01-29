@@ -30,7 +30,7 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="zMY-Db-AdJ">
-                                                <rect key="frame" x="39.5" y="50.5" width="335" height="962.5"/>
+                                                <rect key="frame" x="39.5" y="50.5" width="335" height="962"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="daz-tM-QqB">
                                                         <rect key="frame" x="0.0" y="0.0" width="310.5" height="539"/>
@@ -328,7 +328,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Krs-nD-bgR">
-                                                        <rect key="frame" x="0.0" y="582" width="335" height="380.5"/>
+                                                        <rect key="frame" x="0.0" y="582" width="335" height="380"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="bGH-3N-CEc">
                                                                 <rect key="frame" x="0.0" y="0.0" width="310" height="80.5"/>
@@ -350,7 +350,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kfA-5w-bZF">
-                                                                <rect key="frame" x="0.0" y="110.5" width="335" height="270"/>
+                                                                <rect key="frame" x="0.0" y="110.5" width="335" height="269.5"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="OPq-F1-KJY">
                                                                         <rect key="frame" x="0.0" y="0.0" width="312" height="156.5"/>
@@ -381,15 +381,18 @@
                                                                                 </subviews>
                                                                             </stackView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBU-Az-sfY">
-                                                                                <rect key="frame" x="0.0" y="136" width="310.5" height="20.5"/>
+                                                                                <rect key="frame" x="0.0" y="136" width="312" height="20.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                         </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstItem="Rng-hJ-2z6" firstAttribute="centerX" secondItem="CBU-Az-sfY" secondAttribute="centerX" id="Oos-4n-6dj"/>
+                                                                        </constraints>
                                                                     </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="ZGt-Di-O4g">
-                                                                        <rect key="frame" x="0.0" y="186.5" width="335" height="83.5"/>
+                                                                        <rect key="frame" x="0.0" y="186.5" width="335" height="83"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사람들이 연락할 수 있도록 오픈링크를 적어주세요. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFv-UC-LS2">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
@@ -397,8 +400,8 @@
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ex) kakaotalk.openchatting.link" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rKC-K4-wtG">
-                                                                                <rect key="frame" x="0.0" y="49.5" width="335" height="34"/>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ex) kakaotalk.openchatting.link" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rKC-K4-wtG">
+                                                                                <rect key="frame" x="0.0" y="49.5" width="335" height="33.5"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="335" id="Sym-1r-FLb"/>
                                                                                 </constraints>
@@ -408,36 +411,46 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                 </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="ZGt-Di-O4g" firstAttribute="top" secondItem="kfA-5w-bZF" secondAttribute="top" constant="186.5" id="Gxl-mC-zUN"/>
+                                                                </constraints>
                                                             </stackView>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="kfA-5w-bZF" firstAttribute="top" secondItem="Krs-nD-bgR" secondAttribute="top" constant="110.5" id="U8a-ri-AU2"/>
+                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Krs-nD-bgR" firstAttribute="top" secondItem="zMY-Db-AdJ" secondAttribute="top" constant="582" id="VZE-E8-EX0"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                                         <constraints>
                                             <constraint firstItem="zMY-Db-AdJ" firstAttribute="centerY" secondItem="1Bg-iA-43r" secondAttribute="centerY" id="AmB-Xs-AX5"/>
+                                            <constraint firstItem="zMY-Db-AdJ" firstAttribute="top" secondItem="1Bg-iA-43r" secondAttribute="top" constant="50.5" id="Bke-dj-CJi"/>
                                             <constraint firstItem="zMY-Db-AdJ" firstAttribute="centerX" secondItem="1Bg-iA-43r" secondAttribute="centerX" id="h3J-Kz-Ikc"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="1Bg-iA-43r" firstAttribute="top" secondItem="Q4t-Fr-FBE" secondAttribute="top" id="I2g-8H-KUv"/>
-                                    <constraint firstItem="1Bg-iA-43r" firstAttribute="centerX" secondItem="Q4t-Fr-FBE" secondAttribute="centerX" id="NDB-IT-KOq"/>
-                                    <constraint firstItem="1Bg-iA-43r" firstAttribute="centerY" secondItem="Q4t-Fr-FBE" secondAttribute="centerY" id="SS0-kA-pB4"/>
-                                    <constraint firstItem="1Bg-iA-43r" firstAttribute="leading" secondItem="Q4t-Fr-FBE" secondAttribute="leading" id="kFy-J3-YVU"/>
-                                    <constraint firstAttribute="bottom" secondItem="1Bg-iA-43r" secondAttribute="bottom" id="ojZ-Lq-VDu"/>
-                                    <constraint firstAttribute="trailing" secondItem="1Bg-iA-43r" secondAttribute="trailing" id="tTh-JY-6f0"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Bg-iA-43r" secondAttribute="trailing" id="7mH-Hr-JHj"/>
+                                    <constraint firstItem="1Bg-iA-43r" firstAttribute="top" secondItem="Q4t-Fr-FBE" secondAttribute="top" id="T8g-Z8-7Qp"/>
+                                    <constraint firstItem="1Bg-iA-43r" firstAttribute="centerX" secondItem="Q4t-Fr-FBE" secondAttribute="centerX" id="WTd-pB-x0U"/>
+                                    <constraint firstItem="1Bg-iA-43r" firstAttribute="leading" secondItem="Q4t-Fr-FBE" secondAttribute="leading" id="a4o-5H-5BH"/>
+                                    <constraint firstItem="1Bg-iA-43r" firstAttribute="centerY" secondItem="Q4t-Fr-FBE" secondAttribute="centerY" id="o12-Pw-csz"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Bg-iA-43r" secondAttribute="bottom" id="vdL-wQ-B44"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Q4t-Fr-FBE" firstAttribute="top" secondItem="xRc-cZ-5Lp" secondAttribute="top" id="9aq-on-rve"/>
-                            <constraint firstAttribute="trailing" secondItem="Q4t-Fr-FBE" secondAttribute="trailing" id="AXz-MY-Trk"/>
-                            <constraint firstItem="Q4t-Fr-FBE" firstAttribute="leading" secondItem="jq0-y6-sAt" secondAttribute="leading" id="eXA-pc-3Qa"/>
-                            <constraint firstItem="Q4t-Fr-FBE" firstAttribute="bottom" secondItem="xRc-cZ-5Lp" secondAttribute="bottom" id="lmL-t9-aNC"/>
+                            <constraint firstItem="Q4t-Fr-FBE" firstAttribute="bottom" secondItem="xRc-cZ-5Lp" secondAttribute="bottom" id="Pc0-dc-Zym"/>
+                            <constraint firstItem="Q4t-Fr-FBE" firstAttribute="top" secondItem="xRc-cZ-5Lp" secondAttribute="top" id="UN2-QX-66W"/>
+                            <constraint firstItem="Q4t-Fr-FBE" firstAttribute="centerX" secondItem="jq0-y6-sAt" secondAttribute="centerX" id="Wtk-Aq-p8i"/>
+                            <constraint firstItem="Q4t-Fr-FBE" firstAttribute="leading" secondItem="xRc-cZ-5Lp" secondAttribute="leading" id="Zqr-6B-F1u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xRc-cZ-5Lp"/>
                     </view>
@@ -872,10 +885,10 @@
             </objects>
             <point key="canvasLocation" x="1769.5652173913045" y="-152.00892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Survey View Controller-->
         <scene sceneID="BMa-HQ-wTD">
             <objects>
-                <viewController id="pOP-2v-Kuc" sceneMemberID="viewController">
+                <viewController id="pOP-2v-Kuc" customClass="SurveyViewController" customModule="OAOmates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ySA-lD-AUS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1446"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -884,246 +897,253 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1446"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wtk-aC-JRA">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1446"/>
+                                        <rect key="frame" x="0.0" y="-20" width="414" height="1446"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGx-T7-XV5">
-                                                <rect key="frame" x="344" y="766" width="37" height="36"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                <size key="titleShadowOffset" width="-10" height="0.0"/>
-                                                <state key="normal" title="Button" image="questionmark.circle" catalog="system"/>
-                                            </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="XSP-2H-mnq">
-                                                <rect key="frame" x="30" y="30" width="354" height="1386"/>
+                                                <rect key="frame" x="12" y="30" width="390" height="1386"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="생활습관 설문조사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cea-7C-4kA">
-                                                        <rect key="frame" x="102" y="0.0" width="150" height="11.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                        <color key="textColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="나의 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XU-Fc-yKW">
-                                                        <rect key="frame" x="140" y="71.5" width="74" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="fX1-Pt-a3e">
-                                                        <rect key="frame" x="0.0" y="155.5" width="354" height="633"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="doh-Ef-rCy">
+                                                        <rect key="frame" x="120" y="0.0" width="150" height="95.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1. 나의 잠버릇은?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7p-DL-nhF">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="생활습관 설문조사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cea-7C-4kA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="11.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="textColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="m6i-Rd-Tql">
-                                                                <rect key="frame" x="0.0" y="38.5" width="354" height="32"/>
-                                                                <segments>
-                                                                    <segment title="코골이"/>
-                                                                    <segment title="이갈이"/>
-                                                                    <segment title="크게숨쉬기"/>
-                                                                    <segment title="없음"/>
-                                                                </segments>
-                                                            </segmentedControl>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2. 흡연 여부" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae3-pE-XIh">
-                                                                <rect key="frame" x="0.0" y="87.5" width="354" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D0m-s4-l8H">
-                                                                <rect key="frame" x="0.0" y="126" width="354" height="32"/>
-                                                                <segments>
-                                                                    <segment title="예"/>
-                                                                    <segment title="아니오"/>
-                                                                </segments>
-                                                            </segmentedControl>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3. 음주 정도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDo-Vm-sP4">
-                                                                <rect key="frame" x="0.0" y="175" width="354" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-q4-FqI">
-                                                                <rect key="frame" x="0.0" y="213.5" width="354" height="32"/>
-                                                                <segments>
-                                                                    <segment title="전혀"/>
-                                                                    <segment title="달 1~3회"/>
-                                                                    <segment title="주 1~2회"/>
-                                                                    <segment title="주 3~4회"/>
-                                                                    <segment title="주 5~7회"/>
-                                                                </segments>
-                                                            </segmentedControl>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="4. 외박회수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVV-bT-YO8">
-                                                                <rect key="frame" x="0.0" y="262.5" width="354" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yJP-Jm-cuD">
-                                                                <rect key="frame" x="0.0" y="301" width="354" height="32"/>
-                                                                <segments>
-                                                                    <segment title="안함"/>
-                                                                    <segment title="드물게"/>
-                                                                    <segment title="가끔"/>
-                                                                    <segment title="종종"/>
-                                                                    <segment title="자주"/>
-                                                                </segments>
-                                                            </segmentedControl>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="5. 룸메와의 희망 친밀도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzC-1q-GTA">
-                                                                <rect key="frame" x="0.0" y="350" width="354" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Hc-Eo-ROB">
-                                                                <rect key="frame" x="0.0" y="388.5" width="354" height="32"/>
-                                                                <segments>
-                                                                    <segment title="0"/>
-                                                                    <segment title="25%"/>
-                                                                    <segment title="50%"/>
-                                                                    <segment title="75%"/>
-                                                                    <segment title="100%"/>
-                                                                </segments>
-                                                            </segmentedControl>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="6. 나는 일주일에 몇 번 씻는다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DC4-Ef-6oN">
-                                                                <rect key="frame" x="0.0" y="437.5" width="354" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="A6f-qW-9Zg">
-                                                                <rect key="frame" x="0.0" y="476" width="354" height="32"/>
-                                                                <segments>
-                                                                    <segment title="0~1번"/>
-                                                                    <segment title="2~3번"/>
-                                                                    <segment title="4~5번"/>
-                                                                    <segment title="6~7번"/>
-                                                                </segments>
-                                                            </segmentedControl>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="7. 나의 종교" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boF-YL-eZU">
-                                                                <rect key="frame" x="0.0" y="525" width="354" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M4S-bZ-U9K">
-                                                                <rect key="frame" x="0.0" y="563.5" width="354" height="32"/>
-                                                                <segments>
-                                                                    <segment title="불교"/>
-                                                                    <segment title="천주교"/>
-                                                                    <segment title="기독교"/>
-                                                                    <segment title="무교"/>
-                                                                    <segment title="기타"/>
-                                                                </segments>
-                                                            </segmentedControl>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="________________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fb-aF-qkt">
-                                                                <rect key="frame" x="0.0" y="612.5" width="354" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kgd-JA-Cwf">
-                                                        <rect key="frame" x="0.0" y="848.5" width="354" height="442.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="희망 룸메이트 고려사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8L-Jc-oRQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="24"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XU-Fc-yKW">
+                                                                <rect key="frame" x="38" y="71.5" width="74" height="24"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YfV-es-Mta">
-                                                                <rect key="frame" x="0.0" y="39" width="354" height="0.0"/>
-                                                            </stackView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1. 나는 잠잘 때 소리에 매우 예민하다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgM-oy-BEE">
-                                                                <rect key="frame" x="0.0" y="54" width="354" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4lv-Ur-6UZ">
-                                                                <rect key="frame" x="-2" y="89.5" width="358" height="31"/>
-                                                            </slider>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2. 룸메이트가 흡연 하지 않는 것은 중요하다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwz-Df-Gmt">
-                                                                <rect key="frame" x="0.0" y="134.5" width="354" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YHT-Kl-xLm">
-                                                                <rect key="frame" x="-2" y="170" width="358" height="31"/>
-                                                            </slider>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3. 룸메이트가 술을 마시지 않는 것은 중요하다. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVy-ok-V4W">
-                                                                <rect key="frame" x="0.0" y="215" width="354" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pLl-Uy-m56">
-                                                                <rect key="frame" x="-2" y="250.5" width="358" height="31"/>
-                                                            </slider>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="4. 룸메이트의 청결은 중요하다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hm3-pR-Dt6">
-                                                                <rect key="frame" x="0.0" y="295.5" width="354" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kSb-sa-iTy">
-                                                                <rect key="frame" x="-2" y="331" width="358" height="31"/>
-                                                            </slider>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="5. 룸메이트의 종교가 같으면 좋겠다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86d-jW-blf">
-                                                                <rect key="frame" x="0.0" y="376" width="354" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-ea-OuT">
-                                                                <rect key="frame" x="0.0" y="411.5" width="354" height="32"/>
-                                                                <segments>
-                                                                    <segment title="예"/>
-                                                                    <segment title="상관없음"/>
-                                                                </segments>
-                                                            </segmentedControl>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ1-6l-X4o">
-                                                        <rect key="frame" x="154" y="1351" width="46" height="35"/>
-                                                        <color key="backgroundColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="SAVE"/>
-                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Wb9-19-wOT">
+                                                        <rect key="frame" x="0.0" y="155.5" width="390" height="1230.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="fX1-Pt-a3e">
+                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="633"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. 나의 잠버릇은?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7p-DL-nhF">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="m6i-Rd-Tql">
+                                                                        <rect key="frame" x="0.0" y="38.5" width="390" height="32"/>
+                                                                        <segments>
+                                                                            <segment title="코골이"/>
+                                                                            <segment title="이갈이"/>
+                                                                            <segment title="크게숨쉬기"/>
+                                                                            <segment title="없음"/>
+                                                                        </segments>
+                                                                    </segmentedControl>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. 흡연 여부" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae3-pE-XIh">
+                                                                        <rect key="frame" x="0.0" y="87.5" width="390" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D0m-s4-l8H">
+                                                                        <rect key="frame" x="0.0" y="126" width="390" height="32"/>
+                                                                        <segments>
+                                                                            <segment title="예"/>
+                                                                            <segment title="아니오"/>
+                                                                        </segments>
+                                                                    </segmentedControl>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. 음주 정도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDo-Vm-sP4">
+                                                                        <rect key="frame" x="0.0" y="175" width="390" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-q4-FqI">
+                                                                        <rect key="frame" x="0.0" y="213.5" width="390" height="32"/>
+                                                                        <segments>
+                                                                            <segment title="전혀"/>
+                                                                            <segment title="달 1~3회"/>
+                                                                            <segment title="주 1~2회"/>
+                                                                            <segment title="주 3~4회"/>
+                                                                            <segment title="주 5~7회"/>
+                                                                        </segments>
+                                                                    </segmentedControl>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. 외박회수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVV-bT-YO8">
+                                                                        <rect key="frame" x="0.0" y="262.5" width="390" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yJP-Jm-cuD">
+                                                                        <rect key="frame" x="0.0" y="301" width="390" height="32"/>
+                                                                        <segments>
+                                                                            <segment title="안함"/>
+                                                                            <segment title="드물게"/>
+                                                                            <segment title="가끔"/>
+                                                                            <segment title="종종"/>
+                                                                            <segment title="자주"/>
+                                                                        </segments>
+                                                                    </segmentedControl>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. 룸메와의 희망 친밀도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzC-1q-GTA">
+                                                                        <rect key="frame" x="0.0" y="350" width="390" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Hc-Eo-ROB">
+                                                                        <rect key="frame" x="0.0" y="388.5" width="390" height="32"/>
+                                                                        <segments>
+                                                                            <segment title="0"/>
+                                                                            <segment title="25%"/>
+                                                                            <segment title="50%"/>
+                                                                            <segment title="75%"/>
+                                                                            <segment title="100%"/>
+                                                                        </segments>
+                                                                    </segmentedControl>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6. 나는 일주일에 몇 번 씻는다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DC4-Ef-6oN">
+                                                                        <rect key="frame" x="0.0" y="437.5" width="390" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="A6f-qW-9Zg">
+                                                                        <rect key="frame" x="0.0" y="476" width="390" height="32"/>
+                                                                        <segments>
+                                                                            <segment title="0~1번"/>
+                                                                            <segment title="2~3번"/>
+                                                                            <segment title="4~5번"/>
+                                                                            <segment title="6~7번"/>
+                                                                        </segments>
+                                                                    </segmentedControl>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7. 나의 종교" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boF-YL-eZU">
+                                                                        <rect key="frame" x="0.0" y="525" width="390" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M4S-bZ-U9K">
+                                                                        <rect key="frame" x="0.0" y="563.5" width="390" height="32"/>
+                                                                        <segments>
+                                                                            <segment title="불교"/>
+                                                                            <segment title="천주교"/>
+                                                                            <segment title="기독교"/>
+                                                                            <segment title="무교"/>
+                                                                            <segment title="기타"/>
+                                                                        </segments>
+                                                                    </segmentedControl>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="________________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fb-aF-qkt">
+                                                                        <rect key="frame" x="0.0" y="612.5" width="390" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Zhf-Mg-MiH">
+                                                                <rect key="frame" x="0.0" y="693" width="390" height="537.5"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kgd-JA-Cwf">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="442.5"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="희망 룸메이트 고려사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8L-Jc-oRQ">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="24"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YfV-es-Mta">
+                                                                                <rect key="frame" x="0.0" y="39" width="390" height="0.0"/>
+                                                                            </stackView>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. 나는 잠잘 때 소리에 매우 예민하다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgM-oy-BEE">
+                                                                                <rect key="frame" x="0.0" y="54" width="390" height="20.5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4lv-Ur-6UZ">
+                                                                                <rect key="frame" x="-2" y="89.5" width="394" height="31"/>
+                                                                            </slider>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. 룸메이트가 흡연 하지 않는 것은 중요하다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwz-Df-Gmt">
+                                                                                <rect key="frame" x="0.0" y="134.5" width="390" height="20.5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YHT-Kl-xLm">
+                                                                                <rect key="frame" x="-2" y="170" width="394" height="31"/>
+                                                                            </slider>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. 룸메이트가 술을 마시지 않는 것은 중요하다. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVy-ok-V4W">
+                                                                                <rect key="frame" x="0.0" y="215" width="390" height="20.5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pLl-Uy-m56">
+                                                                                <rect key="frame" x="-2" y="250.5" width="394" height="31"/>
+                                                                            </slider>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. 룸메이트의 청결은 중요하다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hm3-pR-Dt6">
+                                                                                <rect key="frame" x="0.0" y="295.5" width="390" height="20.5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kSb-sa-iTy">
+                                                                                <rect key="frame" x="-2" y="331" width="394" height="31"/>
+                                                                            </slider>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. 룸메이트의 종교가 같으면 좋겠다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86d-jW-blf">
+                                                                                <rect key="frame" x="0.0" y="376" width="390" height="20.5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-ea-OuT">
+                                                                                <rect key="frame" x="0.0" y="411.5" width="390" height="32"/>
+                                                                                <segments>
+                                                                                    <segment title="예"/>
+                                                                                    <segment title="상관없음"/>
+                                                                                </segments>
+                                                                            </segmentedControl>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ1-6l-X4o">
+                                                                        <rect key="frame" x="172" y="502.5" width="46" height="35"/>
+                                                                        <color key="backgroundColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <state key="normal" title="SAVE"/>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="kgd-JA-Cwf" firstAttribute="leading" secondItem="Zhf-Mg-MiH" secondAttribute="leading" id="ipY-Rr-cd1"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Wb9-19-wOT" firstAttribute="top" secondItem="XSP-2H-mnq" secondAttribute="top" constant="155.5" id="FOQ-aU-5ZP"/>
+                                                    <constraint firstItem="Wb9-19-wOT" firstAttribute="leading" secondItem="XSP-2H-mnq" secondAttribute="leading" id="dKf-5Z-ogz"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="XSP-2H-mnq" secondAttribute="trailing" constant="30" id="8sJ-lL-g5L"/>
-                                            <constraint firstItem="XSP-2H-mnq" firstAttribute="leading" secondItem="Wtk-aC-JRA" secondAttribute="leading" constant="30" id="SqV-QI-zSM"/>
-                                            <constraint firstAttribute="bottom" secondItem="XSP-2H-mnq" secondAttribute="bottom" constant="30" id="fGs-GU-fQj"/>
-                                            <constraint firstItem="XSP-2H-mnq" firstAttribute="top" secondItem="Wtk-aC-JRA" secondAttribute="top" constant="30" id="l3P-8S-5Ex"/>
+                                            <constraint firstAttribute="height" constant="1446" id="Jws-Ti-P2D"/>
+                                            <constraint firstItem="XSP-2H-mnq" firstAttribute="leading" secondItem="Wtk-aC-JRA" secondAttribute="leading" constant="12" id="L3E-Fi-NzH"/>
+                                            <constraint firstItem="XSP-2H-mnq" firstAttribute="centerX" secondItem="Wtk-aC-JRA" secondAttribute="centerX" id="PEA-fH-EIf"/>
+                                            <constraint firstItem="XSP-2H-mnq" firstAttribute="centerY" secondItem="Wtk-aC-JRA" secondAttribute="centerY" id="Rbx-P5-Tn7"/>
+                                            <constraint firstItem="XSP-2H-mnq" firstAttribute="top" secondItem="Wtk-aC-JRA" secondAttribute="top" constant="30" id="YtN-tX-kxW"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Wtk-aC-JRA" firstAttribute="top" secondItem="5mA-5d-yVx" secondAttribute="top" id="5C2-J4-6TB"/>
-                                    <constraint firstItem="Wtk-aC-JRA" firstAttribute="top" secondItem="5mA-5d-yVx" secondAttribute="top" id="7MR-Vd-dUc"/>
-                                    <constraint firstItem="Wtk-aC-JRA" firstAttribute="height" secondItem="Tar-VO-Rh0" secondAttribute="height" id="D8Y-AR-kJs"/>
-                                    <constraint firstItem="Wtk-aC-JRA" firstAttribute="leading" secondItem="Tar-VO-Rh0" secondAttribute="leading" id="FYP-N1-Rcg"/>
-                                    <constraint firstItem="Wtk-aC-JRA" firstAttribute="width" secondItem="Tar-VO-Rh0" secondAttribute="width" id="Fan-hJ-PSs"/>
-                                    <constraint firstItem="pAG-cf-fP4" firstAttribute="trailing" secondItem="Wtk-aC-JRA" secondAttribute="trailing" id="IRa-oX-HGP"/>
-                                    <constraint firstItem="Wtk-aC-JRA" firstAttribute="leading" secondItem="5mA-5d-yVx" secondAttribute="leading" id="OuF-h4-rkq"/>
-                                    <constraint firstItem="5mA-5d-yVx" firstAttribute="bottom" secondItem="Wtk-aC-JRA" secondAttribute="bottom" id="P8A-F9-Nih"/>
-                                    <constraint firstItem="5mA-5d-yVx" firstAttribute="trailing" secondItem="Wtk-aC-JRA" secondAttribute="trailing" id="UBp-tz-W1U"/>
-                                    <constraint firstAttribute="bottom" secondItem="Wtk-aC-JRA" secondAttribute="bottom" constant="20" symbolic="YES" id="bs4-lP-duZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="Wtk-aC-JRA" secondAttribute="trailing" id="lj0-jW-7Iq"/>
-                                    <constraint firstItem="Wtk-aC-JRA" firstAttribute="top" secondItem="Tar-VO-Rh0" secondAttribute="top" id="zMG-Mr-Nrb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wtk-aC-JRA" secondAttribute="trailing" id="Ol6-ND-2BO"/>
+                                    <constraint firstItem="Wtk-aC-JRA" firstAttribute="top" secondItem="Tar-VO-Rh0" secondAttribute="top" constant="-20" id="XM4-3W-cN3"/>
+                                    <constraint firstItem="Wtk-aC-JRA" firstAttribute="centerX" secondItem="Tar-VO-Rh0" secondAttribute="centerX" id="bcd-Hp-yeX"/>
+                                    <constraint firstItem="Wtk-aC-JRA" firstAttribute="leading" secondItem="Tar-VO-Rh0" secondAttribute="leading" id="cXH-Wv-XA4"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wtk-aC-JRA" secondAttribute="bottom" constant="20" id="fd7-O7-ble"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="pAG-cf-fP4"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="5mA-5d-yVx"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1146,6 +1166,5 @@
     <resources>
         <image name="KakaoTalk_Image_2020-01-15-20-42-43" width="282.5" height="365.5"/>
         <image name="person" catalog="system" width="64" height="58"/>
-        <image name="questionmark.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>

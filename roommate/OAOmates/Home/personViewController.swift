@@ -51,9 +51,9 @@ extension personViewController: UITableViewDataSource{
         return cell
         
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           performSegue(withIdentifier: "MoreInfo", sender: data[indexPath.row])
-       }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//           performSegue(withIdentifier: "MoreInfo", sender: data[indexPath.row])
+//       }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MoreInfo"{
