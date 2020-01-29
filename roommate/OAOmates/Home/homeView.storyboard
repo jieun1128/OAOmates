@@ -28,24 +28,18 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vL-KO-pUh">
-                                                <rect key="frame" x="52" y="68" width="74" height="21"/>
+                                                <rect key="frame" x="52" y="67" width="74" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="한줄소개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkn-qW-yUl">
-                                                <rect key="frame" x="222" y="103.5" width="59" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한줄소개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkn-qW-yUl">
+                                                <rect key="frame" x="222" y="103" width="59" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="남자말풍선" translatesAutoresizingMaskIntoConstraints="NO" id="rmJ-p1-8eX">
-                                                <rect key="frame" x="32" y="24" width="356" height="178"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="178" id="Hv2-cj-Hjo"/>
-                                                </constraints>
-                                            </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fnk-BF-pqM">
                                                 <rect key="frame" x="35" y="210" width="344" height="531.5"/>
                                                 <subviews>
@@ -231,12 +225,19 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="남자말풍선" translatesAutoresizingMaskIntoConstraints="NO" id="rmJ-p1-8eX">
+                                                <rect key="frame" x="32" y="24" width="356" height="178"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="178" id="Hv2-cj-Hjo"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="Fnk-BF-pqM" firstAttribute="centerY" secondItem="XsZ-jd-DCd" secondAttribute="centerY" constant="-22.25" id="8Hn-fg-uj6"/>
                                             <constraint firstAttribute="trailing" secondItem="rmJ-p1-8eX" secondAttribute="trailing" constant="26" id="8ve-XR-3E0"/>
                                             <constraint firstItem="Fnk-BF-pqM" firstAttribute="centerX" secondItem="yT7-rb-qg6" secondAttribute="centerX" id="AMT-sj-hnv"/>
+                                            <constraint firstItem="jkn-qW-yUl" firstAttribute="top" secondItem="yT7-rb-qg6" secondAttribute="bottom" constant="166.5" id="EK9-s8-S61"/>
                                             <constraint firstItem="rmJ-p1-8eX" firstAttribute="leading" secondItem="XsZ-jd-DCd" secondAttribute="leading" constant="32" id="Jaj-l6-4XY"/>
                                             <constraint firstItem="Fnk-BF-pqM" firstAttribute="top" secondItem="jkn-qW-yUl" secondAttribute="bottom" constant="86" id="MTb-YP-e8V"/>
                                             <constraint firstItem="rmJ-p1-8eX" firstAttribute="top" secondItem="yT7-rb-qg6" secondAttribute="bottom" constant="87.5" id="Nay-S0-Sdn"/>
@@ -448,6 +449,6 @@
     <resources>
         <image name="heart" catalog="system" width="64" height="54"/>
         <image name="house" catalog="system" width="64" height="54"/>
-        <image name="남자말풍선" width="306" height="170"/>
+        <image name="남자말풍선" width="306" height="170"/>
     </resources>
 </document>
