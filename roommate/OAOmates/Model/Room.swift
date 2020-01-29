@@ -7,10 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
 struct Room : Codable{
+   // var image : UIImage?
     var dormitory: String
+    var name: String
     var number: String
+    var nickname: String
     var age: String
     var gender: String
     var nation: String

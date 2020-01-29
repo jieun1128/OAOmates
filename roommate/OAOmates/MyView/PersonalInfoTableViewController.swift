@@ -19,7 +19,7 @@ class PersonalInfoTableViewController: UITableViewController {
     @IBOutlet weak var introductionText: UITextField!
     @IBOutlet weak var letterText: UITextField!
     @IBAction func SaveUser(_ sender: Any) {
-        API.shared.addUser(user: Room(dormitory: "", number: "", age: ageTExt.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "",major : MajorText.text ?? "", grade : "",college : "", sleepTime : "", riseTime : "", letter : "", introduction : "", openChat : ""), completion: { self.navigationController?.popViewController(animated: true)})
+        API.shared.addUser(user: Room(dormitory: "", name : NameText.text ?? "", number: "", nickname: NickNameText.text ?? "", age: ageTExt.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "",major : MajorText.text ?? "", grade : "",college : "", sleepTime : "", riseTime : "", letter : "", introduction : "", openChat : ""), completion: { self.navigationController?.popViewController(animated: true)})
 //
     }
     override func viewDidLoad() {
@@ -36,15 +36,15 @@ class PersonalInfoTableViewController: UITableViewController {
     
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//        return 0
+//    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
