@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyViewController: UIViewController{
+class MyViewController: UITableViewController{
 //    func scrollViewDidScroll(_ scrollView: UIScrollView) {
 //        if scrollView.contentOffset.x != 0 {
 //            scrollView.contentOffset.x = 0

@@ -29,11 +29,11 @@ class personViewController: UIViewController, UITableViewDelegate{
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        API.shared.allUsers{(users) in
-            self.data = users
-    }
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        API.shared.allUsers{(users) in
+//            self.data = users
+//    }
+//    }
 }
 
 extension personViewController: UITableViewDataSource{

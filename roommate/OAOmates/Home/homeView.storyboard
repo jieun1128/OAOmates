@@ -261,25 +261,11 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="S9P-6S-GUY"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="R8w-Tc-0GW"/>
                             </scrollView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAb-EC-fpY">
-                                <rect key="frame" x="0.0" y="868" width="414" height="49"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7j0-Mt-vXU"/>
-                                    <barButtonItem title="Item" image="heart" catalog="system" id="smv-SD-Skw"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YK0-Q2-8bU"/>
-                                    <barButtonItem title="매칭요청" id="aSh-cY-U89"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1kP-Ac-Zxu"/>
-                                </items>
-                                <color key="tintColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="WGt-La-laT" firstAttribute="bottom" secondItem="dY5-NW-CF7" secondAttribute="bottom" constant="21" id="1c7-na-0lx"/>
-                            <constraint firstItem="CAb-EC-fpY" firstAttribute="trailing" secondItem="dY5-NW-CF7" secondAttribute="trailing" id="9B0-Gv-QdZ"/>
                             <constraint firstAttribute="trailing" secondItem="dY5-NW-CF7" secondAttribute="trailing" id="NFs-1G-cWv"/>
-                            <constraint firstItem="CAb-EC-fpY" firstAttribute="leading" secondItem="dY5-NW-CF7" secondAttribute="leading" id="YCq-uL-rOd"/>
-                            <constraint firstItem="CAb-EC-fpY" firstAttribute="bottom" secondItem="WGt-La-laT" secondAttribute="bottom" id="gh8-or-IqB"/>
                             <constraint firstItem="dY5-NW-CF7" firstAttribute="top" secondItem="Jj0-27-98D" secondAttribute="top" id="oje-DT-uSG"/>
                             <constraint firstItem="dY5-NW-CF7" firstAttribute="leading" secondItem="Jj0-27-98D" secondAttribute="leading" id="wSL-Tn-hSp"/>
                         </constraints>
@@ -370,7 +356,7 @@
                                                     <color key="textColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nTC-nX-H27">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="남자말풍선" translatesAutoresizingMaskIntoConstraints="NO" id="nTC-nX-H27">
                                                     <rect key="frame" x="20" y="17" width="50" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -453,7 +439,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="heart" catalog="system" width="64" height="54"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="남자말풍선" width="306" height="170"/>
     </resources>
