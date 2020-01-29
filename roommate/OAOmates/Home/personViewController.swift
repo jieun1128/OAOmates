@@ -48,6 +48,7 @@ extension personViewController: UITableViewDataSource{
         cell.ageLabel.text = "\(data[indexPath.row].age)살"
         cell.genderLabel.text = "성별: \(data[indexPath.row].gender)"
         cell.nationLabel.text = data[indexPath.row].nation
+//        cell.profileImageView.image = data[indexPath.row].image
         return cell
         
     }
