@@ -23,4 +23,6 @@ class personTableViewCell: UITableViewCell {
     
     @IBOutlet weak var progressView: UIProgressView!
     
+
+    
 }
