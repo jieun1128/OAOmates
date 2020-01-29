@@ -8,24 +8,10 @@
 
 import UIKit
 
-class MyViewController: UITableViewController{
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        if scrollView.contentOffset.x != 0 {
-//            scrollView.contentOffset.x = 0
-//        }
-//    }
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var nickNameLabel: UILabel!
-    @IBOutlet weak var departmentLabel: UILabel!
-    @IBOutlet weak var majorLabel: UILabel!
-    @IBOutlet weak var gradeLabel: UILabel!
-    @IBOutlet weak var ageLabel: UILabel!
-    @IBOutlet weak var genderLabel: UILabel!
-    @IBOutlet weak var nationLabel: UILabel!
-    @IBOutlet weak var dormitoryLabel: UILabel!
-    @IBOutlet weak var numberLabel: UILabel!
-    
-    
+
+class MyViewController: UITableViewController {
+
+
     fileprivate var  data:[Room] = [] {
                didSet {
                    
