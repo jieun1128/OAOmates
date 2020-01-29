@@ -22,6 +22,7 @@ class PersonalInfoTableViewController: UITableViewController {
         API.shared.addUser(user: Room(dormitory: "", name : NameText.text ?? "", number: "", nickname: NickNameText.text ?? "", age: ageTExt.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "",major : MajorText.text ?? "", grade : "",college : "", sleepTime : "", riseTime : "", letter : "", introduction : "", openChat : ""), completion: { self.navigationController?.popViewController(animated: true)})
 //
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

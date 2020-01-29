@@ -30,9 +30,9 @@ class personViewController: UIViewController, UITableViewDelegate{
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        API.shared.allUsers{(users) in
-            self.data = users
-    }
+//        API.shared.allUsers{(users) in
+//            self.data = users
+//    }
     }
 }
 
