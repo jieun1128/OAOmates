@@ -16,15 +16,16 @@ extension API {
 //    data: data, completion: { _ in
 //        completion?()
 //    }
-    func addPersonalInfo(name: name, user:Room, completion: (() -> Void)?) {
+    //completion: (() -> Void)?
+    func addPersonalInfo(name: String, user:Person) {
         if let data = try? user.asDictionary() {
-            self.userDocumentRef.document("\(Room.name)").collection("PersonalInfo").document()
+            self.userDocumentRef.document("\(name)").collection("PersonalInfo").document().setData(data)
         }
     }
     
-    func addSurveyResult(user: Room, completion : (()-> Void)?){
+    func addSurveyResult(name: String, user: Survey){
         if let data = try? user.asDictionary(){
-            self.userDocumentRef.
+            self.userDocumentRef.document("\(name)").collection("SurveyResult").document().setData(data)
         }
     }
     

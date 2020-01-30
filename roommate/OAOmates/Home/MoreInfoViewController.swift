@@ -37,17 +37,17 @@ class MoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        ageLabel.text = "\(detail!.age)"
-        genderLabel.text = "\(detail!.gender)"
-        dormitoryLabel.text = "동국대학교 \( detail!.dormitory) \( detail!.number)인실"
-        nationLabel.text = "\( detail!.nation)"
-        gradeLabel.text = "\(detail!.grade)"
-        majorLabel.text = "\(detail!.major)"
-        introductionLabel.text = "\(detail!.introduction)"
-        letterLabel.text = "\(detail!.letter)"
-        openChatLabel.text = "\(detail!.openChat)"
-        collegeLabel.text = "\(detail!.college)"
-        sleepTimeLabel.text = "P.M. \(detail!.sleepTime) ~ A.M. \(detail!.riseTime)"
+        ageLabel.text = "\(detail!.personalInfo.age)"
+        genderLabel.text = "\(detail!.personalInfo.gender)"
+        dormitoryLabel.text = "동국대학교 \( detail!.personalInfo.dormitory) \( detail!.personalInfo.number)인실"
+        nationLabel.text = "\( detail!.personalInfo.nation)"
+        gradeLabel.text = "\(detail!.personalInfo.grade)"
+        majorLabel.text = "\(detail!.personalInfo.major)"
+        introductionLabel.text = "\(detail!.personalInfo.introduction)"
+        letterLabel.text = "\(detail!.personalInfo.letter)"
+        openChatLabel.text = "\(detail!.personalInfo.openChat)"
+        collegeLabel.text = "\(detail!.personalInfo.college)"
+        sleepTimeLabel.text = "P.M. \(detail!.personalInfo.sleepTime) ~ A.M. \(detail!.personalInfo.riseTime)"
 //        P.M. 00:00 ~ A.M. 00:00
 //        college.text = //으으으
         

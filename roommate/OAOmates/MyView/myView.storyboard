@@ -552,6 +552,9 @@
                                                     <state key="normal" title="SAVE">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="C6r-ee-sLc" kind="show" id="KIK-hh-nPO"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -813,9 +816,6 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="SAVE"/>
-                                                                        <connections>
-                                                                            <action selector="Save:" destination="pOP-2v-Kuc" eventType="touchUpInside" id="QrQ-wX-gZ1"/>
-                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <constraints>
@@ -885,7 +885,7 @@
             <objects>
                 <tableViewController id="C6r-ee-sLc" customClass="MyViewController" customModule="OAOmates" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Ei3-bz-WjX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="z7b-1D-cDQ">
@@ -1338,6 +1338,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="MY" selectedImage="house" catalog="system" id="XuT-3e-LYD"/>
+                    <navigationItem key="navigationItem" id="s7q-Uh-Uk0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKp-Jp-qzN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
