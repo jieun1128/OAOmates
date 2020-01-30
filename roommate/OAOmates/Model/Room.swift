@@ -34,12 +34,11 @@ struct Survey : Codable{
     var closeness : Int
     var washing : Int
     var religion : Int
+    var noise : Int
     var notSmoking : Int
     var notDrinking : Int
     var cleaning : Int
     var sameReligion : Int
-    
-    
 }
 
 struct Room : Codable{

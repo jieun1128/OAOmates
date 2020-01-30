@@ -10,7 +10,21 @@ import UIKit
 
 class SurveyViewController: UIViewController {
 
-
+    @IBOutlet weak var SleepingHabit: UISegmentedControl!
+    @IBOutlet weak var Smoking: UISegmentedControl!
+    @IBOutlet weak var Drinking: UISegmentedControl!
+    @IBOutlet weak var SleepOut: UISegmentedControl!
+    @IBOutlet weak var Closeness: UISegmentedControl!
+    @IBOutlet weak var Washing: UISegmentedControl!
+    @IBOutlet weak var Religion: UISegmentedControl!
+    @IBOutlet weak var Noise: UISlider!
+    @IBOutlet weak var NotSmoking: UISlider!
+    @IBOutlet weak var NotDrinking: UISlider!
+    @IBOutlet weak var Cleaning: UISlider!
+    @IBOutlet weak var SameReligion: UISegmentedControl!
+    
+    
+    
     
 //    func convertString (button : UISegmentedControl)-> String{
 //        if button.selectedSegmentIndex == 0{
@@ -19,30 +33,21 @@ class SurveyViewController: UIViewController {
 //    }
     
     @IBAction func noiseSet(_ sender: UISlider) {
-        noise.value = round(noise.value)
+        Noise.value = round(Noise.value)
     }
     
     
     
     @IBAction func Save(_ sender: Any) {
 
-        let user = Survey(sleepingHabit: SleepingHabit.selectedSegmentIndex ?? 0, smoking: Smoking.selectedSegmentIndex ?? 0, drinking: drinking.selectedSegmentIndex ?? 0, sleepout: sleepOut?.selectedSegmentIndex ?? 0, closeness: closeness.selectedSegmentIndex ?? 0, washing: washing.selectedSegmentIndex ?? 0, religion: religion.selectedSegmentIndex ?? 0, notSmoking: Int, notDrinking: Int, cleaning: Int, sameReligion: sameReligion.selectedSegmentIndex ?? 0)
+        let user = Survey(sleepingHabit: Int(), smoking: Int(), drinking: Int(), sleepout: Int(), closeness: Int(), washing: Int(), religion: Int(), noise: Int(), notSmoking: Int(), notDrinking: Int(), cleaning: Int(), sameReligion: Int())
+//        let user = Survey(sleepingHabit: SleepingHabit.selectedSegmentIndex ?? 0, smoking: Smoking.selectedSegmentIndex ?? 0, drinking: Drinking.selectedSegmentIndex ?? 0, sleepout: SleepOut?.selectedSegmentIndex ?? 0, closeness: Closeness.selectedSegmentIndex ?? 0, washing: Washing.selectedSegmentIndex ?? 0, religion: Religion.selectedSegmentIndex ?? 0, noise: Int(), notSmoking: Int(), notDrinking: Int(), cleaning: Int(), sameReligion: SameReligion.selectedSegmentIndex ?? 0)
 
-
-        API.shared.addUser(user: user , completion: { self.navigationController?.popViewController(animated: true)})
+        API.shared.addSurveyResult(name: "", user: user)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        noise.minimumValue = 0
-        noise.maximumValue = 10
-        notSmoking.minimumValue = 0
-        notSmoking.maximumValue = 10
-        notdrinking.minimumValue = 0
-        notdrinking.maximumValue = 10
-        cleaning.minimumValue = 0
-        cleaning.maximumValue = 10
 
         // Do any additional setup after loading the view.
     }

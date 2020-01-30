@@ -881,18 +881,18 @@
                     <navigationItem key="navigationItem" id="RfN-pV-BPo"/>
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
-                        <outlet property="SleepingHabit" destination="m6i-Rd-Tql" id="Xsd-kQ-vOi"/>
-                        <outlet property="Smoking" destination="D0m-s4-l8H" id="1tB-Wt-4nY"/>
-                        <outlet property="cleaning" destination="kSb-sa-iTy" id="fKc-yx-zbf"/>
-                        <outlet property="closeness" destination="5Hc-Eo-ROB" id="Opz-ls-CHn"/>
-                        <outlet property="drinking" destination="fK5-q4-FqI" id="J12-JC-IYZ"/>
-                        <outlet property="noise" destination="4lv-Ur-6UZ" id="CQn-eq-hHI"/>
-                        <outlet property="notSmoking" destination="YHT-Kl-xLm" id="1cS-vq-CaO"/>
-                        <outlet property="notdrinking" destination="pLl-Uy-m56" id="laa-Wp-jL6"/>
-                        <outlet property="religion" destination="M4S-bZ-U9K" id="3Zx-ca-M3a"/>
-                        <outlet property="sameReligion" destination="PA9-ea-OuT" id="6DG-1b-GAG"/>
-                        <outlet property="sleepOut" destination="yJP-Jm-cuD" id="czq-Ls-HLr"/>
-                        <outlet property="washing" destination="A6f-qW-9Zg" id="8Yl-Rf-c7l"/>
+                        <outlet property="Cleaning" destination="kSb-sa-iTy" id="aS4-Bn-NGJ"/>
+                        <outlet property="Closeness" destination="5Hc-Eo-ROB" id="cBy-bI-vRv"/>
+                        <outlet property="Drinking" destination="fK5-q4-FqI" id="0IT-GJ-baz"/>
+                        <outlet property="Noise" destination="4lv-Ur-6UZ" id="R4W-Zs-TW8"/>
+                        <outlet property="NotDrinking" destination="pLl-Uy-m56" id="Clo-ya-96p"/>
+                        <outlet property="NotSmoking" destination="YHT-Kl-xLm" id="CWz-Ui-aj9"/>
+                        <outlet property="Religion" destination="M4S-bZ-U9K" id="lcl-Xi-uxR"/>
+                        <outlet property="SameReligion" destination="PA9-ea-OuT" id="B5I-ZI-IX3"/>
+                        <outlet property="SleepOut" destination="yJP-Jm-cuD" id="TCZ-Gr-PmU"/>
+                        <outlet property="SleepingHabit" destination="m6i-Rd-Tql" id="za1-c0-39Y"/>
+                        <outlet property="Smoking" destination="D0m-s4-l8H" id="qD7-vm-EK9"/>
+                        <outlet property="Washing" destination="A6f-qW-9Zg" id="IcA-gM-Yxo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5y-3Q-zdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -915,7 +915,7 @@
                                 <navigationItem title="MY" id="pSZ-hP-qts">
                                     <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="G6S-5I-7le">
                                         <connections>
-                                            <segue destination="koC-xl-qig" kind="presentation" id="UV8-aD-ixo"/>
+                                            <segue destination="koC-xl-qig" kind="show" id="4eL-ho-fFe"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
