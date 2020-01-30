@@ -10,6 +10,23 @@ import UIKit
 
 class SurveyViewController: UIViewController {
 
+    @IBOutlet weak var SleepingHabit: UISegmentedControl!
+    @IBOutlet weak var Smoking: UISegmentedControl!
+    @IBOutlet weak var drinking: UISegmentedControl!
+    @IBOutlet weak var sleepOut: UISegmentedControl!
+    @IBOutlet weak var closeness: UISegmentedControl!
+    @IBOutlet weak var washing: UISegmentedControl!
+    @IBOutlet weak var religion: UISegmentedControl!
+    @IBOutlet weak var noise: UISlider!
+    @IBOutlet weak var notSmoking: UISlider!
+    @IBOutlet weak var notdrinking: UISlider!
+    @IBOutlet weak var cleaning: UISlider!
+    @IBOutlet weak var sameReligion: UISegmentedControl!
+    
+    @IBAction func Save(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
