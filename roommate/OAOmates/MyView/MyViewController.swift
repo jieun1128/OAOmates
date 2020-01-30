@@ -11,43 +11,50 @@ import UIKit
 
 
 
-class MyViewController: UITableViewController, UITableViewDelegate{
+class MyViewController: UITableViewController, CanRecieve{
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nickNameLabel: UILabel!
+    @IBOutlet weak var collegeLabel: UILabel!
+    @IBOutlet weak var majorLabel: UILabel!
+    @IBOutlet weak var gradeLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
+    @IBOutlet weak var nationLabel: UILabel!
+    
+    @IBOutlet weak var dormitoryLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
+    
+    
+    
+    func passDataBack(data: String) {
+        nameLabel.text=data
+    }
+    
     @IBAction func unwindVC1 (segue : UIStoryboardSegue){}
     
-    @IBOutlet var myTableView: UITableView!
-
-    fileprivate var  data:[Room] = [] {
-               didSet {
-                self.myTableView.reloadData()
-               }
-           }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.myTableView.dataSource = self
-        self.myTableView.delegate = self
-        // Do any additional setup after loading the view.
+    @IBAction func pressEditButton(_ sender: Any) {
+        performSegue(withIdentifier: "sendEdit", sender: self)
     }
-
-    override func viewWillAppear (_ animated: Bool){
-//        API.shared.allUsers{(users) in
-//            self.data = users
-//        }
-    }
-}
-
-extension MyViewController: UITableViewDataSource{
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return self.data.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if withIdentifier == "ageCell"{
-             let cell = tableView.dequeueReusableCell(withIdentifier: "ageCell", for: indexPath) as! personTableViewCell
-            cell.ageLabel.text="\(data[indexPath.row].personalInfo.age)살"
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "sendEdit"{
+            let editVC = segue.destination as! ViewControllerEdit
+            secondVc.data = nameText.text!
         }
+    }
+    
+  
 
+ 
+        // Do any additional setup after loading the view.
+    
 }
+
+  
+
+
+
+
 
 
     /*

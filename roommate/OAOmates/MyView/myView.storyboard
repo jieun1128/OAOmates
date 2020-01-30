@@ -51,7 +51,7 @@
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jt1-PB-nfE">
                                                             <rect key="frame" x="136" y="0.0" width="188" height="35"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                         </textField>
                                                     </subviews>
                                                     <constraints>
@@ -908,7 +908,8 @@
                                 <navigationItem title="MY" id="pSZ-hP-qts">
                                     <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="G6S-5I-7le">
                                         <connections>
-                                            <segue destination="koC-xl-qig" kind="presentation" id="UV8-aD-ixo"/>
+                                            <action selector="pressEditButton:" destination="C6r-ee-sLc" id="x9V-SN-DyO"/>
+                                            <segue destination="koC-xl-qig" kind="presentation" identifier="sendEdit" id="UV8-aD-ixo"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
@@ -1363,7 +1364,16 @@
                     <tabBarItem key="tabBarItem" title="MY" image="person" catalog="system" selectedImage="person" id="XuT-3e-LYD"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="myTableView" destination="Ei3-bz-WjX" id="bF8-hn-ekn"/>
+                        <outlet property="ageLabel" destination="Y2B-eD-L7p" id="my0-ET-ShT"/>
+                        <outlet property="collegeLabel" destination="3kT-R5-0MG" id="Hat-E4-rLN"/>
+                        <outlet property="dormitoryLabel" destination="JfW-aR-8aD" id="oLT-6d-zS3"/>
+                        <outlet property="genderLabel" destination="Ilj-vx-ixQ" id="nOU-du-2tO"/>
+                        <outlet property="gradeLabel" destination="wD0-14-uYI" id="goW-Ub-gqz"/>
+                        <outlet property="majorLabel" destination="5EC-k1-hCI" id="6A3-0Y-aBf"/>
+                        <outlet property="nameLabel" destination="CtE-GA-LTi" id="XCa-0R-d35"/>
+                        <outlet property="nationLabel" destination="vUr-k8-9UY" id="tfW-qG-DHQ"/>
+                        <outlet property="nickNameLabel" destination="OGp-EL-g4A" id="UdW-bT-JPV"/>
+                        <outlet property="numberLabel" destination="4gp-e0-H9U" id="2t9-7j-vIU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKp-Jp-qzN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

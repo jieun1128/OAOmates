@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol CanRecieve{
+    func passDataBack(data: String)
+}
+
 class PersonalInfoTableViewController: UITableViewController {
 
     @IBOutlet weak var NameText: UITextField!
@@ -26,7 +30,10 @@ class PersonalInfoTableViewController: UITableViewController {
     @IBOutlet weak var yearText: UITextField!
     @IBOutlet weak var semester: UISegmentedControl!
     @IBOutlet weak var gradeText: UITextField!
-   
+    
+    var delegate:CanRecieve?
+    var data = " "
+    
     func convertString (button : UISegmentedControl)-> String{
         if button.selectedSegmentIndex == 0{
             return "남산"
@@ -41,7 +48,11 @@ class PersonalInfoTableViewController: UITableViewController {
         let user = Person(dormitory: "", name : NameText.text ?? "" , number : "", nickname : NickNameText.text ?? "", age : ageText.text ?? "", gender : genderText.text ?? "", nation : nationText.text ?? "", major : MajorText.text ?? "", grade : gradeText.text ?? "", college : collegeText.text ?? "", sleepTime : SleepingText.text ?? "", letter : letterText.text ?? "", introduction : introductionText.text ?? "", openChat : openChat.text ?? "")
         
         API.shared.addPersonalInfo(name: NameText.text ?? "", user: user)
-//
+
+        delegate?.passDataBack(data: NameText.text!)
+        dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
+        //
     }
     
     override func viewDidLoad() {
