@@ -13,15 +13,43 @@ class PersonalInfoTableViewController: UITableViewController {
     @IBOutlet weak var NameText: UITextField!
     @IBOutlet weak var NickNameText: UITextField!
     @IBOutlet weak var MajorText: UITextField!
-    @IBOutlet weak var ageTExt: UITextField!
+    @IBOutlet weak var ageText: UITextField!
     @IBOutlet weak var genderText: UITextField!
     @IBOutlet weak var nationText: UITextField!
     @IBOutlet weak var introductionText: UITextField!
     @IBOutlet weak var letterText: UITextField!
+    @IBOutlet weak var SleepingText: UITextField!
+    @IBOutlet weak var collegeText: UITextField!
+    @IBOutlet weak var openChat: UITextField!
+    @IBOutlet weak var dormitory: UISegmentedControl!
+    @IBOutlet weak var number: UISegmentedControl!
+    @IBOutlet weak var yearText: UITextField!
+    @IBOutlet weak var semester: UISegmentedControl!
+    @IBOutlet weak var gradeText: UITextField!
+   
+    func convertStringDorm (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "남산학사"
+        }else {
+            return "충무학사"
+        }
+    }
+    
+    func convertStringNumber (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "2"
+        }else if button.selectedSegmentIndex == 1{
+            return "4"
+        }else{
+            return "6"
+        }
+    }
+    
+    
     @IBAction func SaveUser(_ sender: Any) {
-       let user = Room(dormitory: "", name : NameText.text ?? "", number: "", nickname: NickNameText.text ?? "", age: ageTExt.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "",major : MajorText.text ?? "", grade : "",college : "", sleepTime : "", riseTime : "", letter : "", introduction : "", openChat : "")
+        let user = Person(dormitory: convertStringDorm(button: dormitory), name : NameText.text ?? "" , number : convertStringNumber(button: number), nickname : NickNameText.text ?? "", age : ageText.text ?? "", gender : genderText.text ?? "", nation : nationText.text ?? "", major : MajorText.text ?? "", grade : gradeText.text ?? "", college : collegeText.text ?? "", sleepTime : SleepingText.text ?? "", letter : letterText.text ?? "", introduction : introductionText.text ?? "", openChat : openChat.text ?? "")
         
-        API.shared.addUser(user: user , completion: { self.navigationController?.popViewController(animated: true)})
+        API.shared.addPersonalInfo(name: NameText.text ?? "", user: user)
 //
     }
     
@@ -35,7 +63,7 @@ class PersonalInfoTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    @IBOutlet weak var GradeText: UITextField!
+
     
     // MARK: - Table view data source
 

@@ -45,11 +45,12 @@ extension personViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personTableViewCell", for: indexPath) as! personTableViewCell
-        cell.dormitoryLabel.text = data[indexPath.row].dormitory
-        cell.numberLabel.text = "\(data[indexPath.row].number)인실"
-        cell.ageLabel.text = "\(data[indexPath.row].age)살"
-        cell.genderLabel.text = "성별: \(data[indexPath.row].gender)"
-        cell.nationLabel.text = data[indexPath.row].nation
+        cell.dormitoryLabel.text = data[indexPath.row].personalInfo.dormitory
+        cell.numberLabel.text = "\(data[indexPath.row].personalInfo.number)인실"
+        cell.ageLabel.text = "\(data[indexPath.row].personalInfo.age)살"
+        cell.genderLabel.text = "성별: \(data[indexPath.row].personalInfo.gender)"
+        cell.nationLabel.text = data[indexPath.row].personalInfo.nation
+        cell.progressView.progress = Float(Concordination(myResult:data[indexPath.row] , yourResult: data[indexPath.row]))
 //        cell.profileImageView.image = data[indexPath.row].image
         return cell
         

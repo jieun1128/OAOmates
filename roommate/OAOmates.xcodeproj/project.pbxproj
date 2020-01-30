@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F00351623E2B7A900B19C5D /* myTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00351523E2B7A900B19C5D /* myTableViewCell.swift */; };
 		3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F181CDC23D05E360026ADED /* personTableViewCell.swift */; };
+		3F299DB023E2CFF000DF9B55 /* Concordination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F299DAF23E2CFF000DF9B55 /* Concordination.swift */; };
 		3F46D7DD23D067C90020F986 /* homeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F46D7DC23D067C90020F986 /* homeView.storyboard */; };
-		3F4D9F7223D8500A0015132A /* JjimTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D9F7123D8500A0015132A /* JjimTableViewController.swift */; };
 		3F5B8F4F23DEBDEA00E64578 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F5B8F4E23DEBDEA00E64578 /* GoogleService-Info.plist */; };
 		3F5B8F8F23DED99A00E64578 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B8F8E23DED99A00E64578 /* Encodable.swift */; };
 		3F5B8F9123DED9AC00E64578 /* Codable-Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B8F9023DED9AC00E64578 /* Codable-Dictionary.swift */; };
 		3F5B8F9423DED9DA00E64578 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B8F9323DED9DA00E64578 /* API.swift */; };
 		3F5B8F9623DED9E800E64578 /* API-Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B8F9523DED9E800E64578 /* API-Firebase.swift */; };
 		3F74FAD323D6BAC1009028B1 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74FAD223D6BAC1009028B1 /* Room.swift */; };
-		3F74FAD523D6BAFE009028B1 /* personalData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F74FAD423D6BAFE009028B1 /* personalData.json */; };
-		3F74FAD723D6BBA5009028B1 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74FAD623D6BBA5009028B1 /* DataLoader.swift */; };
 		3F74FADD23D6CADE009028B1 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74FADC23D6CADE009028B1 /* MoreInfoViewController.swift */; };
 		3F96F1D023CDCDFA00456F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96F1CF23CDCDFA00456F64 /* AppDelegate.swift */; };
 		3F96F1D223CDCDFA00456F64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96F1D123CDCDFA00456F64 /* SceneDelegate.swift */; };
@@ -26,8 +25,6 @@
 		3F96F1D923CDCDFA00456F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F96F1D823CDCDFA00456F64 /* Assets.xcassets */; };
 		3F96F1DC23CDCDFA00456F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F96F1DA23CDCDFA00456F64 /* LaunchScreen.storyboard */; };
 		3F96F1E423CDD10A00456F64 /* personViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96F1E323CDD10A00456F64 /* personViewController.swift */; };
-		3F98B1F223D5A84700C733C3 /* jjimTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F98B1F123D5A84700C733C3 /* jjimTableViewCell.swift */; };
-		3FCA42A923D0603B0050793A /* jjimView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA42A823D0603B0050793A /* jjimView.storyboard */; };
 		3FCA42AB23D066760050793A /* myView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA42AA23D066760050793A /* myView.storyboard */; };
 		3FED6C2E23DFF6130026924F /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED6C2D23DFF6130026924F /* MyViewController.swift */; };
 		3FED6C3023DFF63C0026924F /* PersonalInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED6C2F23DFF63C0026924F /* PersonalInfoTableViewController.swift */; };
@@ -37,17 +34,16 @@
 
 /* Begin PBXFileReference section */
 		2984AFD5B83035190D53346D /* Pods-OAOmates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAOmates.release.xcconfig"; path = "Target Support Files/Pods-OAOmates/Pods-OAOmates.release.xcconfig"; sourceTree = "<group>"; };
+		3F00351523E2B7A900B19C5D /* myTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableViewCell.swift; sourceTree = "<group>"; };
 		3F181CDC23D05E360026ADED /* personTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personTableViewCell.swift; sourceTree = "<group>"; };
+		3F299DAF23E2CFF000DF9B55 /* Concordination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concordination.swift; sourceTree = "<group>"; };
 		3F46D7DC23D067C90020F986 /* homeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = homeView.storyboard; sourceTree = "<group>"; };
-		3F4D9F7123D8500A0015132A /* JjimTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JjimTableViewController.swift; sourceTree = "<group>"; };
 		3F5B8F4E23DEBDEA00E64578 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F5B8F8E23DED99A00E64578 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		3F5B8F9023DED9AC00E64578 /* Codable-Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable-Dictionary.swift"; sourceTree = "<group>"; };
 		3F5B8F9323DED9DA00E64578 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		3F5B8F9523DED9E800E64578 /* API-Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API-Firebase.swift"; sourceTree = "<group>"; };
 		3F74FAD223D6BAC1009028B1 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
-		3F74FAD423D6BAFE009028B1 /* personalData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = personalData.json; sourceTree = "<group>"; };
-		3F74FAD623D6BBA5009028B1 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		3F74FADC23D6CADE009028B1 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		3F96F1CC23CDCDFA00456F64 /* OAOmates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OAOmates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F96F1CF23CDCDFA00456F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +54,6 @@
 		3F96F1DB23CDCDFA00456F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F96F1DD23CDCDFA00456F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F96F1E323CDD10A00456F64 /* personViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personViewController.swift; sourceTree = "<group>"; };
-		3F98B1F123D5A84700C733C3 /* jjimTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jjimTableViewCell.swift; sourceTree = "<group>"; };
-		3FCA42A823D0603B0050793A /* jjimView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = jjimView.storyboard; sourceTree = "<group>"; };
 		3FCA42AA23D066760050793A /* myView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = myView.storyboard; sourceTree = "<group>"; };
 		3FED6C2D23DFF6130026924F /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		3FED6C2F23DFF63C0026924F /* PersonalInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoTableViewController.swift; sourceTree = "<group>"; };
@@ -122,27 +116,9 @@
 				3F181CDC23D05E360026ADED /* personTableViewCell.swift */,
 				3F46D7DC23D067C90020F986 /* homeView.storyboard */,
 				3F74FADC23D6CADE009028B1 /* MoreInfoViewController.swift */,
+				3F299DAF23E2CFF000DF9B55 /* Concordination.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		3F74FACF23D6BA4A009028B1 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				3F74FAD423D6BAFE009028B1 /* personalData.json */,
-				3F74FAD623D6BBA5009028B1 /* DataLoader.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		3F74FAD023D6BA52009028B1 /* jjimView */ = {
-			isa = PBXGroup;
-			children = (
-				3F98B1F123D5A84700C733C3 /* jjimTableViewCell.swift */,
-				3FCA42A823D0603B0050793A /* jjimView.storyboard */,
-				3F4D9F7123D8500A0015132A /* JjimTableViewController.swift */,
-			);
-			path = jjimView;
 			sourceTree = "<group>";
 		};
 		3F74FAD123D6BA66009028B1 /* MyView */ = {
@@ -150,6 +126,7 @@
 			children = (
 				3FCA42AA23D066760050793A /* myView.storyboard */,
 				3FED6C2D23DFF6130026924F /* MyViewController.swift */,
+				3F00351523E2B7A900B19C5D /* myTableViewCell.swift */,
 				3FED6C2F23DFF63C0026924F /* PersonalInfoTableViewController.swift */,
 				3FED6C3123DFF6580026924F /* SurveyViewController.swift */,
 			);
@@ -181,8 +158,6 @@
 				3F5B8F8D23DED98D00E64578 /* Extension */,
 				3F5B8F8C23DED96000E64578 /* Model */,
 				3F74FAD123D6BA66009028B1 /* MyView */,
-				3F74FAD023D6BA52009028B1 /* jjimView */,
-				3F74FACF23D6BA4A009028B1 /* Data */,
 				3F74FACE23D6B9CD009028B1 /* Home */,
 				3F96F1D123CDCDFA00456F64 /* SceneDelegate.swift */,
 				3F96F1D323CDCDFA00456F64 /* ViewController.swift */,
@@ -267,11 +242,9 @@
 				3F96F1DC23CDCDFA00456F64 /* LaunchScreen.storyboard in Resources */,
 				3F5B8F4F23DEBDEA00E64578 /* GoogleService-Info.plist in Resources */,
 				3FCA42AB23D066760050793A /* myView.storyboard in Resources */,
-				3F74FAD523D6BAFE009028B1 /* personalData.json in Resources */,
 				3F96F1D923CDCDFA00456F64 /* Assets.xcassets in Resources */,
 				3F96F1D723CDCDFA00456F64 /* Main.storyboard in Resources */,
 				3F46D7DD23D067C90020F986 /* homeView.storyboard in Resources */,
-				3FCA42A923D0603B0050793A /* jjimView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,15 +299,14 @@
 			files = (
 				3F5B8F9123DED9AC00E64578 /* Codable-Dictionary.swift in Sources */,
 				3F96F1D423CDCDFA00456F64 /* ViewController.swift in Sources */,
-				3F4D9F7223D8500A0015132A /* JjimTableViewController.swift in Sources */,
 				3F96F1D023CDCDFA00456F64 /* AppDelegate.swift in Sources */,
 				3F74FAD323D6BAC1009028B1 /* Room.swift in Sources */,
 				3F5B8F9623DED9E800E64578 /* API-Firebase.swift in Sources */,
-				3F98B1F223D5A84700C733C3 /* jjimTableViewCell.swift in Sources */,
 				3FED6C3223DFF6580026924F /* SurveyViewController.swift in Sources */,
 				3FED6C3023DFF63C0026924F /* PersonalInfoTableViewController.swift in Sources */,
-				3F74FAD723D6BBA5009028B1 /* DataLoader.swift in Sources */,
 				3F96F1D223CDCDFA00456F64 /* SceneDelegate.swift in Sources */,
+				3F00351623E2B7A900B19C5D /* myTableViewCell.swift in Sources */,
+				3F299DB023E2CFF000DF9B55 /* Concordination.swift in Sources */,
 				3F5B8F9423DED9DA00E64578 /* API.swift in Sources */,
 				3F74FADD23D6CADE009028B1 /* MoreInfoViewController.swift in Sources */,
 				3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */,
