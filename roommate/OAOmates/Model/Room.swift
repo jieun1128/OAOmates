@@ -22,7 +22,6 @@ struct Person : Codable{
     var grade: String
     var college: String
     var sleepTime: String
-    var riseTime: String
     var letter: String
     var introduction: String
     var openChat: String

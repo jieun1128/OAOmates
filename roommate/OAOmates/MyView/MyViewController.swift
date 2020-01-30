@@ -11,9 +11,9 @@ import UIKit
 
 
 
-class MyViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource{
+class MyViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBAction func unwindVC1 (segue : UIStoryboardSegue){}
-    
+
     @IBOutlet var myTableView: UITableView!
 
     fileprivate var  data:[Room] = [] {
@@ -29,31 +29,34 @@ class MyViewController: UITableViewController, UITableViewDelegate, UITableViewD
     }
 
     override func viewWillAppear (_ animated: Bool){
-//        API.shared.allUsers{(users) in
-//            self.data = users
-//        }
+        API.shared.allUsers{(users) in
+            self.data = users
+        }
     }
 }
 
-extension MyViewController: UITableViewDataSource{
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return self.data.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableView{
-
-}
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-
+//extension MyViewController: UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        return 0
+//    }
+//
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+//        return self.data.count
+//    }
+//
+//
+//
+//
+//    /*
+//    // MARK: - Navigation
+//
+//    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Get the new view controller using segue.destination.
+//        // Pass the selected object to the new view controller.
+//    }
+//    */
+//
+//
+//}

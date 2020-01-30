@@ -13,13 +13,37 @@ class PersonalInfoTableViewController: UITableViewController {
     @IBOutlet weak var NameText: UITextField!
     @IBOutlet weak var NickNameText: UITextField!
     @IBOutlet weak var MajorText: UITextField!
-    @IBOutlet weak var ageTExt: UITextField!
+    @IBOutlet weak var ageText: UITextField!
     @IBOutlet weak var genderText: UITextField!
     @IBOutlet weak var nationText: UITextField!
     @IBOutlet weak var introductionText: UITextField!
     @IBOutlet weak var letterText: UITextField!
+    @IBOutlet weak var SleepingText: UITextField!
+    @IBOutlet weak var collegeText: UITextField!
+    @IBOutlet weak var openChat: UITextField!
+    @IBOutlet weak var dormitory: UISegmentedControl!
+    @IBOutlet weak var number: UISegmentedControl!
+    @IBOutlet weak var yearText: UITextField!
+    @IBOutlet weak var semester: UISegmentedControl!
+//    struct Person : Codable{
+//       // var image : UIImage?
+//        var dormitory: String
+//        var name: String
+//        var number: String
+//        var nickname: String
+//        var age: String
+//        var gender: String
+//        var nation: String
+//        var major: String
+//        var grade: String
+//        var college: String
+//        var sleepTime: String
+//        var letter: String
+//        var introduction: String
+//        var openChat: String
+//    }
     @IBAction func SaveUser(_ sender: Any) {
-        let user = Person(dormitory: "", name: NameText.text ?? "", number: "", nickname: NickNameText.text ?? "", age: ageTExt.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "", major: MajorText.text ?? "", grade: GradeText.text ?? "", college: "", sleepTime: "", riseTime: "", letter: letterText.text ?? "", introduction: introductionText.text ?? "", openChat: "")
+        let user = 
         
         API.shared.addPersonalInfo(name: NameText.text ?? "", user: user)
 //
