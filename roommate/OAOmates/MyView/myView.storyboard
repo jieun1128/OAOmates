@@ -1333,8 +1333,18 @@
                             </tableViewSection>
                         </sections>
                         <connections>
+                            <outlet property="ageLabel" destination="Y2B-eD-L7p" id="YAp-uA-vmW"/>
+                            <outlet property="collegeLabel" destination="3kT-R5-0MG" id="THU-he-4oj"/>
                             <outlet property="dataSource" destination="C6r-ee-sLc" id="XxY-q2-ndo"/>
                             <outlet property="delegate" destination="C6r-ee-sLc" id="SzY-d2-Dwi"/>
+                            <outlet property="dormitoryLabel" destination="JfW-aR-8aD" id="cjq-vl-JAP"/>
+                            <outlet property="genderLabel" destination="Ilj-vx-ixQ" id="uMt-JN-fqi"/>
+                            <outlet property="gradeLabel" destination="wD0-14-uYI" id="ntB-ST-02b"/>
+                            <outlet property="majorLabel" destination="5EC-k1-hCI" id="9gQ-jD-xyh"/>
+                            <outlet property="nameLabel" destination="CtE-GA-LTi" id="RT6-YU-Boy"/>
+                            <outlet property="nationLabel" destination="vUr-k8-9UY" id="DkS-47-bEz"/>
+                            <outlet property="nickNameLabel" destination="OGp-EL-g4A" id="JBF-nV-n2a"/>
+                            <outlet property="numberLabel" destination="4gp-e0-H9U" id="vB7-BG-PUj"/>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="MY" image="person" catalog="system" selectedImage="person" id="XuT-3e-LYD"/>

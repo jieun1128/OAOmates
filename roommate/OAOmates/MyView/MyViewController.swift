@@ -11,7 +11,7 @@ import UIKit
 
 
 
-class MyViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource{
+class MyViewController: UITableViewController, UITableViewDelegate{
     @IBAction func unwindVC1 (segue : UIStoryboardSegue){}
     
     @IBOutlet var myTableView: UITableView!
@@ -41,7 +41,11 @@ extension MyViewController: UITableViewDataSource{
         return self.data.count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableView{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if withIdentifier == "ageCell"{
+             let cell = tableView.dequeueReusableCell(withIdentifier: "ageCell", for: indexPath) as! personTableViewCell
+            cell.ageLabel.text="\(data[indexPath.row].personalInfo.age)살"
+        }
 
 }
 
