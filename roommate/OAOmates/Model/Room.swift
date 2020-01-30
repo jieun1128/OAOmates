@@ -27,17 +27,18 @@ struct Person : Codable{
     var openChat: String
 }
 struct Survey : Codable{
-    var sleepingHabit : String
-    var smoking : String
-    var drinking : String
-    var sleepout : String
-    var closeness : String
-    var washing : String
-    var religion : String
+    var sleepingHabit : Int
+    var smoking : Int
+    var drinking : Int
+    var sleepout : Int
+    var closeness : Int
+    var washing : Int
+    var religion : Int
     var notSmoking : Int
     var notDrinking : Int
     var cleaning : Int
     var sameReligion : Int
+    
     
 }
 
