@@ -11,7 +11,9 @@ import UIKit
 
 
 
-class MyViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MyViewController : UITableViewController {
+ 
+    
     @IBAction func unwindVC1 (segue : UIStoryboardSegue){}
 
     @IBOutlet var myTableView: UITableView!
@@ -23,8 +25,8 @@ class MyViewController : UIViewController, UITableViewDelegate, UITableViewDataS
            }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.myTableView.dataSource = self
-        self.myTableView.delegate = self
+//        self.myTableView.dataSource = self
+//        self.myTableView.delegate = self
         // Do any additional setup after loading the view.
     }
 

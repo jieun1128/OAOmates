@@ -25,25 +25,20 @@ class PersonalInfoTableViewController: UITableViewController {
     @IBOutlet weak var number: UISegmentedControl!
     @IBOutlet weak var yearText: UITextField!
     @IBOutlet weak var semester: UISegmentedControl!
-//    struct Person : Codable{
-//       // var image : UIImage?
-//        var dormitory: String
-//        var name: String
-//        var number: String
-//        var nickname: String
-//        var age: String
-//        var gender: String
-//        var nation: String
-//        var major: String
-//        var grade: String
-//        var college: String
-//        var sleepTime: String
-//        var letter: String
-//        var introduction: String
-//        var openChat: String
-//    }
+    @IBOutlet weak var gradeText: UITextField!
+   
+    func convertString (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "남산"
+        }else {
+            return ""
+        }
+    }
+    
+    
+    
     @IBAction func SaveUser(_ sender: Any) {
-        let user = 
+        let user = Person(dormitory: "", name : NameText.text ?? "" , number : "", nickname : NickNameText.text ?? "", age : ageText.text ?? "", gender : genderText.text ?? "", nation : nationText.text ?? "", major : MajorText.text ?? "", grade : gradeText.text ?? "", college : collegeText.text ?? "", sleepTime : SleepingText.text ?? "", letter : letterText.text ?? "", introduction : introductionText.text ?? "", openChat : openChat.text ?? "")
         
         API.shared.addPersonalInfo(name: NameText.text ?? "", user: user)
 //
@@ -59,7 +54,7 @@ class PersonalInfoTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    @IBOutlet weak var GradeText: UITextField!
+
     
     // MARK: - Table view data source
 
