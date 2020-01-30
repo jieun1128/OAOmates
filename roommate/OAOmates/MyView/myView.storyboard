@@ -552,6 +552,9 @@
                                                     <state key="normal" title="SAVE">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="qUi-bh-SRc" kind="unwind" unwindAction="unwindVC1WithSegue:" id="1qa-K7-Tgz"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -571,18 +574,26 @@
                     <navigationItem key="navigationItem" id="ugk-LW-RBH"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="GradeText" destination="ZXm-Wk-mMc" id="lkw-4M-G7Q"/>
-                        <outlet property="MajorText" destination="P77-YW-Uoc" id="1d8-k4-t7r"/>
+                        <outlet property="MajorText" destination="ZXm-Wk-mMc" id="DAO-Ne-P7x"/>
                         <outlet property="NameText" destination="Jt1-PB-nfE" id="hCE-Nl-pD0"/>
                         <outlet property="NickNameText" destination="pLx-KM-S1Y" id="MnZ-ts-QGX"/>
-                        <outlet property="ageTExt" destination="c2U-dI-xnJ" id="MGp-7s-wJZ"/>
-                        <outlet property="genderText" destination="oZE-eW-e2W" id="oaG-yb-027"/>
+                        <outlet property="SleepingText" destination="jCb-FW-Uau" id="P5P-Lu-QTI"/>
+                        <outlet property="ageText" destination="oZE-eW-e2W" id="hj0-UU-tiv"/>
+                        <outlet property="collegeText" destination="P77-YW-Uoc" id="BTg-M0-LXv"/>
+                        <outlet property="dormitory" destination="49y-Gy-O46" id="cUx-ul-pvH"/>
+                        <outlet property="genderText" destination="WUJ-zp-IbH" id="uhp-aQ-suQ"/>
+                        <outlet property="gradeText" destination="c2U-dI-xnJ" id="3dp-M7-RQ7"/>
                         <outlet property="introductionText" destination="Cn9-Ta-mIK" id="U7G-7N-H9Z"/>
                         <outlet property="letterText" destination="zXQ-qe-eiQ" id="d1f-7f-b47"/>
-                        <outlet property="nationText" destination="WUJ-zp-IbH" id="gtT-2f-hYf"/>
+                        <outlet property="nationText" destination="4wx-EF-caD" id="xbH-BS-fE7"/>
+                        <outlet property="number" destination="X9h-w8-H4X" id="c0m-Cg-dNY"/>
+                        <outlet property="openChat" destination="VP7-zM-tO5" id="Q9P-iR-GuK"/>
+                        <outlet property="semester" destination="MC6-Xs-j74" id="NbM-bI-yks"/>
+                        <outlet property="yearText" destination="Oab-4F-TM2" id="Tme-id-1zJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3TT-eM-Fkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="qUi-bh-SRc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1508.6956521739132" y="-183.48214285714286"/>
         </scene>
@@ -815,6 +826,7 @@
                                                                         <state key="normal" title="SAVE"/>
                                                                         <connections>
                                                                             <action selector="Save:" destination="pOP-2v-Kuc" eventType="touchUpInside" id="QrQ-wX-gZ1"/>
+                                                                            <segue destination="4kY-aT-JXx" kind="unwind" unwindAction="unwindVC1WithSegue:" id="ch4-pk-XxO"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -877,6 +889,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5y-3Q-zdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4kY-aT-JXx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1507" y="703"/>
         </scene>

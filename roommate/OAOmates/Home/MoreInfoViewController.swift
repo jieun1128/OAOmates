@@ -47,7 +47,7 @@ class MoreInfoViewController: UIViewController {
         letterLabel.text = "\(detail!.personalInfo.letter)"
         openChatLabel.text = "\(detail!.personalInfo.openChat)"
         collegeLabel.text = "\(detail!.personalInfo.college)"
-        sleepTimeLabel.text = "P.M. \(detail!.personalInfo.sleepTime) ~ A.M. \(detail!.personalInfo.riseTime)"
+        sleepTimeLabel.text = "\(detail!.personalInfo.sleepTime)"
 //        P.M. 00:00 ~ A.M. 00:00
 //        college.text = //으으으
         
