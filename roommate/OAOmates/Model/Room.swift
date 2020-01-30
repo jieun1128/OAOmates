@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct Room : Codable{
+struct Person : Codable{
    // var image : UIImage?
     var dormitory: String
     var name: String
@@ -26,7 +26,27 @@ struct Room : Codable{
     var letter: String
     var introduction: String
     var openChat: String
+}
+struct Survey : Codable{
+    var sleepingHabit : String
+    var smoking : String
+    var drinking : String
+    var sleepout : String
+    var closeness : String
+    var washing : String
+    var religion : String
+    var notSmoking : Int
+    var notDrinking : Int
+    var cleaning : Int
+    var sameReligion : Int
     
+}
+
+struct Room : Codable{
+    var personalInfo : Person
+    var surveyResult : Survey
+}
+
 //    enum survey : String{
 //        case sleepingHabit
 //        case smoking
@@ -39,5 +59,8 @@ struct Room : Codable{
 //        case
 //    }
 //    var time: String.  //으으으으으
-  
-}
+//  notSmoking: UISlider!
+//  @IBOutlet weak var notdrinking: UISlider!
+//  @IBOutlet weak var cleaning: UISlider!
+//  @IBOutlet weak var sameReligion: UI
+//}
