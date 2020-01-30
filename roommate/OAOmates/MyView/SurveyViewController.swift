@@ -23,12 +23,37 @@ class SurveyViewController: UIViewController {
     @IBOutlet weak var cleaning: UISlider!
     @IBOutlet weak var sameReligion: UISegmentedControl!
     
+//    func convertString (button : UISegmentedControl)-> String{
+//        if button.selectedSegmentIndex == 0{
+//            return "코콜이"
+//        }else if
+//    }
+    
+    @IBAction func noiseSet(_ sender: UISlider) {
+        noise.value = round(noise.value)
+    }
+    
+    
+    
     @IBAction func Save(_ sender: Any) {
-        
+
+        let user = Survey(sleepingHabit: SleepingHabit.selectedSegmentIndex ?? 0, smoking: Smoking.selectedSegmentIndex ?? 0, drinking: drinking.selectedSegmentIndex ?? 0, sleepout: sleepOut?.selectedSegmentIndex ?? 0, closeness: closeness.selectedSegmentIndex ?? 0, washing: washing.selectedSegmentIndex ?? 0, religion: religion.selectedSegmentIndex ?? 0, notSmoking: Int, notDrinking: Int, cleaning: Int, sameReligion: sameReligion.selectedSegmentIndex ?? 0)
+
+
+        API.shared.addUser(user: user , completion: { self.navigationController?.popViewController(animated: true)})
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        noise.minimumValue = 0
+        noise.maximumValue = 10
+        notSmoking.minimumValue = 0
+        notSmoking.maximumValue = 10
+        notdrinking.minimumValue = 0
+        notdrinking.maximumValue = 10
+        cleaning.minimumValue = 0
+        cleaning.maximumValue = 10
 
         // Do any additional setup after loading the view.
     }
@@ -45,3 +70,11 @@ class SurveyViewController: UIViewController {
     */
 
 }
+
+//        switch SleepingHabit.selectedSegmentIndex {
+//        case 0: textLabel.text = "코골이";
+//        case 1: textLabel.text = "이갈이";
+//        case 2: textLabel.text = "크게 숨쉬기";
+//        case 3: textLabel.text = "없음";
+//        default: break;
+//        }
