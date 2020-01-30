@@ -50,6 +50,7 @@ extension personViewController: UITableViewDataSource{
         cell.ageLabel.text = "\(data[indexPath.row].personalInfo.age)살"
         cell.genderLabel.text = "성별: \(data[indexPath.row].personalInfo.gender)"
         cell.nationLabel.text = data[indexPath.row].personalInfo.nation
+        cell.progressView.progress = Float(Concordination(myResult:data[indexPath.row] , yourResult: data[indexPath.row]))
 //        cell.profileImageView.image = data[indexPath.row].image
         return cell
         
