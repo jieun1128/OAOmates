@@ -19,9 +19,9 @@ class PersonalInfoTableViewController: UITableViewController {
     @IBOutlet weak var introductionText: UITextField!
     @IBOutlet weak var letterText: UITextField!
     @IBAction func SaveUser(_ sender: Any) {
-       let user = Room(dormitory: "", name : NameText.text ?? "", number: "", nickname: NickNameText.text ?? "", age: ageTExt.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "",major : MajorText.text ?? "", grade : "",college : "", sleepTime : "", riseTime : "", letter : "", introduction : "", openChat : "")
+        let user = Person(dormitory: "", name: NameText.text ?? "", number: "", nickname: NickNameText.text ?? "", age: ageTExt.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "", major: MajorText.text ?? "", grade: GradeText.text ?? "", college: "", sleepTime: "", riseTime: "", letter: letterText.text ?? "", introduction: introductionText.text ?? "", openChat: "")
         
-        API.shared.addUser(user: user , completion: { self.navigationController?.popViewController(animated: true)})
+        API.shared.addPersonalInfo(name: NameText.text ?? "", user: user)
 //
     }
     

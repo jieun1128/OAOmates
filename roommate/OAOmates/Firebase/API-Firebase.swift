@@ -13,12 +13,19 @@ extension API {
     private var userDocumentRef: CollectionReference {
         return Firestore.firestore().collection("Room")
     }
-    
-    func addUser(user:Room, completion: (() -> Void)?) {
+//    data: data, completion: { _ in
+//        completion?()
+//    }
+    //completion: (() -> Void)?
+    func addPersonalInfo(name: String, user:Person) {
         if let data = try? user.asDictionary() {
-            self.userDocumentRef.addDocument(data: data, completion: { _ in
-                completion?()
-            })
+            self.userDocumentRef.document("\(name)").collection("PersonalInfo").document().setData(data)
+        }
+    }
+    
+    func addSurveyResult(name: String, user: Survey){
+        if let data = try? user.asDictionary(){
+            self.userDocumentRef.document("\(name)").collection("SurveyResult").document().setData(data)
         }
     }
     
