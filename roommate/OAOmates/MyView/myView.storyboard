@@ -424,13 +424,13 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mhd-Xa-f51">
                                                     <rect key="frame" x="45" y="16" width="324" height="58"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="취침 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mru-Th-Ja3">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="취침 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mru-Th-Ja3">
                                                             <rect key="frame" x="0.0" y="0.0" width="324" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jCb-FW-Uau">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jCb-FW-Uau">
                                                             <rect key="frame" x="0.0" y="24" width="324" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
@@ -454,16 +454,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1wA-qO-B7G">
-                                                    <rect key="frame" x="45" y="16" width="324" height="68"/>
+                                                    <rect key="frame" x="33" y="16" width="348" height="68"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한줄 소개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zb-Ke-trE">
-                                                            <rect key="frame" x="0.0" y="0.0" width="324" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="348" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cn9-Ta-mIK">
-                                                            <rect key="frame" x="0.0" y="28.5" width="324" height="39.5"/>
+                                                            <rect key="frame" x="0.0" y="28.5" width="348" height="39.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
@@ -813,6 +813,9 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="SAVE"/>
+                                                                        <connections>
+                                                                            <action selector="Save:" destination="pOP-2v-Kuc" eventType="touchUpInside" id="QrQ-wX-gZ1"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <constraints>
@@ -858,6 +861,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="RfN-pV-BPo"/>
                     <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <outlet property="SleepingHabit" destination="m6i-Rd-Tql" id="Xsd-kQ-vOi"/>
+                        <outlet property="Smoking" destination="D0m-s4-l8H" id="1tB-Wt-4nY"/>
+                        <outlet property="cleaning" destination="kSb-sa-iTy" id="fKc-yx-zbf"/>
+                        <outlet property="closeness" destination="5Hc-Eo-ROB" id="Opz-ls-CHn"/>
+                        <outlet property="drinking" destination="fK5-q4-FqI" id="J12-JC-IYZ"/>
+                        <outlet property="noise" destination="4lv-Ur-6UZ" id="CQn-eq-hHI"/>
+                        <outlet property="notSmoking" destination="YHT-Kl-xLm" id="1cS-vq-CaO"/>
+                        <outlet property="notdrinking" destination="pLl-Uy-m56" id="laa-Wp-jL6"/>
+                        <outlet property="religion" destination="M4S-bZ-U9K" id="3Zx-ca-M3a"/>
+                        <outlet property="sameReligion" destination="PA9-ea-OuT" id="6DG-1b-GAG"/>
+                        <outlet property="sleepOut" destination="yJP-Jm-cuD" id="czq-Ls-HLr"/>
+                        <outlet property="washing" destination="A6f-qW-9Zg" id="8Yl-Rf-c7l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5y-3Q-zdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
