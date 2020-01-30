@@ -16,17 +16,6 @@
             </objects>
             <point key="canvasLocation" x="859" y="205"/>
         </scene>
-        <!--jjimView-->
-        <scene sceneID="b9Q-RU-VOh">
-            <objects>
-                <viewControllerPlaceholder storyboardName="jjimView" id="Ukk-n5-dpU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="bgf-70-prq"/>
-                    <navigationItem key="navigationItem" id="K1W-H0-G7J"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3QY-Lb-cge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="862" y="339"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="n9J-Nl-p7n">
             <objects>
@@ -38,7 +27,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="rGG-9S-u2J" kind="relationship" relationship="viewControllers" id="Mw7-fF-vfy"/>
-                        <segue destination="Ukk-n5-dpU" kind="relationship" relationship="viewControllers" id="l44-Ln-7zi"/>
                         <segue destination="Ic1-aK-TbF" kind="relationship" relationship="viewControllers" id="oPb-4t-7ak"/>
                     </connections>
                 </tabBarController>
