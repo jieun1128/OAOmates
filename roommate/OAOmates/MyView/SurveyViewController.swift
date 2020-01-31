@@ -128,6 +128,8 @@ class SurveyViewController: UIViewController {
     @IBAction func Save(_ sender: Any) {
 
         let userSurvey = Survey(sleepingHabit: convertStringSleepingHabit(button: SleepingHabit), smoking: convertStringSmoking(button: Smoking), drinking: convertStringDrinking(button: Drinking), sleepout: convertStringSleepOut(button: SleepOut), closeness: convertStringSleepOut(button: SleepOut), washing: convertStringWashing(button: Washing), religion: convertStringReligion(button: Religion), noise: Int(self.Noise.value), notSmoking: Int(self.NotSmoking.value), notDrinking: Int(self.NotDrinking.value), cleaning: Int(self.Cleaning.value), sameReligion: convertStringSameReligion(button: SameReligion))
+        
+        API.shared.addSurveyResult(name: "", user: userSurvey)
     }
 
     

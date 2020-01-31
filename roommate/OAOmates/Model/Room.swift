@@ -21,6 +21,7 @@ struct Person : Codable{
     var major: String
     var grade: String
     var college: String
+    var wakeTime: String
     var sleepTime: String
     var letter: String
     var introduction: String

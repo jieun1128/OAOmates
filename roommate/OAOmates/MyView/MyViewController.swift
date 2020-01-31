@@ -29,13 +29,13 @@ class MyViewController: UITableViewController, CanRecieve{
     
     func passDataBack(data: String) {
         nameLabel.text = data
-//        nickNameLabel.text = data.nickname
-//        collegeLabel.text = data.college
-//        majorLabel.text = data.major
-//        gradeLabel.text = data.grade
-//        ageLabel.text = data.age
-//        genderLabel.text = data.gender
-//        nationLabel.text = data.nation
+//        nickNameLabel.text = data.personalInfo.nickname
+//        collegeLabel.text = data.personalInfo.college
+//        majorLabel.text = data.personalInfo.major
+//        gradeLabel.text = data.personalInfo.grade
+//        ageLabel.text = data.personalInfo.age
+//        genderLabel.text = data.personalInfo.gender
+//        nationLabel.text = data.personalInfo.nation
         
     }
     
@@ -48,15 +48,15 @@ class MyViewController: UITableViewController, CanRecieve{
         if segue.identifier == "sendEdit"{
             let editVC = segue.destination as! PersonalInfoTableViewController
             editVC.data = nameLabel.text!
-//            editVC.data.nickname = nickNameLabel.text!
-//            editVC.data.college = collegeLabel.text!
-//            editVC.data.major = majorLabel.text!
-//            editVC.data.grade = gradeLabel.text!
-//            editVC.data.age = ageLabel.text!
-//            editVC.data.gender = genderLabel.text!
-//            editVC.data.nation = nationLabel.text!
-//            editVC.data.dormitory = dormitoryLabel.text!
-//            editVC.data.number = numberLabel.text!
+//            editVC.data.personalInfo.nickname = nickNameLabel.text!
+//            editVC.data.personalInfo.college = collegeLabel.text!
+//            editVC.data.personalInfo.major = majorLabel.text!
+//            editVC.data.personalInfo.grade = gradeLabel.text!
+//            editVC.data.personalInfo.age = ageLabel.text!
+//            editVC.data.personalInfo.gender = genderLabel.text!
+//            editVC.data.personalInfo.nation = nationLabel.text!
+//            editVC.data.personalInfo.dormitory = dormitoryLabel.text!
+//            editVC.data.personalInfo.number = numberLabel.text!
             
             editVC.delegate = self
         }

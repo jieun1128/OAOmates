@@ -25,7 +25,8 @@ class PersonalInfoTableViewController: UITableViewController {
     @IBOutlet weak var nationText: UITextField!
     @IBOutlet weak var introductionText: UITextField!
     @IBOutlet weak var letterText: UITextField!
-    @IBOutlet weak var SleepingText: UITextField!
+    @IBOutlet weak var wakeText: UITextField!
+    @IBOutlet weak var sleepText: UITextField!
     @IBOutlet weak var collegeText: UITextField!
     @IBOutlet weak var openChat: UITextField!
     @IBOutlet weak var dormitory: UISegmentedControl!
@@ -35,7 +36,7 @@ class PersonalInfoTableViewController: UITableViewController {
     @IBOutlet weak var gradeText: UITextField!
     
     var delegate:CanRecieve?
-    var data = ""
+    var data = String()
     
     func convertString (button : UISegmentedControl)-> String{
         if button.selectedSegmentIndex == 0{
@@ -57,11 +58,11 @@ class PersonalInfoTableViewController: UITableViewController {
     
     
     @IBAction func SaveUser(_ sender: Any) {
-        let user = Person(dormitory: convertString(button: dormitory), name: NameText.text ?? "", number: convertStringNumber(button: number), nickname: NickNameText.text ?? "", age: ageText.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "", major: MajorText.text ?? "", grade: gradeText.text ?? "", college: collegeText.text ?? "", sleepTime: SleepingText.text ?? "", letter: letterText.text ?? "", introduction: introductionText.text ?? "", openChat: openChat.text ?? "")
+        let user = Person(dormitory: convertString(button: dormitory), name: NameText.text ?? "", number: convertStringNumber(button: number), nickname: NickNameText.text ?? "", age: ageText.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "", major: MajorText.text ?? "", grade: gradeText.text ?? "", college: collegeText.text ?? "", wakeTime: wakeText.text ?? "", sleepTime: sleepText.text ?? "", letter: letterText.text ?? "", introduction: introductionText.text ?? "", openChat: openChat.text ?? "")
         
         
         API.shared.addPersonalInfo(name: NameText.text ?? "", user: user)
-
+    
         
         
         delegate?.passDataBack(data: NameText.text!) //Room 인스턴스 만들기
