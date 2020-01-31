@@ -36,12 +36,102 @@ class SurveyViewController: UIViewController {
         Noise.value = round(Noise.value)
     }
     
-    
+    func convertStringSleepingHabit (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "코골이"
+        }else if button.selectedSegmentIndex == 1{
+            return "이갈이"
+        }else if button.selectedSegmentIndex == 2{
+            return "크게숨쉬기"
+        }else{
+            return "없음"
+        }
+    }
+    func convertStringSmoking (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "예"
+        }else{
+            return "아니요"
+        }
+    }
+    func convertStringDrinking (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "전혀"
+        }else if button.selectedSegmentIndex == 1{
+            return "달 1~3회"
+        }else if button.selectedSegmentIndex == 2{
+            return "주 1~2회"
+        }else if button.selectedSegmentIndex == 3{
+            return "주 3~4회"
+        }else{
+            return "주 5~7회"
+        }
+    }
+    func convertStringSleepOut (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "안함"
+        }else if button.selectedSegmentIndex == 1{
+            return "드물게"
+        }else if button.selectedSegmentIndex == 2{
+            return "가끔"
+        }else if button.selectedSegmentIndex == 3{
+            return "종종"
+        }else{
+            return "자주"
+        }
+    }
+    func convertStringCloseness (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "0%"
+        }else if button.selectedSegmentIndex == 1{
+            return "25%"
+        }else if button.selectedSegmentIndex == 2{
+            return "50%"
+        }else if button.selectedSegmentIndex == 3{
+            return "75%"
+        }else{
+            return "100%"
+        }
+    }
+    func convertStringWashing (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "0~1번"
+        }else if button.selectedSegmentIndex == 1{
+            return "2~3번"
+        }else if button.selectedSegmentIndex == 2{
+            return "4~5번"
+        }else{
+            return "6~7번"
+        }
+    }
+    func convertStringReligion (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "불교"
+        }else if button.selectedSegmentIndex == 1{
+            return "천주교"
+        }else if button.selectedSegmentIndex == 2{
+            return "기독교"
+        }else if button.selectedSegmentIndex == 3{
+            return "무교"
+        }else{
+            return "기타"
+        }
+    }
+    func convertStringSameReligion (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "예"
+        }else{
+            return "상관없음"
+        }
+    }
     
     @IBAction func Save(_ sender: Any) {
 
-        let user = Survey(sleepingHabit: Int(), smoking: Int(), drinking: Int(), sleepout: Int(), closeness: Int(), washing: Int(), religion: Int(), noise: Int(), notSmoking: Int(), notDrinking: Int(), cleaning: Int(), sameReligion: Int())
-//        let user = Survey(sleepingHabit: SleepingHabit.selectedSegmentIndex ?? 0, smoking: Smoking.selectedSegmentIndex ?? 0, drinking: Drinking.selectedSegmentIndex ?? 0, sleepout: SleepOut?.selectedSegmentIndex ?? 0, closeness: Closeness.selectedSegmentIndex ?? 0, washing: Washing.selectedSegmentIndex ?? 0, religion: Religion.selectedSegmentIndex ?? 0, noise: Int(), notSmoking: Int(), notDrinking: Int(), cleaning: Int(), sameReligion: SameReligion.selectedSegmentIndex ?? 0)
+        let user = Survey(sleepingHabit: convertStringSleepingHabit(button: SleepingHabit), smoking: convertStringSmoking(button: Smoking), drinking: convertStringDrinking(button: Drinking), sleepout: convertStringSleepOut(button: SleepOut), closeness: convertStringSleepOut(button: SleepOut), washing: convertStringWashing(button: Washing), religion: convertStringReligion(button: Religion), noise: Int(self.Noise.value), notSmoking: Int(self.NotSmoking.value), notDrinking: Int(self.NotDrinking.value), cleaning: Int(self.Cleaning.value), sameReligion: convertStringSameReligion(button: SameReligion))
+        
+//        let user = Survey(sleepingHabit: convert(button: SleepingHabit), smoking: convertStringSmoking(button: Smoking), drinking: convertStringDrinking(button: Drinking), sleepout: convertStringSleepOut(button: SleepOut), closeness: convertStringCloseness(button: SleepOut), washing: convertStringWashing(button: Washing), religion: convertStringReligion(button: Religion), sameReligion: convertStringSameReligion(button: SameReligion))
+
+//        let user = Survey(noise: String(Noise.value), notSmoking = String(NotSmoking.value), notDrinking = String(NotDrinking.value), cleaning = String(Cleaning.value))
 
         API.shared.addSurveyResult(name: "", user: user)
     }
