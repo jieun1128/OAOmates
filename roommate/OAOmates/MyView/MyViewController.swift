@@ -11,54 +11,61 @@ import UIKit
 
 
 
-class MyViewController : UITableViewController {
- 
+class MyViewController: UITableViewController, CanRecieve{
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nickNameLabel: UILabel!
+    @IBOutlet weak var collegeLabel: UILabel!
+    @IBOutlet weak var majorLabel: UILabel!
+    @IBOutlet weak var gradeLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
+    @IBOutlet weak var nationLabel: UILabel!
+    
+    @IBOutlet weak var dormitoryLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
+    
+    
+    
+    func passDataBack(data: String) {
+        nameLabel.text=data
+    }
     
     @IBAction func unwindVC1 (segue : UIStoryboardSegue){}
-
-    @IBOutlet var myTableView: UITableView!
-
-    fileprivate var  data:[Room] = [] {
-               didSet {
-                self.myTableView.reloadData()
-               }
-           }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-//        self.myTableView.dataSource = self
-//        self.myTableView.delegate = self
-        // Do any additional setup after loading the view.
+    
+    @IBAction func pressEditButton(_ sender: Any) {
+        performSegue(withIdentifier: "sendEdit", sender: self)
     }
-
-    override func viewWillAppear (_ animated: Bool){
-        API.shared.allUsers{(users) in
-            self.data = users
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "sendEdit"{
+            let secondVC = segue.destination as! PersonalInfoTableViewController
+            secondVC.data = nameLabel.text!
+            secondVC.delegate = self
         }
     }
+    
+  
+
+ 
+        // Do any additional setup after loading the view.
+    
 }
 
-//extension MyViewController: UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        return 0
-//    }
-//
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-//        return self.data.count
-//    }
-//
-//
-//
-//
-//    /*
-//    // MARK: - Navigation
-//
-//    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        // Get the new view controller using segue.destination.
-//        // Pass the selected object to the new view controller.
-//    }
-//    */
-//
-//
-//}
+  
+
+
+
+
+
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+
