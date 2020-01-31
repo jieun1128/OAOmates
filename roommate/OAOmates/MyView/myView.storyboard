@@ -553,7 +553,8 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="qUi-bh-SRc" kind="unwind" unwindAction="unwindVC1WithSegue:" id="1qa-K7-Tgz"/>
+                                                        <action selector="SaveUser:" destination="koC-xl-qig" eventType="touchUpInside" id="XVJ-nJ-3HD"/>
+                                                        <segue destination="qUi-bh-SRc" kind="unwind" unwindAction="unwindVC1WithSegue:" id="fWd-48-XpO"/>
                                                     </connections>
                                                 </button>
                                             </subviews>

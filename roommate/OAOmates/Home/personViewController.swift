@@ -10,11 +10,20 @@
 
 
 import UIKit
+import Firebase
 
 
 class personViewController: UIViewController, UITableViewDelegate{
 //    let data = DataLoader().userData
-
+    @IBAction func LogoutButton(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do{
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError{
+            print("Error signing out : %@", signOutError)
+        }
+    }
+    
     @IBOutlet weak var personTableView: UITableView!
     fileprivate var  data:[Room] = [] {
         didSet {
@@ -29,12 +38,21 @@ class personViewController: UIViewController, UITableViewDelegate{
         // Do any additional setup after loading the view.
     }
     
-
+//    var handle : Any
     override func viewWillAppear(_ animated: Bool) {
+        var handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+          // [START_EXCLUDE]
+          self.personTableView.reloadData()
+          // [END_EXCLUDE]
+        }
+        Auth.auth().removeStateDidChangeListener(handle)
 //        API.shared.allUsers{(users) in
 //            self.data = users
 //    }
     }
+//    override func viewWillDisappear(_ animated: Bool) {
+//        Auth.auth().removeStateDidChangeListener(handle)
+//    }
 
 }
 
@@ -66,6 +84,8 @@ extension personViewController: UITableViewDataSource{
             
         }
     }
+    
+    
 }
 
     /*
