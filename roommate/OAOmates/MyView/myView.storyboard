@@ -553,7 +553,8 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="qUi-bh-SRc" kind="unwind" unwindAction="unwindVC1WithSegue:" id="1qa-K7-Tgz"/>
+                                                        <action selector="SaveUser:" destination="koC-xl-qig" eventType="touchUpInside" id="XVJ-nJ-3HD"/>
+                                                        <segue destination="qUi-bh-SRc" kind="unwind" unwindAction="unwindVC1WithSegue:" id="fWd-48-XpO"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -926,7 +927,7 @@
                             <tableViewSection headerTitle="나의 정보" id="SfM-ku-JQz">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="130" id="EYb-rP-sGG">
-                                        <rect key="frame" x="0.0" y="99.5" width="374" height="130"/>
+                                        <rect key="frame" x="20" y="99.5" width="374" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EYb-rP-sGG" id="qR7-U1-kRo">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="130"/>
@@ -940,7 +941,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="nameCell" id="ToD-Ca-4Zy">
-                                        <rect key="frame" x="0.0" y="229.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="229.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ToD-Ca-4Zy" id="X2M-Ts-95y">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
@@ -994,15 +995,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="동국대학교(서울)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47F-t4-CxW">
-                                                    <rect key="frame" x="237" y="11" width="116" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="학교" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVt-Ge-ffW">
+                                                    <rect key="frame" x="98" y="11" width="30" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="학교" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVt-Ge-ffW">
-                                                    <rect key="frame" x="98" y="11" width="30" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="동국대학교(서울)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47F-t4-CxW">
+                                                    <rect key="frame" x="204" y="11" width="116" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1250,7 +1251,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="0KZ-e1-mk4">
-                                        <rect key="frame" x="20" y="891" width="374" height="71"/>
+                                        <rect key="frame" x="0.0" y="891" width="374" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0KZ-e1-mk4" id="Kdt-YD-0vt">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="71"/>
@@ -1274,7 +1275,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="OwO-KW-M7R">
-                                        <rect key="frame" x="20" y="962" width="374" height="71"/>
+                                        <rect key="frame" x="0.0" y="962" width="374" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OwO-KW-M7R" id="wqb-gg-l0M">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="71"/>
@@ -1302,7 +1303,7 @@
                             <tableViewSection headerTitle="설문조사" id="Xkd-oB-OHX">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="81" id="dsk-S9-j7k">
-                                        <rect key="frame" x="20" y="1089" width="374" height="81"/>
+                                        <rect key="frame" x="0.0" y="1089" width="374" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dsk-S9-j7k" id="hhT-qS-Rc1">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="81"/>

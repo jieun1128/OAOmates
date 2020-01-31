@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F00351623E2B7A900B19C5D /* myTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00351523E2B7A900B19C5D /* myTableViewCell.swift */; };
 		3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F181CDC23D05E360026ADED /* personTableViewCell.swift */; };
 		3F299DB023E2CFF000DF9B55 /* Concordination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F299DAF23E2CFF000DF9B55 /* Concordination.swift */; };
 		3F46D7DD23D067C90020F986 /* homeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F46D7DC23D067C90020F986 /* homeView.storyboard */; };
@@ -37,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		2984AFD5B83035190D53346D /* Pods-OAOmates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAOmates.release.xcconfig"; path = "Target Support Files/Pods-OAOmates/Pods-OAOmates.release.xcconfig"; sourceTree = "<group>"; };
-		3F00351523E2B7A900B19C5D /* myTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableViewCell.swift; sourceTree = "<group>"; };
 		3F181CDC23D05E360026ADED /* personTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personTableViewCell.swift; sourceTree = "<group>"; };
 		3F299DAF23E2CFF000DF9B55 /* Concordination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concordination.swift; sourceTree = "<group>"; };
 		3F46D7DC23D067C90020F986 /* homeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = homeView.storyboard; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 			children = (
 				3FCA42AA23D066760050793A /* myView.storyboard */,
 				3FED6C2D23DFF6130026924F /* MyViewController.swift */,
-				3F00351523E2B7A900B19C5D /* myTableViewCell.swift */,
 				3FED6C2F23DFF63C0026924F /* PersonalInfoTableViewController.swift */,
 				3FED6C3123DFF6580026924F /* SurveyViewController.swift */,
 			);
@@ -324,7 +321,6 @@
 				3FED6C3223DFF6580026924F /* SurveyViewController.swift in Sources */,
 				3FED6C3023DFF63C0026924F /* PersonalInfoTableViewController.swift in Sources */,
 				3F96F1D223CDCDFA00456F64 /* SceneDelegate.swift in Sources */,
-				3F00351623E2B7A900B19C5D /* myTableViewCell.swift in Sources */,
 				3F299DB023E2CFF000DF9B55 /* Concordination.swift in Sources */,
 				3F5B8F9423DED9DA00E64578 /* API.swift in Sources */,
 				3F74FADD23D6CADE009028B1 /* MoreInfoViewController.swift in Sources */,
