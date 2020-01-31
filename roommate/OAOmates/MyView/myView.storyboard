@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Personal Info Table View Controller-->
+        <!--PersonalInfoTableViewController-->
         <scene sceneID="cMM-b0-do6">
             <objects>
-                <tableViewController id="koC-xl-qig" customClass="PersonalInfoTableViewController" customModule="OAOmates" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="PersonalInfoTableViewController" id="koC-xl-qig" customClass="PersonalInfoTableViewController" customModule="OAOmates" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VA9-lw-ft6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jt1-PB-nfE">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름을 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jt1-PB-nfE">
                                                             <rect key="frame" x="136" y="0.0" width="188" height="35"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -148,7 +148,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ex) 공과대학" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P77-YW-Uoc">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex) 공과대학" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P77-YW-Uoc">
                                                             <rect key="frame" x="136.5" y="0.0" width="187.5" height="35"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
@@ -462,9 +462,9 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cn9-Ta-mIK">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cn9-Ta-mIK">
                                                             <rect key="frame" x="0.0" y="28.5" width="348" height="39.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <attributedString key="attributedText"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
                                                     </subviews>
@@ -494,9 +494,9 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zXQ-qe-eiQ">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zXQ-qe-eiQ">
                                                             <rect key="frame" x="0.0" y="34" width="348" height="34"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <attributedString key="attributedText"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
                                                     </subviews>
@@ -926,7 +926,7 @@
                             <tableViewSection headerTitle="나의 정보" id="SfM-ku-JQz">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="130" id="EYb-rP-sGG">
-                                        <rect key="frame" x="20" y="99.5" width="374" height="130"/>
+                                        <rect key="frame" x="0.0" y="99.5" width="374" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EYb-rP-sGG" id="qR7-U1-kRo">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="130"/>
@@ -940,7 +940,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="nameCell" id="ToD-Ca-4Zy">
-                                        <rect key="frame" x="20" y="229.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="229.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ToD-Ca-4Zy" id="X2M-Ts-95y">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
@@ -1250,7 +1250,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="0KZ-e1-mk4">
-                                        <rect key="frame" x="0.0" y="891" width="374" height="71"/>
+                                        <rect key="frame" x="20" y="891" width="374" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0KZ-e1-mk4" id="Kdt-YD-0vt">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="71"/>
@@ -1274,7 +1274,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="OwO-KW-M7R">
-                                        <rect key="frame" x="0.0" y="962" width="374" height="71"/>
+                                        <rect key="frame" x="20" y="962" width="374" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OwO-KW-M7R" id="wqb-gg-l0M">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="71"/>
@@ -1302,7 +1302,7 @@
                             <tableViewSection headerTitle="설문조사" id="Xkd-oB-OHX">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="81" id="dsk-S9-j7k">
-                                        <rect key="frame" x="0.0" y="1089" width="374" height="81"/>
+                                        <rect key="frame" x="20" y="1089" width="374" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dsk-S9-j7k" id="hhT-qS-Rc1">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="81"/>
@@ -1354,18 +1354,8 @@
                             </tableViewSection>
                         </sections>
                         <connections>
-                            <outlet property="ageLabel" destination="Y2B-eD-L7p" id="YAp-uA-vmW"/>
-                            <outlet property="collegeLabel" destination="3kT-R5-0MG" id="THU-he-4oj"/>
                             <outlet property="dataSource" destination="C6r-ee-sLc" id="XxY-q2-ndo"/>
                             <outlet property="delegate" destination="C6r-ee-sLc" id="SzY-d2-Dwi"/>
-                            <outlet property="dormitoryLabel" destination="JfW-aR-8aD" id="cjq-vl-JAP"/>
-                            <outlet property="genderLabel" destination="Ilj-vx-ixQ" id="uMt-JN-fqi"/>
-                            <outlet property="gradeLabel" destination="wD0-14-uYI" id="ntB-ST-02b"/>
-                            <outlet property="majorLabel" destination="5EC-k1-hCI" id="9gQ-jD-xyh"/>
-                            <outlet property="nameLabel" destination="CtE-GA-LTi" id="RT6-YU-Boy"/>
-                            <outlet property="nationLabel" destination="vUr-k8-9UY" id="DkS-47-bEz"/>
-                            <outlet property="nickNameLabel" destination="OGp-EL-g4A" id="JBF-nV-n2a"/>
-                            <outlet property="numberLabel" destination="4gp-e0-H9U" id="vB7-BG-PUj"/>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="MY" image="person" catalog="system" selectedImage="person" id="XuT-3e-LYD"/>

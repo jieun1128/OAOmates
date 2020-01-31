@@ -38,8 +38,9 @@ class MyViewController: UITableViewController, CanRecieve{
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "sendEdit"{
-            let editVC = segue.destination as! ViewControllerEdit
-            secondVc.data = nameText.text!
+            let secondVC = segue.destination as! PersonalInfoTableViewController
+            secondVC.data = nameLabel.text!
+            secondVC.delegate = self
         }
     }
     
