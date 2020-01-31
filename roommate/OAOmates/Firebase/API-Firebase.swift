@@ -38,7 +38,7 @@ extension API {
     func allUsers(completion: (([Person]) -> Void)?) {
         let decoder = DictionaryDecoder()
         var users:[Person] = []
-        self.userDocumentRef.document("홍길현").collection("PersonalInfo").addSnapshotListener { (snapshot, error) in
+        self.userDocumentRef.document("남연진").collection("PersonalInfo").addSnapshotListener { (snapshot, error) in
             if error == nil, let documents = snapshot?.documents {
                 for document in documents {
                     if let user = try? decoder.decode(Person.self, from: document.data()) {

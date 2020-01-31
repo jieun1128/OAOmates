@@ -26,7 +26,10 @@ class MyViewController: UITableViewController, CanRecieve{
     @IBOutlet weak var numberLabel: UILabel!
     
     
-    
+//    func returningName() -> String? {
+//        return nameLabel.text
+//    }
+//    
     func passDataBack(data: String) {
         nameLabel.text = data
 //        nickNameLabel.text = data.personalInfo.nickname
@@ -44,7 +47,7 @@ class MyViewController: UITableViewController, CanRecieve{
     @IBAction func pressEditButton(_ sender: Any) {
         performSegue(withIdentifier: "sendEdit", sender: self)
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "sendEdit"{
             let editVC = segue.destination as! PersonalInfoTableViewController
             editVC.data = nameLabel.text!
@@ -59,6 +62,7 @@ class MyViewController: UITableViewController, CanRecieve{
 //            editVC.data.personalInfo.number = numberLabel.text!
             
             editVC.delegate = self
+
         }
     }
     

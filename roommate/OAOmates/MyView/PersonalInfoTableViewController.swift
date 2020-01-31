@@ -69,6 +69,7 @@ class PersonalInfoTableViewController: UITableViewController {
         dismiss(animated: true, completion: nil)
 
         self.navigationController?.popViewController(animated: true)
+        
         //
     }
     
