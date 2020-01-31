@@ -30,6 +30,11 @@ class personViewController: UIViewController, UITableViewDelegate{
             self.personTableView.reloadData()
         }
     }
+    var surveyData : [Survey] = [] {
+        didSet{
+            self.personTableView.reloadData()
+        }
+    }
 //    let db = Firestore.firestore()
 //    var ref : DocumentReference? = nil
 //    ref = db.collection("Room").document("name")
@@ -52,6 +57,10 @@ class personViewController: UIViewController, UITableViewDelegate{
         API.shared.allUsers{(users) in
             self.data = users
     }
+        API.shared.allSurveyUsers{
+            (users) in
+            self.surveyData = users
+        }
     }
 //    override func viewWillDisappear(_ animated: Bool) {
 //        Auth.auth().removeStateDidChangeListener(handle)
@@ -71,7 +80,7 @@ extension personViewController: UITableViewDataSource{
         cell.ageLabel.text = "\(data[indexPath.row]/*.personalInfo*/.age)살"
         cell.genderLabel.text = "성별: \(data[indexPath.row]/*.personalInfo*/.gender)"
         cell.nationLabel.text = data[indexPath.row]/*.personalInfo*/.nation
-//        cell.progressView.progress = Float(Concordination(myResult:data[indexPath.row] , yourResult: data[indexPath.row]))
+        cell.progressView.progress = Float(Concordination(myResult:surveyData[indexPath.row] , yourResult: surveyData[indexPath.row]))
 //        cell.profileImageView.image = data[indexPath.row].image
         return cell
         

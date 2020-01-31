@@ -8,30 +8,30 @@
 
 import Foundation
 
-func Concordination(myResult : Room, yourResult : Room) -> Double{
+func Concordination(myResult : Survey, yourResult : Survey) -> Double{
     var degree : Double = 0
-    if myResult.surveyResult.sleepingHabit == yourResult.surveyResult.sleepingHabit {
+    if myResult.sleepingHabit == yourResult.sleepingHabit {
         degree += 12.5
     }
-    if myResult.surveyResult.smoking == yourResult.surveyResult.sleepingHabit {
+    if myResult.smoking == yourResult.sleepingHabit {
         degree += 12.5
     }
-    if myResult.surveyResult.drinking == yourResult.surveyResult.drinking {
+    if myResult.drinking == yourResult.drinking {
         degree += 12.5
     }
-    if myResult.surveyResult.sleepout == yourResult.surveyResult.sleepout {
+    if myResult.sleepout == yourResult.sleepout {
         degree += 12.5
     }
-    if myResult.surveyResult.closeness == yourResult.surveyResult.closeness {
+    if myResult.closeness == yourResult.closeness {
         degree += 12.5
     }
-    if myResult.surveyResult.washing == yourResult.surveyResult.washing{
+    if myResult.washing == yourResult.washing{
         degree += 12.5
     }
-    if myResult.surveyResult.religion == yourResult.surveyResult.religion{
+    if myResult.religion == yourResult.religion{
         degree += 12.5
     }
-    if myResult.surveyResult.sameReligion == yourResult.surveyResult.sameReligion{
+    if myResult.sameReligion == yourResult.sameReligion{
         degree += 12.5
     }
     return degree
