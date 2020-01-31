@@ -10,21 +10,7 @@ import UIKit
 
 class SurveyViewController: UIViewController {
 
-    @IBOutlet weak var SleepingHabit: UISegmentedControl!
-    @IBOutlet weak var Smoking: UISegmentedControl!
-    @IBOutlet weak var Drinking: UISegmentedControl!
-    @IBOutlet weak var SleepOut: UISegmentedControl!
-    @IBOutlet weak var Closeness: UISegmentedControl!
-    @IBOutlet weak var Washing: UISegmentedControl!
-    @IBOutlet weak var Religion: UISegmentedControl!
-    @IBOutlet weak var Noise: UISlider!
-    @IBOutlet weak var NotSmoking: UISlider!
-    @IBOutlet weak var NotDrinking: UISlider!
-    @IBOutlet weak var Cleaning: UISlider!
-    @IBOutlet weak var SameReligion: UISegmentedControl!
-    
-    
-    
+
     
 //    func convertString (button : UISegmentedControl)-> String{
 //        if button.selectedSegmentIndex == 0{
@@ -33,7 +19,7 @@ class SurveyViewController: UIViewController {
 //    }
     
     @IBAction func noiseSet(_ sender: UISlider) {
-        Noise.value = round(Noise.value)
+//        noise.value = round(noise.value)
     }
     
     func convertStringSleepingHabit (button : UISegmentedControl)-> String{
@@ -133,11 +119,21 @@ class SurveyViewController: UIViewController {
 
 //        let user = Survey(noise: String(Noise.value), notSmoking = String(NotSmoking.value), notDrinking = String(NotDrinking.value), cleaning = String(Cleaning.value))
 
-        API.shared.addSurveyResult(name: "", user: user)
+
+//        API.shared.addUser(user: user , completion: { self.navigationController?.popViewController(animated: true)})
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//
+//        noise.minimumValue = 0
+//        noise.maximumValue = 10
+//        notSmoking.minimumValue = 0
+//        notSmoking.maximumValue = 10
+//        notdrinking.minimumValue = 0
+//        notdrinking.maximumValue = 10
+//        cleaning.minimumValue = 0
+//        cleaning.maximumValue = 10
 
         // Do any additional setup after loading the view.
     }

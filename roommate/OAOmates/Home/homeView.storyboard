@@ -22,7 +22,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="996"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="____________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yT7-rb-qg6">
-                                                <rect key="frame" x="48.5" y="-84" width="317.5" height="20.5"/>
+                                                <rect key="frame" x="48.5" y="-84" width="317" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -35,7 +35,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한줄소개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkn-qW-yUl">
-                                                <rect key="frame" x="222" y="103" width="59" height="21"/>
+                                                <rect key="frame" x="222" y="103.5" width="59" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -226,7 +226,7 @@
                                                 </subviews>
                                             </stackView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="남자말풍선" translatesAutoresizingMaskIntoConstraints="NO" id="rmJ-p1-8eX">
-                                                <rect key="frame" x="32" y="24" width="356" height="178"/>
+                                                <rect key="frame" x="32" y="25" width="356" height="178"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="178" id="Hv2-cj-Hjo"/>
                                                 </constraints>
@@ -237,17 +237,17 @@
                                             <constraint firstItem="Fnk-BF-pqM" firstAttribute="centerY" secondItem="XsZ-jd-DCd" secondAttribute="centerY" constant="-22.25" id="8Hn-fg-uj6"/>
                                             <constraint firstAttribute="trailing" secondItem="rmJ-p1-8eX" secondAttribute="trailing" constant="26" id="8ve-XR-3E0"/>
                                             <constraint firstItem="Fnk-BF-pqM" firstAttribute="centerX" secondItem="yT7-rb-qg6" secondAttribute="centerX" id="AMT-sj-hnv"/>
-                                            <constraint firstItem="jkn-qW-yUl" firstAttribute="top" secondItem="yT7-rb-qg6" secondAttribute="bottom" constant="166.5" id="EK9-s8-S61"/>
                                             <constraint firstItem="rmJ-p1-8eX" firstAttribute="leading" secondItem="XsZ-jd-DCd" secondAttribute="leading" constant="32" id="Jaj-l6-4XY"/>
-                                            <constraint firstItem="Fnk-BF-pqM" firstAttribute="top" secondItem="jkn-qW-yUl" secondAttribute="bottom" constant="86" id="MTb-YP-e8V"/>
-                                            <constraint firstItem="rmJ-p1-8eX" firstAttribute="top" secondItem="yT7-rb-qg6" secondAttribute="bottom" constant="87.5" id="Nay-S0-Sdn"/>
                                             <constraint firstAttribute="height" constant="996" id="SRM-Or-M07"/>
                                             <constraint firstAttribute="trailing" secondItem="jkn-qW-yUl" secondAttribute="trailing" constant="133" id="TSM-pI-xic"/>
                                             <constraint firstItem="Fnk-BF-pqM" firstAttribute="leading" secondItem="XsZ-jd-DCd" secondAttribute="leading" constant="35" id="Ypp-yj-0GM"/>
-                                            <constraint firstItem="Fnk-BF-pqM" firstAttribute="top" secondItem="rmJ-p1-8eX" secondAttribute="bottom" constant="8" id="b5P-xV-fIT"/>
                                             <constraint firstItem="Fnk-BF-pqM" firstAttribute="top" secondItem="XsZ-jd-DCd" secondAttribute="top" constant="210" id="eqz-f4-cRS"/>
-                                            <constraint firstItem="rmJ-p1-8eX" firstAttribute="centerY" secondItem="jkn-qW-yUl" secondAttribute="centerY" id="oon-u4-br5"/>
+                                            <constraint firstItem="yT7-rb-qg6" firstAttribute="top" secondItem="XsZ-jd-DCd" secondAttribute="top" constant="-84" id="gcS-WW-ESP"/>
+                                            <constraint firstItem="Fnk-BF-pqM" firstAttribute="top" secondItem="jkn-qW-yUl" secondAttribute="bottom" constant="86" id="qg8-hF-ZlW"/>
                                             <constraint firstItem="Fnk-BF-pqM" firstAttribute="centerX" secondItem="XsZ-jd-DCd" secondAttribute="centerX" id="rcH-2u-mLu"/>
+                                            <constraint firstItem="rmJ-p1-8eX" firstAttribute="top" secondItem="yT7-rb-qg6" secondAttribute="bottom" constant="87.5" id="tDR-iF-Yig"/>
+                                            <constraint firstItem="jkn-qW-yUl" firstAttribute="centerY" secondItem="rmJ-p1-8eX" secondAttribute="centerY" id="tG3-z5-UDI"/>
+                                            <constraint firstItem="yT7-rb-qg6" firstAttribute="leading" secondItem="XsZ-jd-DCd" secondAttribute="leading" constant="48.5" id="u08-Vp-Pg9"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -408,7 +408,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AWe-kS-aFJ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bqI-dx-6Ca"/>
+                    <navigationItem key="navigationItem" id="bqI-dx-6Ca">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="0Sq-LI-Zf8">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WlX-mf-aS2">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="LogoutButton:" destination="KTc-3P-G06" eventType="touchUpInside" id="8O7-8l-E7g"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="personTableView" destination="93d-j2-a1x" id="vsZ-nL-1al"/>
                     </connections>

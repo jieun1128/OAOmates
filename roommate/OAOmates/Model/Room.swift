@@ -27,6 +27,7 @@ struct Person : Codable{
     var openChat: String
 }
 struct Survey : Codable{
+
     var sleepingHabit : String
     var smoking : String
     var drinking : String
@@ -39,6 +40,7 @@ struct Survey : Codable{
     var notDrinking : Int
     var cleaning : Int
     var sameReligion : String
+
 }
 
 struct Room : Codable{
