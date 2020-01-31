@@ -10,6 +10,7 @@ import UIKit
 
 class SurveyViewController: UIViewController {
 
+
     @IBOutlet weak var SleepingHabit: UISegmentedControl!
     @IBOutlet weak var Smoking: UISegmentedControl!
     @IBOutlet weak var Drinking: UISegmentedControl!
@@ -22,18 +23,18 @@ class SurveyViewController: UIViewController {
     @IBOutlet weak var NotDrinking: UISlider!
     @IBOutlet weak var Cleaning: UISlider!
     @IBOutlet weak var SameReligion: UISegmentedControl!
-    
-    
-    
-//    func convertString (button : UISegmentedControl)-> String{
-//        if button.selectedSegmentIndex == 0{
-//            return "코콜이"
-//        }else if
-//    }
-    
-    @IBAction func noiseSet(_ sender: UISlider) {
-//        noise.value = round(noise.value)
+
+    //slider가 정수값을 가지고, 스무스하게 움직이지 않도록
+    @IBAction func SliderIntValue(_ sender: UISlider) {
+        Noise.value = roundf(Noise.value)
+        NotSmoking.value = roundf(NotSmoking.value)
+        NotDrinking.value = roundf(NotDrinking.value)
+        Cleaning.value = roundf(Cleaning.value)
     }
+    
+//    @IBAction func noiseSet(_ sender: UISlider) { //이게 모야??
+////        noise.value = round(noise.value)
+//    }
     
     func convertStringSleepingHabit (button : UISegmentedControl)-> String{
         if button.selectedSegmentIndex == 0{
@@ -126,15 +127,14 @@ class SurveyViewController: UIViewController {
     
     @IBAction func Save(_ sender: Any) {
 
-
         let userSurvey = Survey(sleepingHabit: convertStringSleepingHabit(button: SleepingHabit), smoking: convertStringSmoking(button: Smoking), drinking: convertStringDrinking(button: Drinking), sleepout: convertStringSleepOut(button: SleepOut), closeness: convertStringSleepOut(button: SleepOut), washing: convertStringWashing(button: Washing), religion: convertStringReligion(button: Religion), noise: Int(self.Noise.value), notSmoking: Int(self.NotSmoking.value), notDrinking: Int(self.NotDrinking.value), cleaning: Int(self.Cleaning.value), sameReligion: convertStringSameReligion(button: SameReligion))
-
     }
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
     }
     
 
@@ -149,3 +149,4 @@ class SurveyViewController: UIViewController {
     */
 
 }
+

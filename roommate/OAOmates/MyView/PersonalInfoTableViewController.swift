@@ -14,6 +14,9 @@ protocol CanRecieve{
 
 class PersonalInfoTableViewController: UITableViewController {
 
+//    var ref: DatabaseReference!
+//    ref = Database.database().reference()
+    
     @IBOutlet weak var NameText: UITextField!
     @IBOutlet weak var NickNameText: UITextField!
     @IBOutlet weak var MajorText: UITextField!
@@ -32,7 +35,7 @@ class PersonalInfoTableViewController: UITableViewController {
     @IBOutlet weak var gradeText: UITextField!
     
     var delegate:CanRecieve?
-    var data = " "
+    var data = ""
     
     func convertString (button : UISegmentedControl)-> String{
         if button.selectedSegmentIndex == 0{
@@ -58,9 +61,12 @@ class PersonalInfoTableViewController: UITableViewController {
         
         
         API.shared.addPersonalInfo(name: NameText.text ?? "", user: user)
-//
-//        delegate?.passDataBack(data: NameT,ext.text!)
-//        dismiss(animated: true, completion: nil)
+
+        
+        
+        delegate?.passDataBack(data: NameText.text!) //Room 인스턴스 만들기
+        dismiss(animated: true, completion: nil)
+
         self.navigationController?.popViewController(animated: true)
         //
     }
