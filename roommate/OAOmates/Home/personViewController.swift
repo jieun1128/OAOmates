@@ -25,11 +25,12 @@ class personViewController: UIViewController, UITableViewDelegate{
     }
     
     @IBOutlet weak var personTableView: UITableView!
-    fileprivate var  data:[Room] = [] {
-        didSet {
-            self.personTableView.reloadData()
-        }
-    }
+//    fileprivate var  data:[Room] = [] {
+//        didSet {
+//            self.personTableView.reloadData()
+//        }
+//    }
+    var data = db.
     
     override func viewDidLoad() {
         super.viewDidLoad()

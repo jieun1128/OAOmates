@@ -421,28 +421,53 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mhd-Xa-f51">
-                                                    <rect key="frame" x="45" y="16" width="324" height="58"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="as2-f1-RMm">
+                                                    <rect key="frame" x="45" y="16" width="227" height="58"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="취침 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mru-Th-Ja3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="324" height="16"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취침시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SJ-lU-xUk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="59" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jCb-FW-Uau">
-                                                            <rect key="frame" x="0.0" y="24" width="324" height="34"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits"/>
-                                                        </textField>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jhk-W4-BUS">
+                                                            <rect key="frame" x="0.0" y="24" width="227" height="34"/>
+                                                            <subviews>
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tlu-mb-j4f">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="100" id="Boo-lc-L8h"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits"/>
+                                                                </textField>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am8-j9-SxG">
+                                                                    <rect key="frame" x="108" y="0.0" width="11" height="34"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="11" id="PVS-uq-ROt"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3nq-Kq-Xff">
+                                                                    <rect key="frame" x="127" y="0.0" width="100" height="34"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="100" id="e2F-db-jAd"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits"/>
+                                                                </textField>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Mhd-Xa-f51" firstAttribute="leading" secondItem="uuH-ap-H7n" secondAttribute="leadingMargin" constant="25" id="8Mw-l3-Rxr"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Mhd-Xa-f51" secondAttribute="trailing" constant="25" id="ARI-iD-Jp9"/>
-                                                <constraint firstItem="Mhd-Xa-f51" firstAttribute="top" secondItem="uuH-ap-H7n" secondAttribute="topMargin" constant="5" id="xVa-DZ-Eb2"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Mhd-Xa-f51" secondAttribute="bottom" constant="5" id="y2L-CT-0K5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="as2-f1-RMm" secondAttribute="bottom" constant="5" id="7Ox-3u-2o5"/>
+                                                <constraint firstItem="as2-f1-RMm" firstAttribute="leading" secondItem="uuH-ap-H7n" secondAttribute="leadingMargin" constant="25" id="TIw-ul-xuO"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="as2-f1-RMm" secondAttribute="trailing" constant="122" id="YUy-qD-aIN"/>
+                                                <constraint firstItem="as2-f1-RMm" firstAttribute="top" secondItem="uuH-ap-H7n" secondAttribute="topMargin" constant="5" id="rrh-Dp-9np"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -539,19 +564,29 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="" id="zn4-zX-xdb">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="eKv-1X-01Q">
-                                        <rect key="frame" x="0.0" y="1243" width="414" height="45"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="eKv-1X-01Q">
+                                        <rect key="frame" x="0.0" y="1243" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eKv-1X-01Q" id="0VM-3b-sol">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cms-tt-8Vd">
-                                                    <rect key="frame" x="20" y="5" width="374" height="35"/>
+                                                    <rect key="frame" x="57" y="50" width="300" height="35"/>
+                                                    <color key="backgroundColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="300" id="Hje-P0-sjz"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <state key="normal" title="SAVE">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="SaveUser:" destination="koC-xl-qig" eventType="touchUpInside" id="XVJ-nJ-3HD"/>
                                                         <segue destination="qUi-bh-SRc" kind="unwind" unwindAction="unwindVC1WithSegue:" id="fWd-48-XpO"/>
@@ -559,13 +594,12 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="cms-tt-8Vd" secondAttribute="trailing" constant="20" symbolic="YES" id="8zk-WR-H9v"/>
-                                                <constraint firstItem="cms-tt-8Vd" firstAttribute="top" secondItem="0VM-3b-sol" secondAttribute="top" constant="5" id="Uqt-L4-QCI"/>
-                                                <constraint firstAttribute="bottom" secondItem="cms-tt-8Vd" secondAttribute="bottom" constant="5" id="cbe-b9-acQ"/>
-                                                <constraint firstItem="cms-tt-8Vd" firstAttribute="leading" secondItem="0VM-3b-sol" secondAttribute="leading" constant="20" symbolic="YES" id="laL-Eg-eMx"/>
+                                                <constraint firstAttribute="bottom" secondItem="cms-tt-8Vd" secondAttribute="bottom" constant="5" id="UmX-M4-1Xg"/>
+                                                <constraint firstItem="cms-tt-8Vd" firstAttribute="top" secondItem="0VM-3b-sol" secondAttribute="top" constant="50" id="V26-Mj-Ne1"/>
+                                                <constraint firstItem="cms-tt-8Vd" firstAttribute="leading" secondItem="0VM-3b-sol" secondAttribute="leading" constant="57" id="gNz-gt-9J1"/>
+                                                <constraint firstAttribute="trailing" secondItem="cms-tt-8Vd" secondAttribute="trailing" constant="57" id="o7H-Wl-44r"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -578,7 +612,6 @@
                         <outlet property="MajorText" destination="ZXm-Wk-mMc" id="DAO-Ne-P7x"/>
                         <outlet property="NameText" destination="Jt1-PB-nfE" id="hCE-Nl-pD0"/>
                         <outlet property="NickNameText" destination="pLx-KM-S1Y" id="MnZ-ts-QGX"/>
-                        <outlet property="SleepingText" destination="jCb-FW-Uau" id="P5P-Lu-QTI"/>
                         <outlet property="ageText" destination="oZE-eW-e2W" id="hj0-UU-tiv"/>
                         <outlet property="collegeText" destination="P77-YW-Uoc" id="BTg-M0-LXv"/>
                         <outlet property="dormitory" destination="49y-Gy-O46" id="cUx-ul-pvH"/>
@@ -635,16 +668,16 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Wb9-19-wOT">
                                                         <rect key="frame" x="0.0" y="155.5" width="390" height="1230.5"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="fX1-Pt-a3e">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="fX1-Pt-a3e">
                                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="633"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. 나의 잠버릇은?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7p-DL-nhF">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1. 나의 잠버릇은?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7p-DL-nhF">
                                                                         <rect key="frame" x="0.0" y="0.0" width="390" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="m6i-Rd-Tql">
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="m6i-Rd-Tql">
                                                                         <rect key="frame" x="0.0" y="38.5" width="390" height="32"/>
                                                                         <segments>
                                                                             <segment title="코골이"/>
@@ -653,26 +686,26 @@
                                                                             <segment title="없음"/>
                                                                         </segments>
                                                                     </segmentedControl>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. 흡연 여부" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae3-pE-XIh">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2. 흡연 여부" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae3-pE-XIh">
                                                                         <rect key="frame" x="0.0" y="87.5" width="390" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D0m-s4-l8H">
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D0m-s4-l8H">
                                                                         <rect key="frame" x="0.0" y="126" width="390" height="32"/>
                                                                         <segments>
                                                                             <segment title="예"/>
                                                                             <segment title="아니오"/>
                                                                         </segments>
                                                                     </segmentedControl>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. 음주 정도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDo-Vm-sP4">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3. 음주 정도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDo-Vm-sP4">
                                                                         <rect key="frame" x="0.0" y="175" width="390" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-q4-FqI">
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-q4-FqI">
                                                                         <rect key="frame" x="0.0" y="213.5" width="390" height="32"/>
                                                                         <segments>
                                                                             <segment title="전혀"/>
@@ -682,13 +715,13 @@
                                                                             <segment title="주 5~7회"/>
                                                                         </segments>
                                                                     </segmentedControl>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. 외박회수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVV-bT-YO8">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="4. 외박회수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVV-bT-YO8">
                                                                         <rect key="frame" x="0.0" y="262.5" width="390" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yJP-Jm-cuD">
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yJP-Jm-cuD">
                                                                         <rect key="frame" x="0.0" y="301" width="390" height="32"/>
                                                                         <segments>
                                                                             <segment title="안함"/>
@@ -698,13 +731,13 @@
                                                                             <segment title="자주"/>
                                                                         </segments>
                                                                     </segmentedControl>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. 룸메와의 희망 친밀도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzC-1q-GTA">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="5. 룸메와의 희망 친밀도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzC-1q-GTA">
                                                                         <rect key="frame" x="0.0" y="350" width="390" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Hc-Eo-ROB">
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Hc-Eo-ROB">
                                                                         <rect key="frame" x="0.0" y="388.5" width="390" height="32"/>
                                                                         <segments>
                                                                             <segment title="0"/>
@@ -714,13 +747,13 @@
                                                                             <segment title="100%"/>
                                                                         </segments>
                                                                     </segmentedControl>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6. 나는 일주일에 몇 번 씻는다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DC4-Ef-6oN">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="6. 나는 일주일에 몇 번 씻는다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DC4-Ef-6oN">
                                                                         <rect key="frame" x="0.0" y="437.5" width="390" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="A6f-qW-9Zg">
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="A6f-qW-9Zg">
                                                                         <rect key="frame" x="0.0" y="476" width="390" height="32"/>
                                                                         <segments>
                                                                             <segment title="0~1번"/>
@@ -729,13 +762,13 @@
                                                                             <segment title="6~7번"/>
                                                                         </segments>
                                                                     </segmentedControl>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7. 나의 종교" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boF-YL-eZU">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="7. 나의 종교" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boF-YL-eZU">
                                                                         <rect key="frame" x="0.0" y="525" width="390" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M4S-bZ-U9K">
+                                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M4S-bZ-U9K">
                                                                         <rect key="frame" x="0.0" y="563.5" width="390" height="32"/>
                                                                         <segments>
                                                                             <segment title="불교"/>
@@ -745,79 +778,91 @@
                                                                             <segment title="기타"/>
                                                                         </segments>
                                                                     </segmentedControl>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="________________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fb-aF-qkt">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="     ________________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fb-aF-qkt">
                                                                         <rect key="frame" x="0.0" y="612.5" width="390" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="9fb-aF-qkt" firstAttribute="centerX" secondItem="fX1-Pt-a3e" secondAttribute="centerX" id="GJM-Ko-W2Z"/>
+                                                                </constraints>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Zhf-Mg-MiH">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Zhf-Mg-MiH">
                                                                 <rect key="frame" x="0.0" y="693" width="390" height="537.5"/>
                                                                 <subviews>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kgd-JA-Cwf">
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kgd-JA-Cwf">
                                                                         <rect key="frame" x="0.0" y="0.0" width="390" height="442.5"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="희망 룸메이트 고려사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8L-Jc-oRQ">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="희망 룸메이트 고려사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8L-Jc-oRQ">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="24"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YfV-es-Mta">
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YfV-es-Mta">
                                                                                 <rect key="frame" x="0.0" y="39" width="390" height="0.0"/>
                                                                             </stackView>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. 나는 잠잘 때 소리에 매우 예민하다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgM-oy-BEE">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1. 나는 잠잘 때 소리에 매우 예민하다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgM-oy-BEE">
                                                                                 <rect key="frame" x="0.0" y="54" width="390" height="20.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="4lv-Ur-6UZ">
+                                                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="4lv-Ur-6UZ">
                                                                                 <rect key="frame" x="-2" y="89.5" width="394" height="31"/>
                                                                                 <color key="tintColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                 <connections>
-                                                                                    <action selector="noiseSet:" destination="pOP-2v-Kuc" eventType="valueChanged" id="gOA-0G-vhs"/>
+                                                                                    <action selector="SliderIntValue:" destination="pOP-2v-Kuc" eventType="valueChanged" id="Dgg-62-xfk"/>
                                                                                 </connections>
                                                                             </slider>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. 룸메이트가 흡연 하지 않는 것은 중요하다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwz-Df-Gmt">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2. 룸메이트가 흡연 하지 않는 것은 중요하다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwz-Df-Gmt">
                                                                                 <rect key="frame" x="0.0" y="134.5" width="390" height="20.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="YHT-Kl-xLm">
+                                                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="YHT-Kl-xLm">
                                                                                 <rect key="frame" x="-2" y="170" width="394" height="31"/>
                                                                                 <color key="tintColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <connections>
+                                                                                    <action selector="SliderIntValue:" destination="pOP-2v-Kuc" eventType="valueChanged" id="B0o-9J-9xf"/>
+                                                                                </connections>
                                                                             </slider>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. 룸메이트가 술을 마시지 않는 것은 중요하다. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVy-ok-V4W">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3. 룸메이트가 술을 마시지 않는 것은 중요하다. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVy-ok-V4W">
                                                                                 <rect key="frame" x="0.0" y="215" width="390" height="20.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="pLl-Uy-m56">
+                                                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="pLl-Uy-m56">
                                                                                 <rect key="frame" x="-2" y="250.5" width="394" height="31"/>
                                                                                 <color key="tintColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <connections>
+                                                                                    <action selector="SliderIntValue:" destination="pOP-2v-Kuc" eventType="valueChanged" id="zgY-0q-CS7"/>
+                                                                                </connections>
                                                                             </slider>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. 룸메이트의 청결은 중요하다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hm3-pR-Dt6">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="4. 룸메이트의 청결은 중요하다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hm3-pR-Dt6">
                                                                                 <rect key="frame" x="0.0" y="295.5" width="390" height="20.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="kSb-sa-iTy">
+                                                                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="kSb-sa-iTy">
                                                                                 <rect key="frame" x="-2" y="331" width="394" height="31"/>
                                                                                 <color key="tintColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <connections>
+                                                                                    <action selector="SliderIntValue:" destination="pOP-2v-Kuc" eventType="valueChanged" id="iBQ-cf-fWr"/>
+                                                                                </connections>
                                                                             </slider>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. 룸메이트의 종교가 같으면 좋겠다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86d-jW-blf">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="5. 룸메이트의 종교가 같으면 좋겠다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86d-jW-blf">
                                                                                 <rect key="frame" x="0.0" y="376" width="390" height="20.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-ea-OuT">
+                                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-ea-OuT">
                                                                                 <rect key="frame" x="0.0" y="411.5" width="390" height="32"/>
                                                                                 <segments>
                                                                                     <segment title="예"/>
@@ -826,12 +871,22 @@
                                                                             </segmentedControl>
                                                                         </subviews>
                                                                     </stackView>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ1-6l-X4o">
-                                                                        <rect key="frame" x="172" y="502.5" width="46" height="35"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ1-6l-X4o">
+                                                                        <rect key="frame" x="45" y="502.5" width="300" height="35"/>
                                                                         <color key="backgroundColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="300" id="84h-SA-Ezd"/>
+                                                                            <constraint firstAttribute="height" constant="35" id="YjZ-KN-Ssa"/>
+                                                                        </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="SAVE"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="5"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
                                                                         <connections>
                                                                             <action selector="Save:" destination="pOP-2v-Kuc" eventType="touchUpInside" id="QrQ-wX-gZ1"/>
                                                                             <segue destination="4kY-aT-JXx" kind="unwind" unwindAction="unwindVC1WithSegue:" id="ch4-pk-XxO"/>
@@ -882,24 +937,24 @@
                     <navigationItem key="navigationItem" id="RfN-pV-BPo"/>
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
-                        <outlet property="SleepingHabit" destination="m6i-Rd-Tql" id="Xsd-kQ-vOi"/>
-                        <outlet property="Smoking" destination="D0m-s4-l8H" id="1tB-Wt-4nY"/>
-                        <outlet property="cleaning" destination="kSb-sa-iTy" id="fKc-yx-zbf"/>
-                        <outlet property="closeness" destination="5Hc-Eo-ROB" id="Opz-ls-CHn"/>
-                        <outlet property="drinking" destination="fK5-q4-FqI" id="J12-JC-IYZ"/>
-                        <outlet property="noise" destination="4lv-Ur-6UZ" id="CQn-eq-hHI"/>
-                        <outlet property="notSmoking" destination="YHT-Kl-xLm" id="1cS-vq-CaO"/>
-                        <outlet property="notdrinking" destination="pLl-Uy-m56" id="laa-Wp-jL6"/>
-                        <outlet property="religion" destination="M4S-bZ-U9K" id="3Zx-ca-M3a"/>
-                        <outlet property="sameReligion" destination="PA9-ea-OuT" id="6DG-1b-GAG"/>
-                        <outlet property="sleepOut" destination="yJP-Jm-cuD" id="czq-Ls-HLr"/>
-                        <outlet property="washing" destination="A6f-qW-9Zg" id="8Yl-Rf-c7l"/>
+                        <outlet property="Cleaning" destination="kSb-sa-iTy" id="2XL-fh-tdB"/>
+                        <outlet property="Closeness" destination="5Hc-Eo-ROB" id="l9i-er-ygf"/>
+                        <outlet property="Drinking" destination="fK5-q4-FqI" id="34t-tE-4gh"/>
+                        <outlet property="Noise" destination="4lv-Ur-6UZ" id="46C-ls-A0J"/>
+                        <outlet property="NotDrinking" destination="pLl-Uy-m56" id="ZzN-0r-fmm"/>
+                        <outlet property="NotSmoking" destination="YHT-Kl-xLm" id="0ji-kT-nYu"/>
+                        <outlet property="Religion" destination="M4S-bZ-U9K" id="Cou-rc-FK4"/>
+                        <outlet property="SameReligion" destination="PA9-ea-OuT" id="wL6-bM-o9r"/>
+                        <outlet property="SleepOut" destination="yJP-Jm-cuD" id="Ul9-De-8ue"/>
+                        <outlet property="SleepingHabit" destination="m6i-Rd-Tql" id="Acc-gJ-0P8"/>
+                        <outlet property="Smoking" destination="D0m-s4-l8H" id="i5m-o4-uWy"/>
+                        <outlet property="Washing" destination="A6f-qW-9Zg" id="lAQ-gb-YS0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5y-3Q-zdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="4kY-aT-JXx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1507" y="703"/>
+            <point key="canvasLocation" x="1505.7971014492755" y="702.45535714285711"/>
         </scene>
         <!--MY-->
         <scene sceneID="hT7-KO-Eg9">

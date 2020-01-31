@@ -41,20 +41,32 @@ class PersonalInfoTableViewController: UITableViewController {
         if button.selectedSegmentIndex == 0{
             return "남산"
         }else {
-            return ""
+            return "충무"
+        }
+    }
+    func convertStringNumber (button : UISegmentedControl)->String{
+        if button.selectedSegmentIndex == 0 {
+            return "2"
+        }else if button.selectedSegmentIndex == 1 {
+            return "4"
+        }else{
+            return "6"
         }
     }
     
     
     
     @IBAction func SaveUser(_ sender: Any) {
-        let user = Person(dormitory: "", name : NameText.text ?? "" , number : "", nickname : NickNameText.text ?? "", age : ageText.text ?? "", gender : genderText.text ?? "", nation : nationText.text ?? "", major : MajorText.text ?? "", grade : gradeText.text ?? "", college : collegeText.text ?? "", sleepTime : SleepingText.text ?? "", letter : letterText.text ?? "", introduction : introductionText.text ?? "", openChat : openChat.text ?? "")
+        let user = Person(dormitory: convertString(button: dormitory), name: NameText.text ?? "", number: convertStringNumber(button: number), nickname: NickNameText.text ?? "", age: ageText.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "", major: MajorText.text ?? "", grade: gradeText.text ?? "", college: collegeText.text ?? "", sleepTime: SleepingText.text ?? "", letter: letterText.text ?? "", introduction: introductionText.text ?? "", openChat: openChat.text ?? "")
+        
         
         API.shared.addPersonalInfo(name: NameText.text ?? "", user: user)
+
         
         
         delegate?.passDataBack(data: NameText.text!) //Room 인스턴스 만들기
         dismiss(animated: true, completion: nil)
+
         self.navigationController?.popViewController(animated: true)
         //
     }

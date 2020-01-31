@@ -126,9 +126,9 @@
 		3F74FACE23D6B9CD009028B1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3F46D7DC23D067C90020F986 /* homeView.storyboard */,
 				3F96F1E323CDD10A00456F64 /* personViewController.swift */,
 				3F181CDC23D05E360026ADED /* personTableViewCell.swift */,
-				3F46D7DC23D067C90020F986 /* homeView.storyboard */,
 				3F74FADC23D6CADE009028B1 /* MoreInfoViewController.swift */,
 				3F299DAF23E2CFF000DF9B55 /* Concordination.swift */,
 			);
