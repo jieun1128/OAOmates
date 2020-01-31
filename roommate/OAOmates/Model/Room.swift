@@ -44,10 +44,11 @@ struct Survey : Codable{
 }
 
 struct Room : Codable{
+    
     var personalInfo : Person
     var surveyResult : Survey
-}
 
+}
 //    enum survey : String{
 //        case sleepingHabit
 //        case smoking
