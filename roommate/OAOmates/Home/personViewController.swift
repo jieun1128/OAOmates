@@ -25,12 +25,14 @@ class personViewController: UIViewController, UITableViewDelegate{
     }
     
     @IBOutlet weak var personTableView: UITableView!
-//    fileprivate var  data:[Room] = [] {
-//        didSet {
-//            self.personTableView.reloadData()
-//        }
-//    }
-    var data = db.
+     var  data:[Person] = [] {
+        didSet {
+            self.personTableView.reloadData()
+        }
+    }
+//    let db = Firestore.firestore()
+//    var ref : DocumentReference? = nil
+//    ref = db.collection("Room").document("name")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,9 +49,9 @@ class personViewController: UIViewController, UITableViewDelegate{
           // [END_EXCLUDE]
         }
         Auth.auth().removeStateDidChangeListener(handle)
-//        API.shared.allUsers{(users) in
-//            self.data = users
-//    }
+        API.shared.allUsers{(users) in
+            self.data = users
+    }
     }
 //    override func viewWillDisappear(_ animated: Bool) {
 //        Auth.auth().removeStateDidChangeListener(handle)
@@ -64,12 +66,12 @@ extension personViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personTableViewCell", for: indexPath) as! personTableViewCell
-        cell.dormitoryLabel.text = data[indexPath.row].personalInfo.dormitory
-        cell.numberLabel.text = "\(data[indexPath.row].personalInfo.number)인실"
-        cell.ageLabel.text = "\(data[indexPath.row].personalInfo.age)살"
-        cell.genderLabel.text = "성별: \(data[indexPath.row].personalInfo.gender)"
-        cell.nationLabel.text = data[indexPath.row].personalInfo.nation
-        cell.progressView.progress = Float(Concordination(myResult:data[indexPath.row] , yourResult: data[indexPath.row]))
+        cell.dormitoryLabel.text = data[indexPath.row]/*.personalInfo*/.dormitory
+        cell.numberLabel.text = "\(data[indexPath.row]/*.personalInfo*/.number)인실"
+        cell.ageLabel.text = "\(data[indexPath.row]/*.personalInfo*/.age)살"
+        cell.genderLabel.text = "성별: \(data[indexPath.row]/*.personalInfo*/.gender)"
+        cell.nationLabel.text = data[indexPath.row]/*.personalInfo*/.nation
+//        cell.progressView.progress = Float(Concordination(myResult:data[indexPath.row] , yourResult: data[indexPath.row]))
 //        cell.profileImageView.image = data[indexPath.row].image
         return cell
         

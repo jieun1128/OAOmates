@@ -10,32 +10,38 @@ import Foundation
 import FirebaseFirestore
 
 extension API {
-    private var userDocumentRef: CollectionReference {
-        return Firestore.firestore().collection("Room")
-    }
-//    data: data, completion: { _ in
-//        completion?()
+        private var userDocumentRef: CollectionReference {
+            return Firestore.firestore().collection("Room")
+        }
+//    func userDocumentRef(name : String) -> CollectionReference{
+//        return Firestore.firestore().collection("\(name)")
 //    }
+    //    data: data, completion: { _ in
+    //        completion?()
+    //    }
     //completion: (() -> Void)?
     func addPersonalInfo(name: String, user:Person) {
         if let data = try? user.asDictionary() {
-            self.userDocumentRef.document("\(name)").collection("PersonalInfo").document().setData(data)
+            self.userDocumentRef.document(
+                "\(name)").collection("PersonalInfo").document().setData(data)
+            //            self.userDocumentRef.document("\(name)").collection("PersonalInfo").document().setData(data)
         }
     }
     
     func addSurveyResult(name: String, user: Survey){
         if let data = try? user.asDictionary(){
-            self.userDocumentRef.document("\(name)").collection("SurveyResult").document().setData(data)
+            self.userDocumentRef.document(
+            "SurveyInfo").setData(data)
         }
     }
     
-    func allUsers(completion: (([Room]) -> Void)?) {
+    func allUsers(completion: (([Person]) -> Void)?) {
         let decoder = DictionaryDecoder()
-        var users:[Room] = []
-        self.userDocumentRef.addSnapshotListener { (snapshot, error) in
+        var users:[Person] = []
+        self.userDocumentRef.getDocuments().collection("PersonalInfo").addSnapshotListener { (snapshot, error) in
             if error == nil, let documents = snapshot?.documents {
                 for document in documents {
-                    if let user = try? decoder.decode(Room.self, from: document.data()) {
+                    if let user = try? decoder.decode(Person.self, from: document.data()) {
                         print(user)
                         users.append(user)
                     }
@@ -44,4 +50,10 @@ extension API {
             }
         }
     }
+//    func allSurveyUsers(completion: (([Survey])->Void)?){
+//        let decoder = DictionaryDecoder()
+//        var users: [Survey] = []
+//
+//        self.userDocumentRef.document(true).collection("SurveyInfo")
+//    }
 }

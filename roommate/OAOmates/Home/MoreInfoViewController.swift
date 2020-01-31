@@ -24,7 +24,7 @@ class MoreInfoViewController: UIViewController {
     @IBOutlet weak var openChatLabel: UITextField!
     @IBOutlet weak var timeLabel: UILabel!
 
-    var detail : Room?
+    var detail : Person?
     
     //???/
     var detailItem: AnyObject? {
@@ -37,17 +37,17 @@ class MoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        ageLabel.text = "\(detail!.personalInfo.age)"
-        genderLabel.text = "\(detail!.personalInfo.gender)"
-        dormitoryLabel.text = "동국대학교 \( detail!.personalInfo.dormitory) \( detail!.personalInfo.number)인실"
-        nationLabel.text = "\( detail!.personalInfo.nation)"
-        gradeLabel.text = "\(detail!.personalInfo.grade)"
-        majorLabel.text = "\(detail!.personalInfo.major)"
-        introductionLabel.text = "\(detail!.personalInfo.introduction)"
-        letterLabel.text = "\(detail!.personalInfo.letter)"
-        openChatLabel.text = "\(detail!.personalInfo.openChat)"
-        collegeLabel.text = "\(detail!.personalInfo.college)"
-        sleepTimeLabel.text = "\(detail!.personalInfo.sleepTime)"
+        ageLabel.text = "\(detail!/*.personalInfo*/.age)"
+        genderLabel.text = "\(detail!/*.personalInfo*/.gender)"
+        dormitoryLabel.text = "동국대학교 \( detail!/*.personalInfo*/.dormitory) \( detail!/*.personalInfo*/.number)인실"
+        nationLabel.text = "\( detail!/*.personalInfo*/.nation)"
+        gradeLabel.text = "\(detail!/*.personalInfo*/.grade)"
+        majorLabel.text = "\(detail!/*.personalInfo*/.major)"
+        introductionLabel.text = "\(detail!/*.personalInfo*/.introduction)"
+        letterLabel.text = "\(detail!/*.personalInfo*/.letter)"
+        openChatLabel.text = "\(detail!/*.personalInfo*/.openChat)"
+        collegeLabel.text = "\(detail!/*.personalInfo*/.college)"
+        sleepTimeLabel.text = "\(detail!/*.personalInfo*/.sleepTime)"
 //        P.M. 00:00 ~ A.M. 00:00
 //        college.text = //으으으
         
