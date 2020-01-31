@@ -10,7 +10,20 @@ import UIKit
 
 class SurveyViewController: UIViewController {
 
-
+    @IBOutlet weak var SleepingHabit: UISegmentedControl!
+    @IBOutlet weak var Smoking: UISegmentedControl!
+    @IBOutlet weak var Drinking: UISegmentedControl!
+    @IBOutlet weak var SleepOut: UISegmentedControl!
+    @IBOutlet weak var Closeness: UISegmentedControl!
+    @IBOutlet weak var Washing: UISegmentedControl!
+    @IBOutlet weak var Religion: UISegmentedControl!
+    @IBOutlet weak var Noise: UISlider!
+    @IBOutlet weak var NotSmoking: UISlider!
+    @IBOutlet weak var NotDrinking: UISlider!
+    @IBOutlet weak var Cleaning: UISlider!
+    @IBOutlet weak var SameReligion: UISegmentedControl!
+    
+    
     
 //    func convertString (button : UISegmentedControl)-> String{
 //        if button.selectedSegmentIndex == 0{
@@ -113,28 +126,12 @@ class SurveyViewController: UIViewController {
     
     @IBAction func Save(_ sender: Any) {
 
-        let user = Survey(sleepingHabit: convertStringSleepingHabit(button: SleepingHabit), smoking: convertStringSmoking(button: Smoking), drinking: convertStringDrinking(button: Drinking), sleepout: convertStringSleepOut(button: SleepOut), closeness: convertStringSleepOut(button: SleepOut), washing: convertStringWashing(button: Washing), religion: convertStringReligion(button: Religion), noise: Int(self.Noise.value), notSmoking: Int(self.NotSmoking.value), notDrinking: Int(self.NotDrinking.value), cleaning: Int(self.Cleaning.value), sameReligion: convertStringSameReligion(button: SameReligion))
-        
-//        let user = Survey(sleepingHabit: convert(button: SleepingHabit), smoking: convertStringSmoking(button: Smoking), drinking: convertStringDrinking(button: Drinking), sleepout: convertStringSleepOut(button: SleepOut), closeness: convertStringCloseness(button: SleepOut), washing: convertStringWashing(button: Washing), religion: convertStringReligion(button: Religion), sameReligion: convertStringSameReligion(button: SameReligion))
-
-//        let user = Survey(noise: String(Noise.value), notSmoking = String(NotSmoking.value), notDrinking = String(NotDrinking.value), cleaning = String(Cleaning.value))
-
-
-//        API.shared.addUser(user: user , completion: { self.navigationController?.popViewController(animated: true)})
+        let userSurvey = Survey(sleepingHabit: convertStringSleepingHabit(button: SleepingHabit), smoking: convertStringSmoking(button: Smoking), drinking: convertStringDrinking(button: Drinking), sleepout: convertStringSleepOut(button: SleepOut), closeness: convertStringSleepOut(button: SleepOut), washing: convertStringWashing(button: Washing), religion: convertStringReligion(button: Religion), noise: Int(self.Noise.value), notSmoking: Int(self.NotSmoking.value), notDrinking: Int(self.NotDrinking.value), cleaning: Int(self.Cleaning.value), sameReligion: convertStringSameReligion(button: SameReligion))
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//
-//        noise.minimumValue = 0
-//        noise.maximumValue = 10
-//        notSmoking.minimumValue = 0
-//        notSmoking.maximumValue = 10
-//        notdrinking.minimumValue = 0
-//        notdrinking.maximumValue = 10
-//        cleaning.minimumValue = 0
-//        cleaning.maximumValue = 10
-
         // Do any additional setup after loading the view.
     }
     
@@ -150,11 +147,3 @@ class SurveyViewController: UIViewController {
     */
 
 }
-
-//        switch SleepingHabit.selectedSegmentIndex {
-//        case 0: textLabel.text = "코골이";
-//        case 1: textLabel.text = "이갈이";
-//        case 2: textLabel.text = "크게 숨쉬기";
-//        case 3: textLabel.text = "없음";
-//        default: break;
-//        }

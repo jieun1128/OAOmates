@@ -421,28 +421,53 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mhd-Xa-f51">
-                                                    <rect key="frame" x="45" y="16" width="324" height="58"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="as2-f1-RMm">
+                                                    <rect key="frame" x="45" y="16" width="227" height="58"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="취침 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mru-Th-Ja3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="324" height="16"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취침시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SJ-lU-xUk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="59" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jCb-FW-Uau">
-                                                            <rect key="frame" x="0.0" y="24" width="324" height="34"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits"/>
-                                                        </textField>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jhk-W4-BUS">
+                                                            <rect key="frame" x="0.0" y="24" width="227" height="34"/>
+                                                            <subviews>
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tlu-mb-j4f">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="100" id="Boo-lc-L8h"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits"/>
+                                                                </textField>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am8-j9-SxG">
+                                                                    <rect key="frame" x="108" y="0.0" width="11" height="34"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="11" id="PVS-uq-ROt"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3nq-Kq-Xff">
+                                                                    <rect key="frame" x="127" y="0.0" width="100" height="34"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="100" id="e2F-db-jAd"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits"/>
+                                                                </textField>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Mhd-Xa-f51" firstAttribute="leading" secondItem="uuH-ap-H7n" secondAttribute="leadingMargin" constant="25" id="8Mw-l3-Rxr"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Mhd-Xa-f51" secondAttribute="trailing" constant="25" id="ARI-iD-Jp9"/>
-                                                <constraint firstItem="Mhd-Xa-f51" firstAttribute="top" secondItem="uuH-ap-H7n" secondAttribute="topMargin" constant="5" id="xVa-DZ-Eb2"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Mhd-Xa-f51" secondAttribute="bottom" constant="5" id="y2L-CT-0K5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="as2-f1-RMm" secondAttribute="bottom" constant="5" id="7Ox-3u-2o5"/>
+                                                <constraint firstItem="as2-f1-RMm" firstAttribute="leading" secondItem="uuH-ap-H7n" secondAttribute="leadingMargin" constant="25" id="TIw-ul-xuO"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="as2-f1-RMm" secondAttribute="trailing" constant="122" id="YUy-qD-aIN"/>
+                                                <constraint firstItem="as2-f1-RMm" firstAttribute="top" secondItem="uuH-ap-H7n" secondAttribute="topMargin" constant="5" id="rrh-Dp-9np"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -578,7 +603,6 @@
                         <outlet property="MajorText" destination="ZXm-Wk-mMc" id="DAO-Ne-P7x"/>
                         <outlet property="NameText" destination="Jt1-PB-nfE" id="hCE-Nl-pD0"/>
                         <outlet property="NickNameText" destination="pLx-KM-S1Y" id="MnZ-ts-QGX"/>
-                        <outlet property="SleepingText" destination="jCb-FW-Uau" id="P5P-Lu-QTI"/>
                         <outlet property="ageText" destination="oZE-eW-e2W" id="hj0-UU-tiv"/>
                         <outlet property="collegeText" destination="P77-YW-Uoc" id="BTg-M0-LXv"/>
                         <outlet property="dormitory" destination="49y-Gy-O46" id="cUx-ul-pvH"/>
@@ -882,17 +906,26 @@
                     <navigationItem key="navigationItem" id="RfN-pV-BPo"/>
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
-                        <outlet property="SleepingHabit" destination="m6i-Rd-Tql" id="Xsd-kQ-vOi"/>
-                        <outlet property="Smoking" destination="D0m-s4-l8H" id="1tB-Wt-4nY"/>
+                        <outlet property="Cleaning" destination="kSb-sa-iTy" id="2XL-fh-tdB"/>
+                        <outlet property="Closeness" destination="5Hc-Eo-ROB" id="l9i-er-ygf"/>
+                        <outlet property="Drinking" destination="fK5-q4-FqI" id="34t-tE-4gh"/>
+                        <outlet property="Noise" destination="4lv-Ur-6UZ" id="46C-ls-A0J"/>
+                        <outlet property="NotDrinking" destination="YHT-Kl-xLm" id="zPb-ya-BJh"/>
+                        <outlet property="NotSmoking" destination="4lv-Ur-6UZ" id="Zni-IL-Vlb"/>
+                        <outlet property="Religion" destination="M4S-bZ-U9K" id="Cou-rc-FK4"/>
+                        <outlet property="SameReligion" destination="PA9-ea-OuT" id="wL6-bM-o9r"/>
+                        <outlet property="SleepOut" destination="yJP-Jm-cuD" id="Ul9-De-8ue"/>
+                        <outlet property="SleepingHabit" destination="m6i-Rd-Tql" id="Acc-gJ-0P8"/>
+                        <outlet property="Washing" destination="A6f-qW-9Zg" id="YUi-Kp-Faw"/>
                         <outlet property="cleaning" destination="kSb-sa-iTy" id="fKc-yx-zbf"/>
                         <outlet property="closeness" destination="5Hc-Eo-ROB" id="Opz-ls-CHn"/>
                         <outlet property="drinking" destination="fK5-q4-FqI" id="J12-JC-IYZ"/>
-                        <outlet property="noise" destination="4lv-Ur-6UZ" id="CQn-eq-hHI"/>
                         <outlet property="notSmoking" destination="YHT-Kl-xLm" id="1cS-vq-CaO"/>
                         <outlet property="notdrinking" destination="pLl-Uy-m56" id="laa-Wp-jL6"/>
                         <outlet property="religion" destination="M4S-bZ-U9K" id="3Zx-ca-M3a"/>
                         <outlet property="sameReligion" destination="PA9-ea-OuT" id="6DG-1b-GAG"/>
                         <outlet property="sleepOut" destination="yJP-Jm-cuD" id="czq-Ls-HLr"/>
+                        <outlet property="smoking" destination="D0m-s4-l8H" id="Y3d-AR-hpr"/>
                         <outlet property="washing" destination="A6f-qW-9Zg" id="8Yl-Rf-c7l"/>
                     </connections>
                 </viewController>
