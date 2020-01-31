@@ -38,7 +38,7 @@ extension API {
     func allUsers(completion: (([Person]) -> Void)?) {
         let decoder = DictionaryDecoder()
         var users:[Person] = []
-        self.userDocumentRef.getDocuments().collection("PersonalInfo").addSnapshotListener { (snapshot, error) in
+        self.userDocumentRef.document("홍길현").collection("PersonalInfo").addSnapshotListener { (snapshot, error) in
             if error == nil, let documents = snapshot?.documents {
                 for document in documents {
                     if let user = try? decoder.decode(Person.self, from: document.data()) {
@@ -50,10 +50,21 @@ extension API {
             }
         }
     }
-//    func allSurveyUsers(completion: (([Survey])->Void)?){
-//        let decoder = DictionaryDecoder()
-//        var users: [Survey] = []
-//
-//        self.userDocumentRef.document(true).collection("SurveyInfo")
-//    }
+    func allSurveyUsers(completion: (([Survey])->Void)?){
+        let decoder = DictionaryDecoder()
+        var users: [Survey] = []
+
+        self.userDocumentRef.document("홍길현").collection("SurveyInfo").addSnapshotListener{
+            (snapshot, error) in
+            if error == nil, let documents = snapshot?.documents {
+                for document in documents {
+                    if let user = try? decoder.decode(Survey.self, from: document.data()){
+                        print(user)
+                        users.append(user)
+                    }
+                }
+                completion?(users)
+            }
+        }
+    }
 }
