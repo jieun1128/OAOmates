@@ -31,20 +31,20 @@ class MyViewController: UITableViewController, CanRecieve{
         nameLabel.text=data
     }
     
-    @IBAction func unwindVC1 (segue : UIStoryboardSegue){}
+    
     
     @IBAction func pressEditButton(_ sender: Any) {
         performSegue(withIdentifier: "sendEdit", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "sendEdit"{
-            let secondVC = segue.destination as! PersonalInfoTableViewController
-            secondVC.data = nameLabel.text!
-            secondVC.delegate = self
+            let editVC = segue.destination as! PersonalInfoTableViewController
+            editVC.data = nameLabel.text!
+            editVC.delegate = self
         }
     }
     
-  
+  @IBAction func unwindVC1 (segue : UIStoryboardSegue){}
 
  
         // Do any additional setup after loading the view.
