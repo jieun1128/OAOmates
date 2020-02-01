@@ -16,7 +16,13 @@ extension API {
     private var surveyrDocumentRef: CollectionReference {
         return Firestore.firestore().collection("Survey")
     }
-   
+//    func userDocumentRef(name : String) -> CollectionReference{
+//        return Firestore.firestore().collection("\(name)")
+//    }
+    //    data: data, completion: { _ in
+    //        completion?()
+    //    }
+    //completion: (() -> Void)?
     func addPersonalInfo(user:Person) {
         if let data = try? user.asDictionary() {
             var inputData = data
@@ -79,7 +85,11 @@ extension API {
                 print(error)
             }
         }
-    } 
+    }
+    
+//    func returnSurvey() -> Survey {
+//        let result : Survey = self.surveyrDocumentRef.document(self.userId)
+//    }
     
     func addSurveyResult(user: Survey){
         if let data = try? user.asDictionary(){

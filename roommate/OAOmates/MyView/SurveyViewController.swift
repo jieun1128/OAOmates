@@ -130,11 +130,65 @@ class SurveyViewController: UIViewController {
     }
 
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    var userId:String {
+            return UserDefaults.standard.string(forKey: "userId") ?? ""
+        }
 
-    }
+        
+        override func viewDidLoad() {
+        super.viewDidLoad()
+            API.shared.getSurveyInfo(userId: userId){ user in
+//                if user.dormitory == "남산"{self.dormitory.selectedSegmentIndex = 0}
+//                           else{ self.dormitory.selectedSegmentIndex = 1 }
+                if user.sleepingHabit == "코골이" {self.SleepingHabit.selectedSegmentIndex = 0}
+                else if user.sleepingHabit == "이갈이" {self.SleepingHabit.selectedSegmentIndex = 1}
+                else if user.sleepingHabit == "크게숨쉬기" {self.SleepingHabit.selectedSegmentIndex = 2}else{
+                    self.SleepingHabit.selectedSegmentIndex = 3
+                }
+                
+                if user.smoking == "예" {self.Smoking.selectedSegmentIndex = 0 }
+                else{self.Smoking.selectedSegmentIndex = 1}
+                
+                if user.drinking == "전혀" {self.Drinking.selectedSegmentIndex = 0 }
+                else if user.drinking == "달 1~3회"{self.Drinking.selectedSegmentIndex = 1}
+                else if user.drinking == "주 1~2회"{self.Drinking.selectedSegmentIndex = 2}
+                else if user.drinking == "주 3~4회"{self.Drinking.selectedSegmentIndex = 3}
+                else{self.Drinking.selectedSegmentIndex = 4}
+                
+                if user.sleepout == "안함"{self.SleepOut.selectedSegmentIndex = 0}
+                else if user.sleepout == "드물게"{self.SleepOut.selectedSegmentIndex = 1}
+                else if user.sleepout == "가끔"{self.SleepOut.selectedSegmentIndex = 2}
+                else if user.sleepout == "종종"{self.SleepOut.selectedSegmentIndex = 3}
+                else{self.SleepOut.selectedSegmentIndex = 4}
+                
+                if user.closeness == "0"{self.Closeness.selectedSegmentIndex = 0}
+                else if user.closeness == "25%"{self.Closeness.selectedSegmentIndex = 1}
+                else if user.closeness == "50%"{self.Closeness.selectedSegmentIndex = 2}
+                else if user.closeness == "75%"{self.Closeness.selectedSegmentIndex = 3}
+                else{self.Closeness.selectedSegmentIndex = 4}
+                
+                if user.washing == "0~1번"{self.Washing.selectedSegmentIndex = 0}
+                else if user.washing == "2~3번"{self.Washing.selectedSegmentIndex = 1}
+                else if user.washing == "4~5번"{self.Washing.selectedSegmentIndex = 2}
+                else {self.Washing.selectedSegmentIndex = 3}
+                
+                if user.religion == "불교"{self.Religion.selectedSegmentIndex = 0}
+                else if user.religion == "천주교"{self.Religion.selectedSegmentIndex = 1}
+                else if user.religion == "기독교"{self.Religion.selectedSegmentIndex = 2}
+                else if user.religion == "무교"{self.Religion.selectedSegmentIndex = 3}
+                else{self.Religion.selectedSegmentIndex = 4}
+                
+                
+                self.Noise.value = Float(user.noise)
+                self.NotSmoking.value = Float(user.notSmoking)
+                self.NotDrinking.value = Float(user.notDrinking)
+                self.Cleaning.value = Float(user.cleaning)
+                
+                if user.sameReligion == "예"{self.SameReligion.selectedSegmentIndex = 0}
+                else{self.SameReligion.selectedSegmentIndex = 1}
+    
+                
+        }
     
 
     /*
@@ -149,3 +203,4 @@ class SurveyViewController: UIViewController {
 
 }
 
+}
