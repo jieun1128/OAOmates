@@ -1071,7 +1071,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XDO-FL-A9w">
                                                     <rect key="frame" x="98" y="11" width="169.5" height="20.5"/>
                                                     <subviews>
@@ -1092,7 +1091,6 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="XDO-FL-A9w" firstAttribute="leading" secondItem="PSa-3X-IXi" secondAttribute="leadingMargin" constant="78" id="dTT-XH-LHE"/>
@@ -1141,7 +1139,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hui-lp-Rni">
                                                     <rect key="frame" x="98" y="11" width="169.5" height="20.5"/>
                                                     <subviews>
@@ -1162,7 +1159,6 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="hui-lp-Rni" firstAttribute="leading" secondItem="Aqa-Av-u9e" secondAttribute="leadingMargin" constant="78" id="63O-Qh-1Xb"/>
@@ -1177,7 +1173,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AiF-X5-Nzb">
                                                     <rect key="frame" x="98" y="11" width="169.5" height="20.5"/>
                                                     <subviews>
@@ -1198,7 +1193,6 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="AiF-X5-Nzb" firstAttribute="leading" secondItem="5yD-hU-VeM" secondAttribute="leadingMargin" constant="78" id="HPh-UK-c2L"/>
@@ -1213,7 +1207,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FmZ-G5-m0d">
                                                     <rect key="frame" x="98" y="11" width="169.5" height="20.5"/>
                                                     <subviews>
@@ -1234,7 +1227,6 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="FmZ-G5-m0d" firstAttribute="top" secondItem="v4U-T6-UWE" secondAttribute="topMargin" id="73J-ey-NPE"/>
@@ -1249,7 +1241,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kde-ap-Xp4">
                                                     <rect key="frame" x="98" y="11" width="169.5" height="20.5"/>
                                                     <subviews>
@@ -1270,7 +1261,6 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="kde-ap-Xp4" firstAttribute="leading" secondItem="aig-tn-cC8" secondAttribute="leadingMargin" constant="78" id="AP9-xo-YvV"/>
@@ -1285,7 +1275,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Cgp-c8-o6r">
                                                     <rect key="frame" x="98" y="11" width="169.5" height="20.5"/>
                                                     <subviews>
@@ -1306,7 +1295,6 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Cgp-c8-o6r" firstAttribute="top" secondItem="oWA-O2-rsy" secondAttribute="topMargin" id="ELA-AA-cep"/>
@@ -1321,7 +1309,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Svg-YE-Pec">
                                                     <rect key="frame" x="98" y="11" width="169.5" height="20.5"/>
                                                     <subviews>
@@ -1342,7 +1329,6 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Svg-YE-Pec" firstAttribute="leading" secondItem="VC6-LZ-Sed" secondAttribute="leadingMargin" constant="78" id="9gK-cA-197"/>
@@ -1361,7 +1347,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EvS-bl-BBx">
                                                     <rect key="frame" x="53" y="11" width="138" height="20.5"/>
                                                     <subviews>
@@ -1385,7 +1370,6 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="EvS-bl-BBx" firstAttribute="top" secondItem="kRO-5y-Xwd" secondAttribute="topMargin" id="0UT-LQ-2fu"/>
@@ -1450,18 +1434,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="71"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="취침시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOA-br-FxU">
-                                                    <rect key="frame" x="20" y="11" width="59" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snG-u3-9w6">
-                                                    <rect key="frame" x="20" y="40" width="334" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취침시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOA-br-FxU">
+                                                    <rect key="frame" x="20" y="11" width="59" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1517,7 +1491,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="71"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="한줄소개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJr-NL-IMP">
                                                     <rect key="frame" x="20" y="11" width="59" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1532,12 +1505,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="ALb-cY-Pgz" firstAttribute="top" secondItem="Kdt-YD-0vt" secondAttribute="topMargin" id="16r-Ew-tZJ"/>
-                                                <constraint firstItem="ALb-cY-Pgz" firstAttribute="leading" secondItem="Kdt-YD-0vt" secondAttribute="leadingMargin" id="qud-0r-BQB"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="OwO-KW-M7R">
@@ -1547,7 +1515,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="71"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="yaV-Sb-SQA">
                                                     <rect key="frame" x="20" y="11" width="66.5" height="48"/>
                                                     <subviews>
@@ -1565,7 +1532,6 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="yaV-Sb-SQA" firstAttribute="leading" secondItem="wqb-gg-l0M" secondAttribute="leadingMargin" id="sTV-GW-Pn8"/>
@@ -1637,21 +1603,25 @@
                     <tabBarItem key="tabBarItem" title="MY" image="person" catalog="system" selectedImage="person" id="XuT-3e-LYD"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="ageLabel" destination="MbB-tz-KIi" id="wLI-Xg-blf"/>
-                        <outlet property="collegeLabel" destination="wdj-zV-A4H" id="crX-Cm-LwU"/>
+                        <outlet property="ageLabel" destination="Y2B-eD-L7p" id="gPC-VT-2VN"/>
+                        <outlet property="amLabel" destination="E9Q-tJ-Pb2" id="mgw-Wn-YHq"/>
+                        <outlet property="collegeLabel" destination="3kT-R5-0MG" id="aHP-95-X2i"/>
                         <outlet property="dormitoryLabel" destination="JfW-aR-8aD" id="oLT-6d-zS3"/>
-                        <outlet property="genderLabel" destination="m4U-uF-7FB" id="Jdr-CJ-avT"/>
-                        <outlet property="gradeLabel" destination="AmP-aJ-ymj" id="nJo-JO-f5T"/>
+                        <outlet property="genderLabel" destination="Ilj-vx-ixQ" id="iHD-R0-zPu"/>
+                        <outlet property="gradeLabel" destination="wD0-14-uYI" id="4Sg-aG-xVW"/>
                         <outlet property="introductionLabel" destination="b6H-yY-8hi" id="kY7-Ob-MKl"/>
-                        <outlet property="letterLabel" destination="NXB-jY-Hbz" id="feA-8u-c14"/>
-                        <outlet property="majorLabel" destination="RQI-ye-sFV" id="TP7-9b-oxg"/>
+                        <outlet property="letterLabel" destination="qOO-Ie-auR" id="rrB-yj-e6P"/>
+                        <outlet property="majorLabel" destination="5EC-k1-hCI" id="Mbj-Tp-Se5"/>
+                        <outlet property="monthLabel" destination="HY6-ed-xc4" id="6OV-1D-27C"/>
                         <outlet property="nameLabel" destination="CtE-GA-LTi" id="XCa-0R-d35"/>
-                        <outlet property="nationLabel" destination="r2z-Vg-mNf" id="mAq-0b-cps"/>
-                        <outlet property="nickNameLabel" destination="jPR-e6-dhR" id="Cbg-J4-zGR"/>
+                        <outlet property="nationLabel" destination="vUr-k8-9UY" id="kFF-Pk-WNe"/>
+                        <outlet property="nickNameLabel" destination="OGp-EL-g4A" id="h4Z-oh-kA9"/>
                         <outlet property="numberLabel" destination="4gp-e0-H9U" id="2t9-7j-vIU"/>
                         <outlet property="openChatLabel" destination="lli-3b-GmR" id="NQ2-49-kJQ"/>
+                        <outlet property="pmLabel" destination="feg-Ym-6Cd" id="tPq-TC-4TV"/>
                         <outlet property="semesterLabel" destination="2Yr-2d-yIB" id="nf7-zx-HRg"/>
-                        <outlet property="sleepingHour" destination="snG-u3-9w6" id="z2T-gO-2JN"/>
+                        <outlet property="sleephour" destination="uVe-4H-oEq" id="wp6-p8-zbm"/>
+                        <outlet property="wakehour" destination="L1h-Ot-zLJ" id="WgD-CU-QuW"/>
                         <outlet property="yearLabel" destination="Ml7-Yo-knS" id="zQS-iG-PNM"/>
                     </connections>
                 </tableViewController>

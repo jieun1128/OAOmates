@@ -114,12 +114,19 @@ class PersonalInfoTableViewController: UITableViewController {
             self.letterText.text = user.letter
             self.openChat.text = user.openChat
             
-            if user.dormitory == "남산"{self.dormitory.selectedSegmentIndex == 0}
-            else{ self.dormitory.selectedSegmentIndex == 1 }
+            if user.sleepAPM == "A.M."{self.sleepAPM.selectedSegmentIndex = 0}else{
+                self.sleepAPM.selectedSegmentIndex = 1
+            }
             
-            if user.number == "2"{self.number.selectedSegmentIndex == 0 }
-            else if user.number == "4" {self.number.selectedSegmentIndex == 1}
-            else{self.number.selectedSegmentIndex == 2}
+            if user.wakeAPM == "A.M."{self.wakeAPM.selectedSegmentIndex = 0}else{ self.wakeAPM.selectedSegmentIndex = 1}
+            
+            if user.dormitory == "남산"{self.dormitory.selectedSegmentIndex = 0}
+            else{ self.dormitory.selectedSegmentIndex = 1 }
+            
+            if user.number == "2"{self.number.selectedSegmentIndex = 0 }
+            else if user.number == "4" {self.number.selectedSegmentIndex = 1}
+            else{self.number.selectedSegmentIndex = 2}
+            
     }
 
     

@@ -22,15 +22,19 @@ class MyViewController: UITableViewController{
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var nationLabel: UILabel!
+    @IBOutlet weak var monthLabel: UILabel!
     
     @IBOutlet weak var dormitoryLabel: UILabel!
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var semesterLabel: UILabel!
-    @IBOutlet weak var sleepingHour: UILabel!
     @IBOutlet weak var introductionLabel: UILabel!
     @IBOutlet weak var letterLabel: UILabel!
     @IBOutlet weak var openChatLabel: UILabel!
+    @IBOutlet weak var amLabel: UILabel!
+    @IBOutlet weak var sleephour: UILabel!
+    @IBOutlet weak var pmLabel: UILabel!
+    @IBOutlet weak var wakehour: UILabel!
     
     
     var userId:String {
@@ -54,7 +58,14 @@ class MyViewController: UITableViewController{
             self.nationLabel.text = user.nation
             self.dormitoryLabel.text = user.dormitory
             self.numberLabel.text = user.number
-            self.sleepingHour.text = "\(user.sleepTime) ~ \(user.wakeTime)"
+            self.amLabel.text = user.sleepAPM
+            self.pmLabel.text = user.wakeAPM
+            self.sleephour.text = "\(user.sleepTime)"
+            self.wakehour.text = user.wakeTime
+            self.yearLabel.text = user.year
+            self.semesterLabel.text = user.semester
+            self.monthLabel.text = user.month
+            
             self.introductionLabel.text = user.introduction
             self.letterLabel.text = user.letter
             self.openChatLabel.text = user.openChat
