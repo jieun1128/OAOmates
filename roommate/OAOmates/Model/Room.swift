@@ -26,6 +26,7 @@ struct Person : Codable{
     var letter: String
     var introduction: String
     var openChat: String
+    var userId: String
 }
 struct Survey : Codable{
 

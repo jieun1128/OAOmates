@@ -58,10 +58,10 @@ class PersonalInfoTableViewController: UITableViewController {
     
     
     @IBAction func SaveUser(_ sender: Any) {
-        let user = Person(dormitory: convertString(button: dormitory), name: NameText.text ?? "", number: convertStringNumber(button: number), nickname: NickNameText.text ?? "", age: ageText.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "", major: MajorText.text ?? "", grade: gradeText.text ?? "", college: collegeText.text ?? "", wakeTime: wakeText.text ?? "", sleepTime: sleepText.text ?? "", letter: letterText.text ?? "", introduction: introductionText.text ?? "", openChat: openChat.text ?? "")
+        let user = Person(dormitory: convertString(button: dormitory), name: NameText.text ?? "", number: convertStringNumber(button: number), nickname: NickNameText.text ?? "", age: ageText.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "", major: MajorText.text ?? "", grade: gradeText.text ?? "", college: collegeText.text ?? "", wakeTime: wakeText.text ?? "", sleepTime: sleepText.text ?? "", letter: letterText.text ?? "", introduction: introductionText.text ?? "", openChat: openChat.text ?? "", userId: "")
         
         
-        API.shared.addPersonalInfo(name: NameText.text ?? "", user: user)
+        API.shared.addPersonalInfo(user: user)
     
         
         
