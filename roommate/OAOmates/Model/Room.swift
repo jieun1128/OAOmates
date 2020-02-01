@@ -21,12 +21,17 @@ struct Person : Codable{
     var major: String
     var grade: String
     var college: String
-    var wakeTime: String
+    var sleepAPM: String
     var sleepTime: String
+    var wakeAPM: String
+    var wakeTime: String
     var letter: String
     var introduction: String
     var openChat: String
     var userId: String
+    var year: String
+    var semester: String
+    var month: String
 }
 struct Survey : Codable{
 

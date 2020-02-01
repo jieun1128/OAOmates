@@ -25,8 +25,10 @@ class PersonalInfoTableViewController: UITableViewController {
     @IBOutlet weak var nationText: UITextField!
     @IBOutlet weak var introductionText: UITextField!
     @IBOutlet weak var letterText: UITextField!
-    @IBOutlet weak var wakeText: UITextField!
+    @IBOutlet weak var sleepAPM: UISegmentedControl!
     @IBOutlet weak var sleepText: UITextField!
+    @IBOutlet weak var wakeText: UITextField!
+    @IBOutlet weak var wakeAPM: UISegmentedControl!
     @IBOutlet weak var collegeText: UITextField!
     @IBOutlet weak var openChat: UITextField!
     @IBOutlet weak var dormitory: UISegmentedControl!
@@ -34,6 +36,7 @@ class PersonalInfoTableViewController: UITableViewController {
     @IBOutlet weak var yearText: UITextField!
     @IBOutlet weak var semester: UISegmentedControl!
     @IBOutlet weak var gradeText: UITextField!
+    @IBOutlet weak var month: UISegmentedControl!
     
     var delegate:CanRecieve?
     var data = String()
@@ -54,11 +57,39 @@ class PersonalInfoTableViewController: UITableViewController {
             return "6"
         }
     }
+    func convertStringSemester (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "1"
+        }else {
+            return "2"
+        }
+    }
+    func convertStringMonth (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "4"
+        }else {
+            return "6"
+        }
+    }
+    func convertStringWake (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "A.M."
+        }else {
+            return "P.M."
+        }
+    }
+    func convertStringSleep (button : UISegmentedControl)-> String{
+        if button.selectedSegmentIndex == 0{
+            return "A.M."
+        }else {
+            return "P.M."
+        }
+    }
     
     
     
     @IBAction func SaveUser(_ sender: Any) {
-        let user = Person(dormitory: convertString(button: dormitory), name: NameText.text ?? "", number: convertStringNumber(button: number), nickname: NickNameText.text ?? "", age: ageText.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "", major: MajorText.text ?? "", grade: gradeText.text ?? "", college: collegeText.text ?? "", wakeTime: wakeText.text ?? "", sleepTime: sleepText.text ?? "", letter: letterText.text ?? "", introduction: introductionText.text ?? "", openChat: openChat.text ?? "", userId: "")
+        let user = Person(dormitory: convertString(button: dormitory), name: NameText.text ?? "", number: convertStringNumber(button: number), nickname: NickNameText.text ?? "", age: ageText.text ?? "", gender: genderText.text ?? "", nation: nationText.text ?? "", major: MajorText.text ?? "", grade: gradeText.text ?? "", college: collegeText.text ?? "", sleepAPM: convertStringSleep(button: sleepAPM), sleepTime: sleepText.text ?? "", wakeAPM: convertStringWake(button: wakeAPM), wakeTime: wakeText.text ?? "", letter: letterText.text ?? "", introduction: introductionText.text ?? "", openChat: openChat.text ?? "", userId: "", year: yearText.text ?? "", semester: convertStringSemester(button: semester), month: convertStringMonth(button: month))
         
         
         API.shared.addPersonalInfo(user: user)
