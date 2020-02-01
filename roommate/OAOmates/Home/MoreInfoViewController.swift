@@ -73,24 +73,21 @@ class MoreInfoViewController: UIViewController {
     */
     
     @IBAction func AlertMatching(_ sender: Any) {
-        let alertController = UIAlertController(title: "매칭요청DLSRKDY", message: "우와", preferredStyle: .alert)
-//        alertController.addTextField(configurationHandler: matchingField)
-//        alertController.addAction(title: "ok", style: .default, handler: nil)
-//        present(alertController, animated: true)
+        let alert = UIAlertController(title: "상대방에게 매칭이 요청되었습니다.", message: nil, preferredStyle: .alert)
+//        alert.addTextField(configurationHandler: matchingField)
+//        alert.addAction(title: "ok", style: .default, handler: nil)
+//        present(alert, animated: true)
+        let okAction = UIAlertAction(title: "확인", style: .default, handler: self.okHandler)
+        alert.addAction(okAction)
         
-//        let okAction = UIAlertAction(title: "ok", style: .default, handler: self.okHandler)
-//        alertController.addAction(okAction)
-        
-        self.present(alertController, animated: true)
+        self.present(alert, animated: true, completion: nil)
     }
     
     func matchingField(textField: UITextField) {
         matchingField = textField
     }
 
-//    func okHandler(alert: UIAlertAction) {
-//        let simpleVC = SimpleVC()
-//        simpleVC.customInit(message: (matchingField?.text)!)
-//        self.navigationController?.pushViewController(simpleVC, animated: true)
-//    }
+    func okHandler(alert: UIAlertAction) {
+        print("request matching")
+    }
 }
