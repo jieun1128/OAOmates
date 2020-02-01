@@ -11,28 +11,28 @@ import Foundation
 func Concordination(myResult : Survey, yourResult : Survey) -> Double{
     var degree : Double = 0
     if myResult.sleepingHabit == yourResult.sleepingHabit {
-        degree += 12.5
+        degree += 0.125
     }
     if myResult.smoking == yourResult.sleepingHabit {
-        degree += 12.5
+        degree += 0.125
     }
     if myResult.drinking == yourResult.drinking {
-        degree += 12.5
+        degree += 0.125
     }
     if myResult.sleepout == yourResult.sleepout {
-        degree += 12.5
+        degree += 0.125
     }
     if myResult.closeness == yourResult.closeness {
-        degree += 12.5
+        degree += 0.125
     }
     if myResult.washing == yourResult.washing{
-        degree += 12.5
+        degree += 0.125
     }
     if myResult.religion == yourResult.religion{
-        degree += 12.5
+        degree += 0.125
     }
     if myResult.sameReligion == yourResult.sameReligion{
-        degree += 12.5
+        degree += 0.125
     }
     return degree
 //    struct Survey : Codable{

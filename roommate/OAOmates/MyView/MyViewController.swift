@@ -22,15 +22,19 @@ class MyViewController: UITableViewController{
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var nationLabel: UILabel!
+    @IBOutlet weak var monthLabel: UILabel!
     
     @IBOutlet weak var dormitoryLabel: UILabel!
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var semesterLabel: UILabel!
-    @IBOutlet weak var sleepingHour: UILabel!
     @IBOutlet weak var introductionLabel: UILabel!
     @IBOutlet weak var letterLabel: UILabel!
     @IBOutlet weak var openChatLabel: UILabel!
+    @IBOutlet weak var amLabel: UILabel!
+    @IBOutlet weak var sleephour: UILabel!
+    @IBOutlet weak var pmLabel: UILabel!
+    @IBOutlet weak var wakehour: UILabel!
     
     
     var userId:String {
@@ -48,13 +52,20 @@ class MyViewController: UITableViewController{
             self.nickNameLabel.text = user.nickname
             self.collegeLabel.text = user.college
             self.majorLabel.text = user.major
-            self.gradeLabel.text = user.grade
-            self.ageLabel.text = user.age
-            self.genderLabel.text = user.gender
+            self.gradeLabel.text = "\(user.grade)학년"
+            self.ageLabel.text = "\(user.age)세"
+            self.genderLabel.text = "성별: \(user.gender)"
             self.nationLabel.text = user.nation
-            self.dormitoryLabel.text = user.dormitory
-            self.numberLabel.text = user.number
-            self.sleepingHour.text = "\(user.sleepTime) ~ \(user.wakeTime)"
+            self.dormitoryLabel.text = "\(user.dormitory)학사"
+            self.numberLabel.text = "\(user.number)인실"
+            self.amLabel.text = user.wakeAPM
+            self.pmLabel.text = user.sleepAPM
+            self.sleephour.text = "\(user.wakeTime)"
+            self.wakehour.text = user.sleepTime
+            self.yearLabel.text = "\(user.year)학년도"
+            self.semesterLabel.text = "\(user.semester)학기"
+            self.monthLabel.text = "\(user.month)개월"
+            
             self.introductionLabel.text = user.introduction
             self.letterLabel.text = user.letter
             self.openChatLabel.text = user.openChat
