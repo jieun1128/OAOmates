@@ -32,13 +32,6 @@ class MoreInfoViewController: UIViewController {
     
     var detail : Person?
     
-    //???/
-    var detailItem: AnyObject? {
-        didSet {
-            //Update the view
-            self.viewDidLoad()
-        }
-    }
 
 
     override func viewDidLoad() {
@@ -54,6 +47,7 @@ class MoreInfoViewController: UIViewController {
         letterLabel.text = "\(detail!/*.personalInfo*/.letter)"
         openChatLabel.text = "\(detail!/*.personalInfo*/.openChat)"
         collegeLabel.text = "\(detail!/*.personalInfo*/.college)"
+
         sleepTimeLabel.text = "\(detail!/*.personalInfo*/.wakeAPM) \(detail!/*.personalInfo*/.wakeTime) ~ \(detail!/*.personalInfo*/.sleepAPM) \(detail!/*.personalInfo*/.sleepTime)"
         timeLabel.text = "\(detail!/*.personalInfo*/.year)년 \(detail!/*.personalInfo*/.semester)학기 \(detail!/*.personalInfo*/.month)개월"
         
@@ -61,6 +55,7 @@ class MoreInfoViewController: UIViewController {
 //        college.text = //으으으
         
         // Do any additional setup after loading the view.
+
     }
 
     override func viewDidAppear(_ animated: Bool) {
