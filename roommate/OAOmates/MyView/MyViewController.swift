@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 
 
 
-class MyViewController: UITableViewController, CanRecieve{
+class MyViewController: UITableViewController{
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var nickNameLabel: UILabel!
@@ -24,47 +25,44 @@ class MyViewController: UITableViewController, CanRecieve{
     
     @IBOutlet weak var dormitoryLabel: UILabel!
     @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var semesterLabel: UILabel!
+    @IBOutlet weak var sleepingHour: UILabel!
+    @IBOutlet weak var introductionLabel: UILabel!
+    @IBOutlet weak var letterLabel: UILabel!
+    @IBOutlet weak var openChatLabel: UILabel!
     
     
-//    func returningName() -> String? {
-//        return nameLabel.text
-//    }
-//    
-    func passDataBack(data: String) {
-        nameLabel.text = data
-//        nickNameLabel.text = data.personalInfo.nickname
-//        collegeLabel.text = data.personalInfo.college
-//        majorLabel.text = data.personalInfo.major
-//        gradeLabel.text = data.personalInfo.grade
-//        ageLabel.text = data.personalInfo.age
-//        genderLabel.text = data.personalInfo.gender
-//        nationLabel.text = data.personalInfo.nation
-        
+    var userId:String {
+        return UserDefaults.standard.string(forKey: "userId") ?? ""
     }
-    
-    
     
     @IBAction func pressEditButton(_ sender: Any) {
         performSegue(withIdentifier: "sendEdit", sender: self)
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "sendEdit"{
-            let editVC = segue.destination as! PersonalInfoTableViewController
-            editVC.data = nameLabel.text!
-//            editVC.data.personalInfo.nickname = nickNameLabel.text!
-//            editVC.data.personalInfo.college = collegeLabel.text!
-//            editVC.data.personalInfo.major = majorLabel.text!
-//            editVC.data.personalInfo.grade = gradeLabel.text!
-//            editVC.data.personalInfo.age = ageLabel.text!
-//            editVC.data.personalInfo.gender = genderLabel.text!
-//            editVC.data.personalInfo.nation = nationLabel.text!
-//            editVC.data.personalInfo.dormitory = dormitoryLabel.text!
-//            editVC.data.personalInfo.number = numberLabel.text!
-            
-            editVC.delegate = self
-
+    
+    override func viewDidLoad() {
+    super.viewDidLoad()
+        API.shared.getUserInfo(userId: userId) { user in
+            self.nameLabel.text = user.name
+            self.nickNameLabel.text = user.nickname
+            self.collegeLabel.text = user.college
+            self.majorLabel.text = user.major
+            self.gradeLabel.text = user.grade
+            self.ageLabel.text = user.age
+            self.genderLabel.text = user.gender
+            self.nationLabel.text = user.nation
+            self.dormitoryLabel.text = user.dormitory
+            self.numberLabel.text = user.number
+            self.sleepingHour.text = "\(user.sleepTime) ~ \(user.wakeTime)"
+            self.introductionLabel.text = user.introduction
+            self.letterLabel.text = user.letter
+            self.openChatLabel.text = user.openChat
         }
     }
+   
+    
+    
     
   @IBAction func unwindVC1 (segue : UIStoryboardSegue){}
 

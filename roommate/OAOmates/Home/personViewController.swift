@@ -15,14 +15,14 @@ import Firebase
 
 class personViewController: UIViewController, UITableViewDelegate{
 //    let data = DataLoader().userData
-    @IBAction func LogoutButton(_ sender: Any) {
-        let firebaseAuth = Auth.auth()
-        do{
-            try firebaseAuth.signOut()
-        } catch let signOutError as NSError{
-            print("Error signing out : %@", signOutError)
-        }
-    }
+//    @IBAction func LogoutButton(_ sender: Any) {
+//        let firebaseAuth = Auth.auth()
+//        do{
+//            try firebaseAuth.signOut()
+//        } catch let signOutError as NSError{
+//            print("Error signing out : %@", signOutError)
+//        }
+//    }
     
     @IBOutlet weak var personTableView: UITableView!
      var  data:[Person] = [] {
@@ -43,12 +43,12 @@ class personViewController: UIViewController, UITableViewDelegate{
     
 //    var handle : Any
     override func viewWillAppear(_ animated: Bool) {
-        var handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-          // [START_EXCLUDE]
-          self.personTableView.reloadData()
-          // [END_EXCLUDE]
-        }
-        Auth.auth().removeStateDidChangeListener(handle)
+//        var handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+//          // [START_EXCLUDE]
+//          self.personTableView.reloadData()
+//          // [END_EXCLUDE]
+//        }
+//        Auth.auth().removeStateDidChangeListener(handle)
         API.shared.allUsers{(users) in
             self.data = users
         }

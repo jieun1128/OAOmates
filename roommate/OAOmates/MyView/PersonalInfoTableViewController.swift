@@ -13,9 +13,6 @@ protocol CanRecieve{
 }
 
 class PersonalInfoTableViewController: UITableViewController {
-
-//    var ref: DatabaseReference!
-//    ref = Database.database().reference()
     
     @IBOutlet weak var NameText: UITextField!
     @IBOutlet weak var NickNameText: UITextField!
@@ -35,8 +32,6 @@ class PersonalInfoTableViewController: UITableViewController {
     @IBOutlet weak var semester: UISegmentedControl!
     @IBOutlet weak var gradeText: UITextField!
     
-    var delegate:CanRecieve?
-    var data = String()
     
     func convertString (button : UISegmentedControl)-> String{
         if button.selectedSegmentIndex == 0{
@@ -62,26 +57,38 @@ class PersonalInfoTableViewController: UITableViewController {
         
         
         API.shared.addPersonalInfo(user: user)
-    
-        
-        
-        delegate?.passDataBack(data: NameText.text!) //Room 인스턴스 만들기
-        dismiss(animated: true, completion: nil)
-
-        self.navigationController?.popViewController(animated: true)
-        
-        //
     }
     
+    var userId:String {
+        return UserDefaults.standard.string(forKey: "userId") ?? ""
+    }
+
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    super.viewDidLoad()
+        API.shared.getUserInfo(userId: userId) { user in
+            self.NameText.text = user.name
+            self.NickNameText.text = user.nickname
+            self.collegeText.text = user.college
+            self.MajorText.text = user.major
+            self.gradeText.text = user.grade
+            self.ageText.text = user.age
+            self.genderText.text = user.gender
+            self.nationText.text = user.nation
+//            self.dormitoryLabel.text = user.dormitory
+//            self.numberLabel.text = user.number
+            self.sleepText.text = user.sleepTime
+            self.wakeText.text = user.wakeTime
+            self.introductionText.text = user.introduction
+            self.letterText.text = user.letter
+            self.openChat.text = user.openChat
+            
+            if user.dormitory == "남산"{self.dormitory.selectedSegmentIndex == 0}
+            else{ self.dormitory.selectedSegmentIndex == 1 }
+            
+            if user.number == "2"{self.number.selectedSegmentIndex == 0 }
+            else if user.number == "4" {self.number.selectedSegmentIndex == 1}
+            else{self.number.selectedSegmentIndex == 2}
     }
 
     
@@ -152,4 +159,5 @@ class PersonalInfoTableViewController: UITableViewController {
     }
     */
 
+}
 }

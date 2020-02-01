@@ -32,9 +32,6 @@ class SurveyViewController: UIViewController {
         Cleaning.value = roundf(Cleaning.value)
     }
     
-//    @IBAction func noiseSet(_ sender: UISlider) { //이게 모야??
-////        noise.value = round(noise.value)
-//    }
     
     func convertStringSleepingHabit (button : UISegmentedControl)-> String{
         if button.selectedSegmentIndex == 0{

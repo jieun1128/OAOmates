@@ -10,9 +10,6 @@
 		3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F181CDC23D05E360026ADED /* personTableViewCell.swift */; };
 		3F299DB023E2CFF000DF9B55 /* Concordination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F299DAF23E2CFF000DF9B55 /* Concordination.swift */; };
 		3F46D7DD23D067C90020F986 /* homeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F46D7DC23D067C90020F986 /* homeView.storyboard */; };
-		3F47E74923E3E9790055D757 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F47E74823E3E9790055D757 /* Login.storyboard */; };
-		3F47E74B23E3EAE60055D757 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F47E74A23E3EAE60055D757 /* LoginViewController.swift */; };
-		3F47E74D23E3EE700055D757 /* NewPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F47E74C23E3EE700055D757 /* NewPersonViewController.swift */; };
 		3F5B8F4F23DEBDEA00E64578 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F5B8F4E23DEBDEA00E64578 /* GoogleService-Info.plist */; };
 		3F5B8F8F23DED99A00E64578 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B8F8E23DED99A00E64578 /* Encodable.swift */; };
 		3F5B8F9123DED9AC00E64578 /* Codable-Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B8F9023DED9AC00E64578 /* Codable-Dictionary.swift */; };
@@ -39,9 +36,6 @@
 		3F181CDC23D05E360026ADED /* personTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personTableViewCell.swift; sourceTree = "<group>"; };
 		3F299DAF23E2CFF000DF9B55 /* Concordination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concordination.swift; sourceTree = "<group>"; };
 		3F46D7DC23D067C90020F986 /* homeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = homeView.storyboard; sourceTree = "<group>"; };
-		3F47E74823E3E9790055D757 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		3F47E74A23E3EAE60055D757 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		3F47E74C23E3EE700055D757 /* NewPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonViewController.swift; sourceTree = "<group>"; };
 		3F5B8F4E23DEBDEA00E64578 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F5B8F8E23DED99A00E64578 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		3F5B8F9023DED9AC00E64578 /* Codable-Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable-Dictionary.swift"; sourceTree = "<group>"; };
@@ -85,16 +79,6 @@
 				2984AFD5B83035190D53346D /* Pods-OAOmates.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		3F47E74723E3E94D0055D757 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				3F47E74823E3E9790055D757 /* Login.storyboard */,
-				3F47E74A23E3EAE60055D757 /* LoginViewController.swift */,
-				3F47E74C23E3EE700055D757 /* NewPersonViewController.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		3F5B8F8C23DED96000E64578 /* Model */ = {
@@ -167,7 +151,6 @@
 		3F96F1CE23CDCDFA00456F64 /* OAOmates */ = {
 			isa = PBXGroup;
 			children = (
-				3F47E74723E3E94D0055D757 /* Login */,
 				3F5B8F9223DED9C700E64578 /* Firebase */,
 				3F5B8F8D23DED98D00E64578 /* Extension */,
 				3F5B8F8C23DED96000E64578 /* Model */,
@@ -255,7 +238,6 @@
 			files = (
 				3F96F1DC23CDCDFA00456F64 /* LaunchScreen.storyboard in Resources */,
 				3F5B8F4F23DEBDEA00E64578 /* GoogleService-Info.plist in Resources */,
-				3F47E74923E3E9790055D757 /* Login.storyboard in Resources */,
 				3FCA42AB23D066760050793A /* myView.storyboard in Resources */,
 				3F96F1D923CDCDFA00456F64 /* Assets.xcassets in Resources */,
 				3F96F1D723CDCDFA00456F64 /* Main.storyboard in Resources */,
@@ -312,7 +294,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F47E74D23E3EE700055D757 /* NewPersonViewController.swift in Sources */,
 				3F5B8F9123DED9AC00E64578 /* Codable-Dictionary.swift in Sources */,
 				3F96F1D423CDCDFA00456F64 /* ViewController.swift in Sources */,
 				3F96F1D023CDCDFA00456F64 /* AppDelegate.swift in Sources */,
@@ -325,7 +306,6 @@
 				3F5B8F9423DED9DA00E64578 /* API.swift in Sources */,
 				3F74FADD23D6CADE009028B1 /* MoreInfoViewController.swift in Sources */,
 				3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */,
-				3F47E74B23E3EAE60055D757 /* LoginViewController.swift in Sources */,
 				3F96F1E423CDD10A00456F64 /* personViewController.swift in Sources */,
 				3FED6C2E23DFF6130026924F /* MyViewController.swift in Sources */,
 				3F5B8F8F23DED99A00E64578 /* Encodable.swift in Sources */,
