@@ -58,10 +58,10 @@ class MyViewController: UITableViewController{
             self.nationLabel.text = user.nation
             self.dormitoryLabel.text = user.dormitory
             self.numberLabel.text = user.number
-            self.amLabel.text = user.sleepAPM
-            self.pmLabel.text = user.wakeAPM
-            self.sleephour.text = "\(user.sleepTime)"
-            self.wakehour.text = user.wakeTime
+            self.amLabel.text = user.wakeAPM
+            self.pmLabel.text = user.sleepAPM
+            self.sleephour.text = "\(user.wakeTime)"
+            self.wakehour.text = user.sleepTime
             self.yearLabel.text = user.year
             self.semesterLabel.text = user.semester
             self.monthLabel.text = user.month
