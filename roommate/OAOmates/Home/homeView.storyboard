@@ -246,11 +246,11 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Y5A-yw-Ktz">
-                                                <rect key="frame" x="55" y="46" width="45" height="42.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PIx-c6-UrU">
+                                                <rect key="frame" x="35" y="51" width="80" height="41.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJf-jw-w4q">
-                                                        <rect key="frame" x="0.0" y="0.0" width="45" height="21"/>
+                                                        <rect key="frame" x="17.5" y="0.0" width="45" height="21"/>
                                                         <color key="backgroundColor" red="0.71638772589999999" green="0.50709821909999997" blue="0.95037109369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="Z6P-57-Pf3"/>
@@ -270,8 +270,11 @@
                                                             <action selector="AlertMatching:" destination="dcM-nT-bBs" eventType="touchUpInside" id="1lh-IA-0r2"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vL-KO-pUh">
-                                                        <rect key="frame" x="0.0" y="22" width="45" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nickname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vL-KO-pUh">
+                                                        <rect key="frame" x="0.0" y="21" width="80" height="20.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="veS-w7-k1I"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -281,15 +284,12 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="Y5A-yw-Ktz" firstAttribute="top" secondItem="XsZ-jd-DCd" secondAttribute="top" constant="46" id="7sm-Fq-87y"/>
                                             <constraint firstItem="Fnk-BF-pqM" firstAttribute="centerY" secondItem="XsZ-jd-DCd" secondAttribute="centerY" constant="-22.25" id="8Hn-fg-uj6"/>
                                             <constraint firstAttribute="trailing" secondItem="rmJ-p1-8eX" secondAttribute="trailing" constant="26" id="8ve-XR-3E0"/>
                                             <constraint firstItem="rmJ-p1-8eX" firstAttribute="leading" secondItem="XsZ-jd-DCd" secondAttribute="leading" constant="32" id="Jaj-l6-4XY"/>
-                                            <constraint firstAttribute="trailing" secondItem="Y5A-yw-Ktz" secondAttribute="trailing" constant="314" id="OGp-4Y-jFY"/>
                                             <constraint firstAttribute="height" constant="996" id="SRM-Or-M07"/>
                                             <constraint firstAttribute="trailing" secondItem="jkn-qW-yUl" secondAttribute="trailing" constant="133" id="TSM-pI-xic"/>
                                             <constraint firstItem="Fnk-BF-pqM" firstAttribute="leading" secondItem="XsZ-jd-DCd" secondAttribute="leading" constant="35" id="Ypp-yj-0GM"/>
-                                            <constraint firstItem="Y5A-yw-Ktz" firstAttribute="leading" secondItem="XsZ-jd-DCd" secondAttribute="leading" constant="55" id="cqI-wX-WIe"/>
                                             <constraint firstItem="Fnk-BF-pqM" firstAttribute="top" secondItem="XsZ-jd-DCd" secondAttribute="top" constant="210" id="eqz-f4-cRS"/>
                                             <constraint firstItem="Fnk-BF-pqM" firstAttribute="top" secondItem="jkn-qW-yUl" secondAttribute="bottom" constant="86" id="qg8-hF-ZlW"/>
                                             <constraint firstItem="Fnk-BF-pqM" firstAttribute="centerX" secondItem="XsZ-jd-DCd" secondAttribute="centerX" id="rcH-2u-mLu"/>
