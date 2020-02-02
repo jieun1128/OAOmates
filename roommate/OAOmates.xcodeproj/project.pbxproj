@@ -28,6 +28,7 @@
 		3FED6C2E23DFF6130026924F /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED6C2D23DFF6130026924F /* MyViewController.swift */; };
 		3FED6C3023DFF63C0026924F /* PersonalInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED6C2F23DFF63C0026924F /* PersonalInfoTableViewController.swift */; };
 		3FED6C3223DFF6580026924F /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED6C3123DFF6580026924F /* SurveyViewController.swift */; };
+		4047D44623E6E92400C64131 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047D44523E6E92300C64131 /* SceneDelegate.swift */; };
 		FC79F853A6CEAC0D926488A3 /* Pods_OAOmates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE74BBBE895D0BC09A2C9B1 /* Pods_OAOmates.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		3FED6C2D23DFF6130026924F /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		3FED6C2F23DFF63C0026924F /* PersonalInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoTableViewController.swift; sourceTree = "<group>"; };
 		3FED6C3123DFF6580026924F /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		4047D44523E6E92300C64131 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BCE74BBBE895D0BC09A2C9B1 /* Pods_OAOmates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAOmates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD42642F600667230A8EABDC /* Pods-OAOmates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAOmates.debug.xcconfig"; path = "Target Support Files/Pods-OAOmates/Pods-OAOmates.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +167,7 @@
 				3F74FAD123D6BA66009028B1 /* MyView */,
 				3F74FACE23D6B9CD009028B1 /* Home */,
 				3F90DC2F23E5788A00CA61A5 /* Check */,
+				4047D44523E6E92300C64131 /* SceneDelegate.swift */,
 				3F96F1D323CDCDFA00456F64 /* ViewController.swift */,
 				3F96F1CF23CDCDFA00456F64 /* AppDelegate.swift */,
 				3F96F1D523CDCDFA00456F64 /* Main.storyboard */,
@@ -308,6 +311,7 @@
 				3F96F1D023CDCDFA00456F64 /* AppDelegate.swift in Sources */,
 				3F74FAD323D6BAC1009028B1 /* Room.swift in Sources */,
 				3F5B8F9623DED9E800E64578 /* API-Firebase.swift in Sources */,
+				4047D44623E6E92400C64131 /* SceneDelegate.swift in Sources */,
 				3FED6C3223DFF6580026924F /* SurveyViewController.swift in Sources */,
 				3FED6C3023DFF63C0026924F /* PersonalInfoTableViewController.swift in Sources */,
 				3F299DB023E2CFF000DF9B55 /* Concordination.swift in Sources */,
