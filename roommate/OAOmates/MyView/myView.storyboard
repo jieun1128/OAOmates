@@ -971,7 +971,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem title="MY" id="pSZ-hP-qts">
-                                    <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="G6S-5I-7le">
+                                    <barButtonItem key="rightBarButtonItem" systemItem="edit" id="G6S-5I-7le">
                                         <connections>
                                             <action selector="pressEditButton:" destination="C6r-ee-sLc" id="x9V-SN-DyO"/>
                                             <segue destination="koC-xl-qig" kind="presentation" identifier="sendEdit" id="UV8-aD-ixo"/>
@@ -1419,7 +1419,6 @@
                         <outlet property="numberLabel" destination="4gp-e0-H9U" id="2t9-7j-vIU"/>
                         <outlet property="openChatLabel" destination="lli-3b-GmR" id="NQ2-49-kJQ"/>
                         <outlet property="semesterLabel" destination="2Yr-2d-yIB" id="nf7-zx-HRg"/>
-                        <outlet property="sleepingHour" destination="snG-u3-9w6" id="z2T-gO-2JN"/>
                         <outlet property="yearLabel" destination="Ml7-Yo-knS" id="zQS-iG-PNM"/>
                     </connections>
                 </tableViewController>
