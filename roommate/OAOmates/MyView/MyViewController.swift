@@ -52,19 +52,19 @@ class MyViewController: UITableViewController{
             self.nickNameLabel.text = user.nickname
             self.collegeLabel.text = user.college
             self.majorLabel.text = user.major
-            self.gradeLabel.text = "\(user.grade)학년"
-            self.ageLabel.text = "\(user.age)세"
-            self.genderLabel.text = "성별: \(user.gender)"
+            self.gradeLabel.text = user.grade
+            self.ageLabel.text = user.age
+            self.genderLabel.text = user.gender
             self.nationLabel.text = user.nation
-            self.dormitoryLabel.text = "\(user.dormitory)학사"
-            self.numberLabel.text = "\(user.number)인실"
+            self.dormitoryLabel.text = user.dormitory
+            self.numberLabel.text = user.number
             self.amLabel.text = user.wakeAPM
             self.pmLabel.text = user.sleepAPM
             self.sleephour.text = "\(user.wakeTime)"
             self.wakehour.text = user.sleepTime
-            self.yearLabel.text = "\(user.year)학년도"
-            self.semesterLabel.text = "\(user.semester)학기"
-            self.monthLabel.text = "\(user.month)개월"
+            self.yearLabel.text = user.year
+            self.semesterLabel.text = user.semester
+            self.monthLabel.text = user.month
             
             self.introductionLabel.text = user.introduction
             self.letterLabel.text = user.letter
