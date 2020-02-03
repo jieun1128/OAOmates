@@ -6,16 +6,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Check-->
-        <scene sceneID="Lv3-uJ-yFE">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Check" id="CbV-ha-Ezx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="uMS-M9-ysN"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YtB-rX-IKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="863" y="217"/>
-        </scene>
         <!--myView-->
         <scene sceneID="K27-Bc-18Q">
             <objects>
@@ -24,7 +14,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ma3-No-puk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="858" y="344"/>
+            <point key="canvasLocation" x="858" y="285"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="n9J-Nl-p7n">
@@ -38,7 +28,6 @@
                     <connections>
                         <segue destination="rGG-9S-u2J" kind="relationship" relationship="viewControllers" id="Mw7-fF-vfy"/>
                         <segue destination="Ic1-aK-TbF" kind="relationship" relationship="viewControllers" id="oPb-4t-7ak"/>
-                        <segue destination="CbV-ha-Ezx" kind="relationship" relationship="viewControllers" id="Eni-Je-FTs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37o-Hl-o4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
