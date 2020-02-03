@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F11F9A423E7BA1300B611BE /* Check.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F11F9A323E7BA1300B611BE /* Check.storyboard */; };
 		3F181CDD23D05E360026ADED /* personTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F181CDC23D05E360026ADED /* personTableViewCell.swift */; };
 		3F299DB023E2CFF000DF9B55 /* Concordination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F299DAF23E2CFF000DF9B55 /* Concordination.swift */; };
 		3F46D7DD23D067C90020F986 /* homeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F46D7DC23D067C90020F986 /* homeView.storyboard */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		2984AFD5B83035190D53346D /* Pods-OAOmates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAOmates.release.xcconfig"; path = "Target Support Files/Pods-OAOmates/Pods-OAOmates.release.xcconfig"; sourceTree = "<group>"; };
+		3F11F9A323E7BA1300B611BE /* Check.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Check.storyboard; path = "../../../../../../../Downloads/OAOmates-8b3930e3afbcd3b43926a3d84b9fc1c92de29fb6/roommate/OAOmates/Check/Check.storyboard"; sourceTree = "<group>"; };
 		3F181CDC23D05E360026ADED /* personTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personTableViewCell.swift; sourceTree = "<group>"; };
 		3F299DAF23E2CFF000DF9B55 /* Concordination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concordination.swift; sourceTree = "<group>"; };
 		3F46D7DC23D067C90020F986 /* homeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = homeView.storyboard; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 				2984AFD5B83035190D53346D /* Pods-OAOmates.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3F11F9A223E7BA0200B611BE /* Check */ = {
+			isa = PBXGroup;
+			children = (
+				3F11F9A323E7BA1300B611BE /* Check.storyboard */,
+			);
+			path = Check;
 			sourceTree = "<group>";
 		};
 		3F5B8F8C23DED96000E64578 /* Model */ = {
@@ -151,6 +161,7 @@
 		3F96F1CE23CDCDFA00456F64 /* OAOmates */ = {
 			isa = PBXGroup;
 			children = (
+				3F11F9A223E7BA0200B611BE /* Check */,
 				3F5B8F9223DED9C700E64578 /* Firebase */,
 				3F5B8F8D23DED98D00E64578 /* Extension */,
 				3F5B8F8C23DED96000E64578 /* Model */,
@@ -241,6 +252,7 @@
 				3FCA42AB23D066760050793A /* myView.storyboard in Resources */,
 				3F96F1D923CDCDFA00456F64 /* Assets.xcassets in Resources */,
 				3F96F1D723CDCDFA00456F64 /* Main.storyboard in Resources */,
+				3F11F9A423E7BA1300B611BE /* Check.storyboard in Resources */,
 				3F46D7DD23D067C90020F986 /* homeView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

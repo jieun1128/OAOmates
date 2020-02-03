@@ -16,6 +16,16 @@
             </objects>
             <point key="canvasLocation" x="858" y="285"/>
         </scene>
+        <!--Check-->
+        <scene sceneID="YyF-sY-ncx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Check" id="zET-zU-Pfp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="mWP-fH-LGh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ES-df-7pk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="589" y="400"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="n9J-Nl-p7n">
             <objects>
@@ -28,6 +38,7 @@
                     <connections>
                         <segue destination="rGG-9S-u2J" kind="relationship" relationship="viewControllers" id="Mw7-fF-vfy"/>
                         <segue destination="Ic1-aK-TbF" kind="relationship" relationship="viewControllers" id="oPb-4t-7ak"/>
+                        <segue destination="zET-zU-Pfp" kind="relationship" relationship="viewControllers" id="9cf-Ol-vRd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37o-Hl-o4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
